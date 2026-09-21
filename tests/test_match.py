@@ -182,3 +182,32 @@ def test_distribution_name_differs_from_import_name(tmp_path):
     alert = build_alert(removed("safe_load"), scan, "PyYAML", "7.0", repo="r")
     assert alert.verdict is Verdict.BREAKING
     assert alert.findings[0].symbol == "yaml.safe_load"
+
+
+# -- deduplication -----------------------------------------------------------
+
+
+def test_same_api_named_twice_is_one_finding(sample_scan):
+    """Notes often name an API bare and qualified; that is still one API."""
+    changes = removed("BaseSettings", "pydantic.BaseSettings")
+    alert = build_alert(changes, sample_scan, "pydantic", "2.0", repo="sample")
+    assert len(alert.findings) == 1
+    assert alert.reason.startswith("1 API(s)")
+
+
+def test_rename_of_an_already_removed_name_is_not_repeated(sample_scan):
+    changes = ExtractedChanges(
+        removed=[RemovedApi(name="BaseSettings")],
+        renamed=[RenamedApi(old_name="BaseSettings", new_name="pydantic_settings.BaseSettings")],
+    )
+    alert = build_alert(changes, sample_scan, "pydantic", "2.0", repo="sample")
+    assert len(alert.findings) == 1
+    assert alert.findings[0].kind == "removed"
+
+
+def test_distinct_apis_are_still_separate_findings(sample_scan):
+    changes = removed("BaseSettings", "BaseModel")
+    alert = build_alert(changes, sample_scan, "pydantic", "2.0", repo="sample")
+    assert {f.symbol for f in alert.findings} == {
+        "pydantic.BaseSettings", "pydantic.BaseModel"
+    }

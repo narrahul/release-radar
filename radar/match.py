@@ -13,7 +13,7 @@ as a caveat on the alert, never as a finding.
 from __future__ import annotations
 
 import re
-from typing import Dict, List, Optional, Sequence
+from typing import Dict, List, Optional, Sequence, Set
 
 from .models import (
     Alert,
@@ -136,6 +136,10 @@ def match_changes(
     module = module or module_for_distribution(package)
     usages = scan.for_module(module.split(".")[0])
     findings: List[Finding] = []
+    # Notes often name the same API twice ("JSONEncoder" in one line,
+    # "flask.json.JSONEncoder" in another). Both resolve to one import path,
+    # and reporting it twice inflates the count for no new information.
+    seen: Set[str] = set()
 
     for removed in changes.removed:
         symbol = normalize_symbol(removed.name)
@@ -145,6 +149,9 @@ def match_changes(
             hits = _usages_touching(candidate, usages)
             if not hits:
                 continue
+            if candidate in seen:
+                break
+            seen.add(candidate)
             detail = f"{candidate} was removed in this release"
             if removed.note:
                 detail += f" ({removed.note.strip()})"
@@ -162,6 +169,9 @@ def match_changes(
             hits = _usages_touching(candidate, usages)
             if not hits:
                 continue
+            if candidate in seen:  # already reported, e.g. as a removal
+                break
+            seen.add(candidate)
             new_name = normalize_symbol(renamed.new_name) or renamed.new_name.strip()
             detail = f"{candidate} was renamed to {new_name}"
             if renamed.note:
