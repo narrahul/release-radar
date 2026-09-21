@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# ...except the fixture repo, which exists to prove .venv is skipped
+!tests/fixtures/sample_repo/.venv/
+.env
+.pytest_cache/
+*.egg-info/

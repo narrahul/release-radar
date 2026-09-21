@@ -1,0 +1,12 @@
+{
+  "info": {
+    "name": "pydantic",
+    "version": "2.0",
+    "description": "long readme text",
+    "home_page": "https://docs.pydantic.dev",
+    "project_urls": {
+      "Documentation": "https://docs.pydantic.dev",
+      "Source": "https://github.com/pydantic/pydantic"
+    }
+  }
+}

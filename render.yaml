@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: release-radar
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn web.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.6"
+      - key: OPENROUTER_API_KEY
+        sync: false          # set this in the Render dashboard, never in git
+      - key: GITHUB_TOKEN
+        sync: false          # optional: raises the GitHub rate limit

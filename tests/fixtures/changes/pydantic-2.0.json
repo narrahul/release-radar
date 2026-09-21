@@ -1,0 +1,23 @@
+{
+  "removed": [
+    {
+      "name": "BaseSettings",
+      "note": "moved to the separate pydantic-settings package"
+    }
+  ],
+  "renamed": [
+    {
+      "old_name": "Model.dict",
+      "new_name": "Model.model_dump",
+      "note": "old name still works but warns"
+    }
+  ],
+  "behaviour_changed": [
+    {
+      "name": "Config",
+      "note": "replaced by model_config dicts"
+    }
+  ],
+  "security": false,
+  "security_note": ""
+}

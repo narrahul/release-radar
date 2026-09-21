@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest>=8.0
+
+# Only for --provider anthropic; the default OpenRouter path is plain HTTP.
+anthropic>=1.7.0
