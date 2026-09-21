@@ -1,3 +1,7 @@
 pydantic>=2.0
 fastapi>=0.110
 uvicorn[standard]>=0.27
+
+# FastAPI needs this to read HTML form posts (the /check endpoint). It is not
+# a FastAPI dependency, so a clean install fails at import time without it.
+python-multipart>=0.0.9
