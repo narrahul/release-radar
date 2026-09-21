@@ -205,7 +205,7 @@ def fetch_release_notes(
     token: Optional[str] = None,
 ) -> ReleaseNotes:
     """Release notes for `package==version`, from GitHub if possible."""
-    token = token or os.environ.get("GITHUB_TOKEN") or None
+    token = (token or os.environ.get("GITHUB_TOKEN") or "").strip() or None
     metadata = _get_json(
         PYPI_JSON.format(package=urllib.parse.quote(package)), timeout
     )

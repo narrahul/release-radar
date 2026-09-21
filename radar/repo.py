@@ -142,7 +142,7 @@ def fetch_repo(
 ) -> FetchedRepo:
     """Download a GitHub repo and return a directory of its Python files."""
     owner, name = parse_repo(value)
-    token = token or os.environ.get("GITHUB_TOKEN") or None
+    token = (token or os.environ.get("GITHUB_TOKEN") or "").strip() or None
 
     tempdir = tempfile.mkdtemp(prefix="radar-repo-")
     archive = Path(tempdir) / "repo.zip"

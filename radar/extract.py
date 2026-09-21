@@ -213,7 +213,10 @@ class OpenRouterExtractor:
         self.model = model
         self.timeout = timeout
         self.last_usage: Optional[Usage] = None
-        self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY")
+        # .strip() is load-bearing: a key pasted into a hosting dashboard
+        # often carries a trailing newline, and Python refuses to put a
+        # newline in an HTTP header ("Invalid header value").
+        self.api_key = (api_key or os.environ.get("OPENROUTER_API_KEY") or "").strip()
         if not self.api_key:
             raise ExtractionError(
                 "OPENROUTER_API_KEY is not set (put it in .env or the environment)"
