@@ -9,8 +9,10 @@ is a crude per-IP rate limit so a stranger cannot spend the API budget.
 from __future__ import annotations
 
 import html
+import logging
 import os
 import time
+import traceback
 from collections import defaultdict, deque
 from typing import Deque, Dict, Optional, Tuple
 
@@ -31,6 +33,9 @@ from radar.repo import RepoError, fetch_repo
 from radar.scan import scan_repo
 
 load_dotenv()
+
+logger = logging.getLogger("radar.web")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 app = FastAPI(title="Release Radar", docs_url=None, redoc_url=None)
 
@@ -231,6 +236,26 @@ def _error_card(message: str) -> str:
     return f'<div class="card err">{html.escape(message)}</div>'
 
 
+# Errors a user can act on. Anything else is a bug, and is logged with a
+# traceback rather than shown - but the page still has to say something.
+EXPECTED_ERRORS = (RepoError, FetchError, ExtractionError, NotADirectoryError, OSError)
+
+
+def _checked(repo: str, package: str, version: str) -> Tuple[Optional[Alert], str]:
+    """Run the pipeline, returning (alert, error_message)."""
+    try:
+        return run_check(repo, package, version), ""
+    except EXPECTED_ERRORS as exc:
+        logger.warning("check failed: %s: %s", type(exc).__name__, exc)
+        return None, str(exc)
+    except Exception as exc:  # a bug - do not lose it in a bare 500
+        logger.error(
+            "unhandled error for %s / %s %s:\n%s",
+            repo, package, version, traceback.format_exc(),
+        )
+        return None, f"Unexpected error ({type(exc).__name__}). This one is on us."
+
+
 # -- routes ------------------------------------------------------------------
 
 
@@ -241,7 +266,12 @@ def index(repo: str = "", package: str = "", version: str = "") -> HTMLResponse:
 
 @app.get("/healthz")
 def healthz() -> JSONResponse:
-    return JSONResponse({"ok": True, "model": OPENROUTER_MODEL})
+    return JSONResponse({
+        "ok": True,
+        "model": OPENROUTER_MODEL,
+        "openrouter_key": bool(os.environ.get("OPENROUTER_API_KEY")),
+        "github_token": bool(os.environ.get("GITHUB_TOKEN")),
+    })
 
 
 @app.post("/check", response_class=HTMLResponse)
@@ -258,11 +288,10 @@ def check(
                         _error_card("Rate limit reached. Try again later.")),
             status_code=429,
         )
-    try:
-        alert = run_check(repo, package, version)
-    except (RepoError, FetchError, ExtractionError) as exc:
+    alert, error = _checked(repo, package, version)
+    if error:
         return HTMLResponse(
-            render_page(repo, package, version, _error_card(str(exc))), status_code=400
+            render_page(repo, package, version, _error_card(error)), status_code=400
         )
     return HTMLResponse(render_page(repo, package, version, render_alert(alert)))
 
@@ -272,10 +301,9 @@ def api_check(request: Request, repo: str, package: str, version: str) -> JSONRe
     client = request.client.host if request.client else "unknown"
     if _rate_limited(client):
         return JSONResponse({"error": "rate limited"}, status_code=429)
-    try:
-        alert = run_check(repo, package, version)
-    except (RepoError, FetchError, ExtractionError) as exc:
-        return JSONResponse({"error": str(exc)}, status_code=400)
+    alert, error = _checked(repo, package, version)
+    if error:
+        return JSONResponse({"error": error}, status_code=400)
     return JSONResponse(alert.model_dump(mode="json"))
 
 
