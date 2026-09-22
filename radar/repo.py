@@ -19,7 +19,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, Tuple
 
-ZIPBALL = "https://api.github.com/repos/{owner}/{repo}/zipball"
+ZIPBALL = "https://api.github.com/repos/{owner}/{repo}/zipball/{ref}"
 USER_AGENT = "release-radar/0.1"
 
 MAX_ARCHIVE_BYTES = 80 * 1024 * 1024  # a repo bigger than this is not a demo
@@ -36,6 +36,7 @@ class FetchedRepo:
     owner: str
     name: str
     path: Path  # directory to scan
+    ref: str = ""  # branch, tag or commit; empty means the default branch
     tempdir: Optional[str] = None  # caller cleans this up
     python_files: int = 0
 
@@ -138,9 +139,17 @@ def extract_python_files(archive: Path, destination: Path) -> int:
 
 
 def fetch_repo(
-    value: str, token: Optional[str] = None, timeout: float = 60.0
+    value: str,
+    token: Optional[str] = None,
+    timeout: float = 60.0,
+    ref: str = "",
 ) -> FetchedRepo:
-    """Download a GitHub repo and return a directory of its Python files."""
+    """Download a GitHub repo and return a directory of its Python files.
+
+    `ref` pins a branch, tag or commit; empty means the default branch. A
+    repo is usually checked against a release it has not adopted yet, so
+    being able to name the old tag matters.
+    """
     owner, name = parse_repo(value)
     token = (token or os.environ.get("GITHUB_TOKEN") or "").strip() or None
 
@@ -149,7 +158,8 @@ def fetch_repo(
     source = Path(tempdir) / "src"
     source.mkdir()
     try:
-        _download(ZIPBALL.format(owner=owner, repo=name), archive, token, timeout)
+        url = ZIPBALL.format(owner=owner, repo=name, ref=ref)
+        _download(url, archive, token, timeout)
         count = extract_python_files(archive, source)
         archive.unlink(missing_ok=True)
     except Exception:
@@ -161,5 +171,6 @@ def fetch_repo(
         raise RepoError(f"{owner}/{name} contains no Python files to scan")
 
     return FetchedRepo(
-        owner=owner, name=name, path=source, tempdir=tempdir, python_files=count
+        owner=owner, name=name, path=source, ref=ref,
+        tempdir=tempdir, python_files=count,
     )

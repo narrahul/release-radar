@@ -1,0 +1,21 @@
+{
+  "removed": [
+    {
+      "name": "__version__",
+      "note": "Remove previously deprecated code."
+    }
+  ],
+  "renamed": [],
+  "behaviour_changed": [
+    {
+      "name": "generate_password_hash",
+      "note": "uses scrypt by default."
+    },
+    {
+      "name": "ProfilerMiddleware",
+      "note": "Add the \"werkzeug.profiler\" item to the WSGI \"environ\" dictionary passed to ProfilerMiddleware's filename_format function. It contains the elapsed and time values for the profiled request."
+    }
+  ],
+  "security": false,
+  "security_note": ""
+}

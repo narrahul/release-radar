@@ -1,0 +1,858 @@
+docs/conf.py:1:# -*- coding: utf-8 -*-
+docs/conf.py:2:
+docs/conf.py:3:project = u'Flask-Bootstrap'
+docs/conf.py:4:copyright = u'2013, Marc Brinkmann'
+docs/conf.py:5:version = '3.3.7.2'
+docs/conf.py:6:release = '3.3.7.2.dev1'
+docs/conf.py:7:
+docs/conf.py:8:extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'alabaster']
+docs/conf.py:9:source_suffix = '.rst'
+docs/conf.py:10:master_doc = 'index'
+docs/conf.py:11:exclude_patterns = ['_build']
+docs/conf.py:12:pygments_style = 'monokai'
+docs/conf.py:13:
+docs/conf.py:14:html_theme = 'alabaster'
+docs/conf.py:15:html_theme_options = {
+docs/conf.py:16:    'github_user': 'mbr',
+docs/conf.py:17:    'github_repo': 'flask-bootstrap',
+docs/conf.py:18:    'description': 'All Bootstrap, no boilerplate.',
+docs/conf.py:19:    'github_banner': True,
+docs/conf.py:20:    'gratipay_user': 'mbr',
+docs/conf.py:21:    'github_button': False,
+docs/conf.py:22:    'show_powered_by': False,
+docs/conf.py:23:
+docs/conf.py:24:    # required for monokai:
+docs/conf.py:25:    'pre_bg': '#292429',
+docs/conf.py:26:}
+docs/conf.py:27:html_sidebars = {
+docs/conf.py:28:    '**': [
+docs/conf.py:29:        'about.html',
+docs/conf.py:30:        'navigation.html',
+docs/conf.py:31:        'relations.html',
+docs/conf.py:32:        'searchbox.html',
+docs/conf.py:33:        'donate.html',
+docs/conf.py:34:    ]
+docs/conf.py:35:}
+docs/conf.py:36:
+docs/conf.py:37:intersphinx_mapping = {'http://docs.python.org/': None,
+docs/conf.py:38:                       'http://flask-sqlalchemy.pocoo.org/': None,
+docs/conf.py:39:                       'http://pythonhosted.org/flask-nav/': None,
+docs/conf.py:40:                       'http://flask.pocoo.org/docs/': None,
+docs/conf.py:41:                       'https://wtforms.readthedocs.org/en/latest/': None, }
+flask_bootstrap/__init__.py:1:#!/usr/bin/env python
+flask_bootstrap/__init__.py:2:# coding=utf8
+flask_bootstrap/__init__.py:3:
+flask_bootstrap/__init__.py:4:import re
+flask_bootstrap/__init__.py:5:
+flask_bootstrap/__init__.py:6:from flask import Blueprint, current_app, url_for
+flask_bootstrap/__init__.py:7:
+flask_bootstrap/__init__.py:8:try:
+flask_bootstrap/__init__.py:9:    from wtforms.fields import HiddenField
+flask_bootstrap/__init__.py:10:except ImportError:
+flask_bootstrap/__init__.py:11:
+flask_bootstrap/__init__.py:12:    def is_hidden_field_filter(field):
+flask_bootstrap/__init__.py:13:        raise RuntimeError('WTForms is not installed.')
+flask_bootstrap/__init__.py:14:else:
+flask_bootstrap/__init__.py:15:
+flask_bootstrap/__init__.py:16:    def is_hidden_field_filter(field):
+flask_bootstrap/__init__.py:17:        return isinstance(field, HiddenField)
+flask_bootstrap/__init__.py:18:
+flask_bootstrap/__init__.py:19:
+flask_bootstrap/__init__.py:20:from .forms import render_form
+flask_bootstrap/__init__.py:21:
+flask_bootstrap/__init__.py:22:__version__ = '3.3.7.1.dev1'
+flask_bootstrap/__init__.py:23:BOOTSTRAP_VERSION = re.sub(r'^(\d+\.\d+\.\d+).*', r'\1', __version__)
+flask_bootstrap/__init__.py:24:JQUERY_VERSION = '1.12.4'
+flask_bootstrap/__init__.py:25:HTML5SHIV_VERSION = '3.7.3'
+flask_bootstrap/__init__.py:26:RESPONDJS_VERSION = '1.4.2'
+flask_bootstrap/__init__.py:27:
+flask_bootstrap/__init__.py:28:
+flask_bootstrap/__init__.py:29:class CDN(object):
+flask_bootstrap/__init__.py:30:    """Base class for CDN objects."""
+flask_bootstrap/__init__.py:31:
+flask_bootstrap/__init__.py:32:    def get_resource_url(self, filename):
+flask_bootstrap/__init__.py:33:        """Return resource url for filename."""
+flask_bootstrap/__init__.py:34:        raise NotImplementedError
+flask_bootstrap/__init__.py:35:
+flask_bootstrap/__init__.py:36:
+flask_bootstrap/__init__.py:37:class StaticCDN(object):
+flask_bootstrap/__init__.py:38:    """A CDN that serves content from the local application.
+flask_bootstrap/__init__.py:39:
+flask_bootstrap/__init__.py:40:    :param static_endpoint: Endpoint to use.
+flask_bootstrap/__init__.py:41:    :param rev: If ``True``, honor ``BOOTSTRAP_QUERYSTRING_REVVING``.
+flask_bootstrap/__init__.py:42:    """
+flask_bootstrap/__init__.py:43:
+flask_bootstrap/__init__.py:44:    def __init__(self, static_endpoint='static', rev=False):
+flask_bootstrap/__init__.py:45:        self.static_endpoint = static_endpoint
+flask_bootstrap/__init__.py:46:        self.rev = rev
+flask_bootstrap/__init__.py:47:
+flask_bootstrap/__init__.py:48:    def get_resource_url(self, filename):
+flask_bootstrap/__init__.py:49:        extra_args = {}
+flask_bootstrap/__init__.py:50:
+flask_bootstrap/__init__.py:51:        if self.rev and current_app.config['BOOTSTRAP_QUERYSTRING_REVVING']:
+flask_bootstrap/__init__.py:52:            extra_args['bootstrap'] = __version__
+flask_bootstrap/__init__.py:53:
+flask_bootstrap/__init__.py:54:        return url_for(self.static_endpoint, filename=filename, **extra_args)
+flask_bootstrap/__init__.py:55:
+flask_bootstrap/__init__.py:56:
+flask_bootstrap/__init__.py:57:class WebCDN(object):
+flask_bootstrap/__init__.py:58:    """Serves files from the Web.
+flask_bootstrap/__init__.py:59:
+flask_bootstrap/__init__.py:60:    :param baseurl: The baseurl. Filenames are simply appended to this URL.
+flask_bootstrap/__init__.py:61:    """
+flask_bootstrap/__init__.py:62:
+flask_bootstrap/__init__.py:63:    def __init__(self, baseurl):
+flask_bootstrap/__init__.py:64:        self.baseurl = baseurl
+flask_bootstrap/__init__.py:65:
+flask_bootstrap/__init__.py:66:    def get_resource_url(self, filename):
+flask_bootstrap/__init__.py:67:        return self.baseurl + filename
+flask_bootstrap/__init__.py:68:
+flask_bootstrap/__init__.py:69:
+flask_bootstrap/__init__.py:70:class ConditionalCDN(object):
+flask_bootstrap/__init__.py:71:    """Serves files from one CDN or another, depending on whether a
+flask_bootstrap/__init__.py:72:    configuration value is set.
+flask_bootstrap/__init__.py:73:
+flask_bootstrap/__init__.py:74:    :param confvar: Configuration variable to use.
+flask_bootstrap/__init__.py:75:    :param primary: CDN to use if the configuration variable is ``True``.
+flask_bootstrap/__init__.py:76:    :param fallback: CDN to use otherwise.
+flask_bootstrap/__init__.py:77:    """
+flask_bootstrap/__init__.py:78:
+flask_bootstrap/__init__.py:79:    def __init__(self, confvar, primary, fallback):
+flask_bootstrap/__init__.py:80:        self.confvar = confvar
+flask_bootstrap/__init__.py:81:        self.primary = primary
+flask_bootstrap/__init__.py:82:        self.fallback = fallback
+flask_bootstrap/__init__.py:83:
+flask_bootstrap/__init__.py:84:    def get_resource_url(self, filename):
+flask_bootstrap/__init__.py:85:        if current_app.config[self.confvar]:
+flask_bootstrap/__init__.py:86:            return self.primary.get_resource_url(filename)
+flask_bootstrap/__init__.py:87:        return self.fallback.get_resource_url(filename)
+flask_bootstrap/__init__.py:88:
+flask_bootstrap/__init__.py:89:
+flask_bootstrap/__init__.py:90:def bootstrap_find_resource(filename, cdn, use_minified=None, local=True):
+flask_bootstrap/__init__.py:91:    """Resource finding function, also available in templates.
+flask_bootstrap/__init__.py:92:
+flask_bootstrap/__init__.py:93:    Tries to find a resource, will force SSL depending on
+flask_bootstrap/__init__.py:94:    ``BOOTSTRAP_CDN_FORCE_SSL`` settings.
+flask_bootstrap/__init__.py:95:
+flask_bootstrap/__init__.py:96:    :param filename: File to find a URL for.
+flask_bootstrap/__init__.py:97:    :param cdn: Name of the CDN to use.
+flask_bootstrap/__init__.py:98:    :param use_minified': If set to ``True``/``False``, use/don't use
+flask_bootstrap/__init__.py:99:                          minified. If ``None``, honors
+flask_bootstrap/__init__.py:100:                          ``BOOTSTRAP_USE_MINIFIED``.
+flask_bootstrap/__init__.py:101:    :param local: If ``True``, uses the ``local``-CDN when
+flask_bootstrap/__init__.py:102:                  ``BOOTSTRAP_SERVE_LOCAL`` is enabled. If ``False``, uses
+flask_bootstrap/__init__.py:103:                  the ``static``-CDN instead.
+flask_bootstrap/__init__.py:104:    :return: A URL.
+flask_bootstrap/__init__.py:105:    """
+flask_bootstrap/__init__.py:106:    config = current_app.config
+flask_bootstrap/__init__.py:107:
+flask_bootstrap/__init__.py:108:    if None == use_minified:
+flask_bootstrap/__init__.py:109:        use_minified = config['BOOTSTRAP_USE_MINIFIED']
+flask_bootstrap/__init__.py:110:
+flask_bootstrap/__init__.py:111:    if use_minified:
+flask_bootstrap/__init__.py:112:        filename = '%s.min.%s' % tuple(filename.rsplit('.', 1))
+flask_bootstrap/__init__.py:113:
+flask_bootstrap/__init__.py:114:    cdns = current_app.extensions['bootstrap']['cdns']
+flask_bootstrap/__init__.py:115:    resource_url = cdns[cdn].get_resource_url(filename)
+flask_bootstrap/__init__.py:116:
+flask_bootstrap/__init__.py:117:    if resource_url.startswith('//') and config['BOOTSTRAP_CDN_FORCE_SSL']:
+flask_bootstrap/__init__.py:118:        resource_url = 'https:%s' % resource_url
+flask_bootstrap/__init__.py:119:
+flask_bootstrap/__init__.py:120:    return resource_url
+flask_bootstrap/__init__.py:121:
+flask_bootstrap/__init__.py:122:
+flask_bootstrap/__init__.py:123:class Bootstrap(object):
+flask_bootstrap/__init__.py:124:    def __init__(self, app=None):
+flask_bootstrap/__init__.py:125:        if app is not None:
+flask_bootstrap/__init__.py:126:            self.init_app(app)
+flask_bootstrap/__init__.py:127:
+flask_bootstrap/__init__.py:128:    def init_app(self, app):
+flask_bootstrap/__init__.py:129:        app.config.setdefault('BOOTSTRAP_USE_MINIFIED', True)
+flask_bootstrap/__init__.py:130:        app.config.setdefault('BOOTSTRAP_CDN_FORCE_SSL', False)
+flask_bootstrap/__init__.py:131:
+flask_bootstrap/__init__.py:132:        app.config.setdefault('BOOTSTRAP_QUERYSTRING_REVVING', True)
+flask_bootstrap/__init__.py:133:        app.config.setdefault('BOOTSTRAP_SERVE_LOCAL', False)
+flask_bootstrap/__init__.py:134:
+flask_bootstrap/__init__.py:135:        app.config.setdefault('BOOTSTRAP_LOCAL_SUBDOMAIN', None)
+flask_bootstrap/__init__.py:136:
+flask_bootstrap/__init__.py:137:        blueprint = Blueprint(
+flask_bootstrap/__init__.py:138:            'bootstrap',
+flask_bootstrap/__init__.py:139:            __name__,
+flask_bootstrap/__init__.py:140:            template_folder='templates',
+flask_bootstrap/__init__.py:141:            static_folder='static',
+flask_bootstrap/__init__.py:142:            static_url_path=app.static_url_path + '/bootstrap',
+flask_bootstrap/__init__.py:143:            subdomain=app.config['BOOTSTRAP_LOCAL_SUBDOMAIN'])
+flask_bootstrap/__init__.py:144:
+flask_bootstrap/__init__.py:145:        # add the form rendering template filter
+flask_bootstrap/__init__.py:146:        blueprint.add_app_template_filter(render_form)
+flask_bootstrap/__init__.py:147:
+flask_bootstrap/__init__.py:148:        app.register_blueprint(blueprint)
+flask_bootstrap/__init__.py:149:
+flask_bootstrap/__init__.py:150:        app.jinja_env.globals['bootstrap_is_hidden_field'] =\
+flask_bootstrap/__init__.py:151:            is_hidden_field_filter
+flask_bootstrap/__init__.py:152:        app.jinja_env.globals['bootstrap_find_resource'] =\
+flask_bootstrap/__init__.py:153:            bootstrap_find_resource
+flask_bootstrap/__init__.py:154:        app.jinja_env.add_extension('jinja2.ext.do')
+flask_bootstrap/__init__.py:155:
+flask_bootstrap/__init__.py:156:        if not hasattr(app, 'extensions'):
+flask_bootstrap/__init__.py:157:            app.extensions = {}
+flask_bootstrap/__init__.py:158:
+flask_bootstrap/__init__.py:159:        local = StaticCDN('bootstrap.static', rev=True)
+flask_bootstrap/__init__.py:160:        static = StaticCDN()
+flask_bootstrap/__init__.py:161:
+flask_bootstrap/__init__.py:162:        def lwrap(cdn, primary=static):
+flask_bootstrap/__init__.py:163:            return ConditionalCDN('BOOTSTRAP_SERVE_LOCAL', primary, cdn)
+flask_bootstrap/__init__.py:164:
+flask_bootstrap/__init__.py:165:        bootstrap = lwrap(
+flask_bootstrap/__init__.py:166:            WebCDN('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/' %
+flask_bootstrap/__init__.py:167:                   BOOTSTRAP_VERSION), local)
+flask_bootstrap/__init__.py:168:
+flask_bootstrap/__init__.py:169:        jquery = lwrap(
+flask_bootstrap/__init__.py:170:            WebCDN('//cdnjs.cloudflare.com/ajax/libs/jquery/%s/' %
+flask_bootstrap/__init__.py:171:                   JQUERY_VERSION), local)
+flask_bootstrap/__init__.py:172:
+flask_bootstrap/__init__.py:173:        html5shiv = lwrap(
+flask_bootstrap/__init__.py:174:            WebCDN('//cdnjs.cloudflare.com/ajax/libs/html5shiv/%s/' %
+flask_bootstrap/__init__.py:175:                   HTML5SHIV_VERSION))
+flask_bootstrap/__init__.py:176:
+flask_bootstrap/__init__.py:177:        respondjs = lwrap(
+flask_bootstrap/__init__.py:178:            WebCDN('//cdnjs.cloudflare.com/ajax/libs/respond.js/%s/' %
+flask_bootstrap/__init__.py:179:                   RESPONDJS_VERSION))
+flask_bootstrap/__init__.py:180:
+flask_bootstrap/__init__.py:181:        app.extensions['bootstrap'] = {
+flask_bootstrap/__init__.py:182:            'cdns': {
+flask_bootstrap/__init__.py:183:                'local': local,
+flask_bootstrap/__init__.py:184:                'static': static,
+flask_bootstrap/__init__.py:185:                'bootstrap': bootstrap,
+flask_bootstrap/__init__.py:186:                'jquery': jquery,
+flask_bootstrap/__init__.py:187:                'html5shiv': html5shiv,
+flask_bootstrap/__init__.py:188:                'respond.js': respondjs,
+flask_bootstrap/__init__.py:189:            },
+flask_bootstrap/__init__.py:190:        }
+flask_bootstrap/__init__.py:191:
+flask_bootstrap/__init__.py:192:        # setup support for flask-nav
+flask_bootstrap/__init__.py:193:        renderers = app.extensions.setdefault('nav_renderers', {})
+flask_bootstrap/__init__.py:194:        renderer_name = (__name__ + '.nav', 'BootstrapRenderer')
+flask_bootstrap/__init__.py:195:        renderers['bootstrap'] = renderer_name
+flask_bootstrap/__init__.py:196:
+flask_bootstrap/__init__.py:197:        # make bootstrap the default renderer
+flask_bootstrap/__init__.py:198:        renderers[None] = renderer_name
+flask_bootstrap/forms.py:1:from dominate import tags
+flask_bootstrap/forms.py:2:from dominate.util import raw
+flask_bootstrap/forms.py:3:from flask import current_app
+flask_bootstrap/forms.py:4:from markupsafe import Markup
+flask_bootstrap/forms.py:5:from visitor import Visitor
+flask_bootstrap/forms.py:6:
+flask_bootstrap/forms.py:7:
+flask_bootstrap/forms.py:8:def render_form(form, **kwargs):
+flask_bootstrap/forms.py:9:    r = WTFormsRenderer(**kwargs)
+flask_bootstrap/forms.py:10:
+flask_bootstrap/forms.py:11:    return Markup(r.visit(form))
+flask_bootstrap/forms.py:12:
+flask_bootstrap/forms.py:13:
+flask_bootstrap/forms.py:14:class WTFormsRenderer(Visitor):
+flask_bootstrap/forms.py:15:    def __init__(self,
+flask_bootstrap/forms.py:16:                 action='',
+flask_bootstrap/forms.py:17:                 id=None,
+flask_bootstrap/forms.py:18:                 method='post',
+flask_bootstrap/forms.py:19:                 extra_classes=[],
+flask_bootstrap/forms.py:20:                 role='form',
+flask_bootstrap/forms.py:21:                 enctype=None):
+flask_bootstrap/forms.py:22:        self.action = action
+flask_bootstrap/forms.py:23:        self.form_id = id
+flask_bootstrap/forms.py:24:        self.method = method
+flask_bootstrap/forms.py:25:        self.extra_classes = extra_classes
+flask_bootstrap/forms.py:26:        self.role = role
+flask_bootstrap/forms.py:27:        self.enctype = enctype
+flask_bootstrap/forms.py:28:
+flask_bootstrap/forms.py:29:    def _visited_file_field(self):
+flask_bootstrap/forms.py:30:        if self._real_enctype is None:
+flask_bootstrap/forms.py:31:            self._real_enctype = u'multipart/form-data'
+flask_bootstrap/forms.py:32:
+flask_bootstrap/forms.py:33:    def _get_wrap(self, node, classes='form-group'):
+flask_bootstrap/forms.py:34:        # add required class, which strictly speaking isn't bootstrap, but
+flask_bootstrap/forms.py:35:        # a common enough customization
+flask_bootstrap/forms.py:36:        if node.flags.required:
+flask_bootstrap/forms.py:37:            classes += ' required'
+flask_bootstrap/forms.py:38:
+flask_bootstrap/forms.py:39:        div = tags.div(_class=classes)
+flask_bootstrap/forms.py:40:        if current_app.debug:
+flask_bootstrap/forms.py:41:            div.add(tags.comment(' Field: {} ({}) '.format(
+flask_bootstrap/forms.py:42:                node.name, node.__class__.__name__)))
+flask_bootstrap/forms.py:43:
+flask_bootstrap/forms.py:44:        return div
+flask_bootstrap/forms.py:45:
+flask_bootstrap/forms.py:46:    def _wrapped_input(self, node,
+flask_bootstrap/forms.py:47:                       type='text',
+flask_bootstrap/forms.py:48:                       classes=['form-control'], **kwargs):
+flask_bootstrap/forms.py:49:        wrap = self._get_wrap(node)
+flask_bootstrap/forms.py:50:        wrap.add(tags.label(node.label.text, _for=node.id))
+flask_bootstrap/forms.py:51:        wrap.add(tags.input(type=type, _class=' '.join(classes), **kwargs))
+flask_bootstrap/forms.py:52:
+flask_bootstrap/forms.py:53:        return wrap
+flask_bootstrap/forms.py:54:
+flask_bootstrap/forms.py:55:    def visit_BooleanField(self, node):
+flask_bootstrap/forms.py:56:        wrap = self._get_wrap(node, classes='checkbox')
+flask_bootstrap/forms.py:57:
+flask_bootstrap/forms.py:58:        label = wrap.add(tags.label(_for=node.id))
+flask_bootstrap/forms.py:59:        label.add(tags.input(type='checkbox'))
+flask_bootstrap/forms.py:60:        label.add(node.label.text)
+flask_bootstrap/forms.py:61:
+flask_bootstrap/forms.py:62:        return wrap
+flask_bootstrap/forms.py:63:
+flask_bootstrap/forms.py:64:    def visit_DateField(self, node):
+flask_bootstrap/forms.py:65:        return self._wrapped_input(node, 'date')
+flask_bootstrap/forms.py:66:
+flask_bootstrap/forms.py:67:    def visit_DateTimeField(self, node):
+flask_bootstrap/forms.py:68:        return self._wrapped_input(node, 'datetime-local')
+flask_bootstrap/forms.py:69:
+flask_bootstrap/forms.py:70:    def visit_DecimalField(self, node):
+flask_bootstrap/forms.py:71:        # FIXME: if range-validator is present, add limits?
+flask_bootstrap/forms.py:72:        return self._wrapped_input(node, 'number')
+flask_bootstrap/forms.py:73:
+flask_bootstrap/forms.py:74:    def visit_EmailField(self, node):
+flask_bootstrap/forms.py:75:        # note: WTForms does not actually have an EmailField, this function
+flask_bootstrap/forms.py:76:        # is called by visit_StringField based on which validators are enabled
+flask_bootstrap/forms.py:77:        return self._wrapped_input(node, 'email')
+flask_bootstrap/forms.py:78:
+flask_bootstrap/forms.py:79:    def visit_Field(self, node):
+flask_bootstrap/forms.py:80:        # FIXME: add error class
+flask_bootstrap/forms.py:81:
+flask_bootstrap/forms.py:82:        wrap = self._get_wrap(node)
+flask_bootstrap/forms.py:83:
+flask_bootstrap/forms.py:84:        # add the label
+flask_bootstrap/forms.py:85:        wrap.add(tags.label(node.label.text, _for=node.id))
+flask_bootstrap/forms.py:86:        wrap.add(raw(node()))
+flask_bootstrap/forms.py:87:
+flask_bootstrap/forms.py:88:        if node.description:
+flask_bootstrap/forms.py:89:            wrap.add(tags.p(node.description, _class='help-block'))
+flask_bootstrap/forms.py:90:
+flask_bootstrap/forms.py:91:        return wrap
+flask_bootstrap/forms.py:92:
+flask_bootstrap/forms.py:93:    def visit_FileField(self, node):
+flask_bootstrap/forms.py:94:        self._visited_file_field()
+flask_bootstrap/forms.py:95:        return self._wrapped_input(node, 'file', classes=[])
+flask_bootstrap/forms.py:96:
+flask_bootstrap/forms.py:97:    def visit_FloatField(self, node):
+flask_bootstrap/forms.py:98:        # FIXME: if range-validator is present, add limits?
+flask_bootstrap/forms.py:99:        return self._wrapped_input(node, 'number')
+flask_bootstrap/forms.py:100:
+flask_bootstrap/forms.py:101:    def visit_Form(self, node):
+flask_bootstrap/forms.py:102:        form = tags.form(_class=' '.join(['form'] + self.extra_classes))
+flask_bootstrap/forms.py:103:
+flask_bootstrap/forms.py:104:        if self.action:
+flask_bootstrap/forms.py:105:            form['action'] = self.action
+flask_bootstrap/forms.py:106:
+flask_bootstrap/forms.py:107:        if self.form_id:
+flask_bootstrap/forms.py:108:            form['id'] = self.form_id
+flask_bootstrap/forms.py:109:
+flask_bootstrap/forms.py:110:        if self.method:
+flask_bootstrap/forms.py:111:            form['method'] = self.method
+flask_bootstrap/forms.py:112:
+flask_bootstrap/forms.py:113:        # prepare enctype, this will be auto-updated by file fields if
+flask_bootstrap/forms.py:114:        # necessary
+flask_bootstrap/forms.py:115:        self._real_enctype = self.enctype
+flask_bootstrap/forms.py:116:
+flask_bootstrap/forms.py:117:        # render fields
+flask_bootstrap/forms.py:118:        for field in node:
+flask_bootstrap/forms.py:119:            elem = self.visit(field)
+flask_bootstrap/forms.py:120:            form.add(elem)
+flask_bootstrap/forms.py:121:
+flask_bootstrap/forms.py:122:        if self._real_enctype:
+flask_bootstrap/forms.py:123:            form['enctype'] = self._real_enctype
+flask_bootstrap/forms.py:124:
+flask_bootstrap/forms.py:125:        return form
+flask_bootstrap/forms.py:126:
+flask_bootstrap/forms.py:127:    def visit_HiddenField(self, node):
+flask_bootstrap/forms.py:128:        return raw(node())
+flask_bootstrap/forms.py:129:
+flask_bootstrap/forms.py:130:    def visit_IntegerField(self, node):
+flask_bootstrap/forms.py:131:        # FIXME: if range-validator is present, add limits?
+flask_bootstrap/forms.py:132:        return self._wrapped_input(node, 'number', step=1)
+flask_bootstrap/forms.py:133:
+flask_bootstrap/forms.py:134:    def visit_PasswordField(self, node):
+flask_bootstrap/forms.py:135:        return self._wrapped_input(node, 'password')
+flask_bootstrap/forms.py:136:
+flask_bootstrap/forms.py:137:    def visit_SubmitField(self, node):
+flask_bootstrap/forms.py:138:        button = tags.button(node.label.text,
+flask_bootstrap/forms.py:139:                             _class='btn btn-default',
+flask_bootstrap/forms.py:140:                             type='submit')
+flask_bootstrap/forms.py:141:        return button
+flask_bootstrap/forms.py:142:
+flask_bootstrap/forms.py:143:    def visit_TextField(self, node):
+flask_bootstrap/forms.py:144:        # legacy support for TextField, deprecated in WTForms 2.0
+flask_bootstrap/forms.py:145:        return self.visit_StringField(node)
+flask_bootstrap/forms.py:146:
+flask_bootstrap/forms.py:147:    def visit_StringField(self, node):
+flask_bootstrap/forms.py:148:        for v in node.validators:
+flask_bootstrap/forms.py:149:            if v.__class__.__name__ == 'Email':
+flask_bootstrap/forms.py:150:                # render email fields differently
+flask_bootstrap/forms.py:151:                return self.visit_EmailField(node)
+flask_bootstrap/forms.py:152:
+flask_bootstrap/forms.py:153:        return self._wrapped_input(node, 'text')
+flask_bootstrap/nav.py:1:from hashlib import sha1
+flask_bootstrap/nav.py:2:from dominate import tags
+flask_bootstrap/nav.py:3:from visitor import Visitor
+flask_bootstrap/nav.py:4:
+flask_bootstrap/nav.py:5:
+flask_bootstrap/nav.py:6:class BootstrapRenderer(Visitor):
+flask_bootstrap/nav.py:7:    def __init__(self, html5=True, id=None):
+flask_bootstrap/nav.py:8:        self.html5 = html5
+flask_bootstrap/nav.py:9:        self._in_dropdown = False
+flask_bootstrap/nav.py:10:        self.id = id
+flask_bootstrap/nav.py:11:
+flask_bootstrap/nav.py:12:    def visit_Navbar(self, node):
+flask_bootstrap/nav.py:13:        # create a navbar id that is somewhat fixed, but do not leak any
+flask_bootstrap/nav.py:14:        # information about memory contents to the outside
+flask_bootstrap/nav.py:15:        node_id = self.id or sha1(str(id(node)).encode()).hexdigest()
+flask_bootstrap/nav.py:16:
+flask_bootstrap/nav.py:17:        root = tags.nav() if self.html5 else tags.div(role='navigation')
+flask_bootstrap/nav.py:18:        root['class'] = 'navbar navbar-default'
+flask_bootstrap/nav.py:19:
+flask_bootstrap/nav.py:20:        cont = root.add(tags.div(_class='container-fluid'))
+flask_bootstrap/nav.py:21:
+flask_bootstrap/nav.py:22:        # collapse button
+flask_bootstrap/nav.py:23:        header = cont.add(tags.div(_class='navbar-header'))
+flask_bootstrap/nav.py:24:        btn = header.add(tags.button())
+flask_bootstrap/nav.py:25:        btn['type'] = 'button'
+flask_bootstrap/nav.py:26:        btn['class'] = 'navbar-toggle collapsed'
+flask_bootstrap/nav.py:27:        btn['data-toggle'] = 'collapse'
+flask_bootstrap/nav.py:28:        btn['data-target'] = '#' + node_id
+flask_bootstrap/nav.py:29:        btn['aria-expanded'] = 'false'
+flask_bootstrap/nav.py:30:        btn['aria-controls'] = 'navbar'
+flask_bootstrap/nav.py:31:
+flask_bootstrap/nav.py:32:        btn.add(tags.span('Toggle navigation', _class='sr-only'))
+flask_bootstrap/nav.py:33:        btn.add(tags.span(_class='icon-bar'))
+flask_bootstrap/nav.py:34:        btn.add(tags.span(_class='icon-bar'))
+flask_bootstrap/nav.py:35:        btn.add(tags.span(_class='icon-bar'))
+flask_bootstrap/nav.py:36:
+flask_bootstrap/nav.py:37:        # title may also have a 'get_url()' method, in which case we render
+flask_bootstrap/nav.py:38:        # a brand-link
+flask_bootstrap/nav.py:39:        if node.title is not None:
+flask_bootstrap/nav.py:40:            if hasattr(node.title, 'get_url'):
+flask_bootstrap/nav.py:41:                header.add(tags.a(node.title.text, _class='navbar-brand',
+flask_bootstrap/nav.py:42:                                  href=node.title.get_url()))
+flask_bootstrap/nav.py:43:            else:
+flask_bootstrap/nav.py:44:                header.add(tags.span(node.title, _class='navbar-brand'))
+flask_bootstrap/nav.py:45:
+flask_bootstrap/nav.py:46:        bar = cont.add(tags.div(
+flask_bootstrap/nav.py:47:            _class='navbar-collapse collapse',
+flask_bootstrap/nav.py:48:            id=node_id,
+flask_bootstrap/nav.py:49:        ))
+flask_bootstrap/nav.py:50:        bar_list = bar.add(tags.ul(_class='nav navbar-nav'))
+flask_bootstrap/nav.py:51:
+flask_bootstrap/nav.py:52:        for item in node.items:
+flask_bootstrap/nav.py:53:            bar_list.add(self.visit(item))
+flask_bootstrap/nav.py:54:
+flask_bootstrap/nav.py:55:        return root
+flask_bootstrap/nav.py:56:
+flask_bootstrap/nav.py:57:    def visit_Text(self, node):
+flask_bootstrap/nav.py:58:        if not self._in_dropdown:
+flask_bootstrap/nav.py:59:            return tags.p(node.text, _class='navbar-text')
+flask_bootstrap/nav.py:60:        return tags.li(node.text, _class='dropdown-header')
+flask_bootstrap/nav.py:61:
+flask_bootstrap/nav.py:62:    def visit_Link(self, node):
+flask_bootstrap/nav.py:63:        item = tags.li()
+flask_bootstrap/nav.py:64:        item.add(tags.a(node.text, href=node.get_url()))
+flask_bootstrap/nav.py:65:
+flask_bootstrap/nav.py:66:        return item
+flask_bootstrap/nav.py:67:
+flask_bootstrap/nav.py:68:    def visit_Separator(self, node):
+flask_bootstrap/nav.py:69:        if not self._in_dropdown:
+flask_bootstrap/nav.py:70:            raise RuntimeError('Cannot render separator outside Subgroup.')
+flask_bootstrap/nav.py:71:        return tags.li(role='separator', _class='divider')
+flask_bootstrap/nav.py:72:
+flask_bootstrap/nav.py:73:    def visit_Subgroup(self, node):
+flask_bootstrap/nav.py:74:        if not self._in_dropdown:
+flask_bootstrap/nav.py:75:            li = tags.li(_class='dropdown')
+flask_bootstrap/nav.py:76:            if node.active:
+flask_bootstrap/nav.py:77:                li['class'] = 'active'
+flask_bootstrap/nav.py:78:            a = li.add(tags.a(node.title, href='#', _class='dropdown-toggle'))
+flask_bootstrap/nav.py:79:            a['data-toggle'] = 'dropdown'
+flask_bootstrap/nav.py:80:            a['role'] = 'button'
+flask_bootstrap/nav.py:81:            a['aria-haspopup'] = 'true'
+flask_bootstrap/nav.py:82:            a['aria-expanded'] = 'false'
+flask_bootstrap/nav.py:83:            a.add(tags.span(_class='caret'))
+flask_bootstrap/nav.py:84:
+flask_bootstrap/nav.py:85:            ul = li.add(tags.ul(_class='dropdown-menu'))
+flask_bootstrap/nav.py:86:
+flask_bootstrap/nav.py:87:            self._in_dropdown = True
+flask_bootstrap/nav.py:88:            for item in node.items:
+flask_bootstrap/nav.py:89:                ul.add(self.visit(item))
+flask_bootstrap/nav.py:90:            self._in_dropdown = False
+flask_bootstrap/nav.py:91:
+flask_bootstrap/nav.py:92:            return li
+flask_bootstrap/nav.py:93:        else:
+flask_bootstrap/nav.py:94:            raise RuntimeError('Cannot render nested Subgroups')
+flask_bootstrap/nav.py:95:
+flask_bootstrap/nav.py:96:    def visit_View(self, node):
+flask_bootstrap/nav.py:97:        item = tags.li()
+flask_bootstrap/nav.py:98:        item.add(tags.a(node.text, href=node.get_url(), title=node.text))
+flask_bootstrap/nav.py:99:        if node.active:
+flask_bootstrap/nav.py:100:            item['class'] = 'active'
+flask_bootstrap/nav.py:101:
+flask_bootstrap/nav.py:102:        return item
+run_sample_app.py:1:# under normal circumstances, this script would not be necessary. the
+run_sample_app.py:2:# sample_application would have its own setup.py and be properly installed;
+run_sample_app.py:3:# however since it is not bundled in the sdist package, we need some hacks
+run_sample_app.py:4:# to make it work
+run_sample_app.py:5:
+run_sample_app.py:6:import os
+run_sample_app.py:7:import sys
+run_sample_app.py:8:
+run_sample_app.py:9:sys.path.append(os.path.dirname(__name__))
+run_sample_app.py:10:
+run_sample_app.py:11:from sample_application import create_app
+run_sample_app.py:12:
+run_sample_app.py:13:# create an app instance
+run_sample_app.py:14:app = create_app()
+run_sample_app.py:15:
+run_sample_app.py:16:app.run(debug=True)
+sample_app/__init__.py:1:# Welcome to the Flask-Bootstrap sample application. This will give you a
+sample_app/__init__.py:2:# guided tour around creating an application using Flask-Bootstrap.
+sample_app/__init__.py:3:#
+sample_app/__init__.py:4:# To run this application yourself, please install its requirements first:
+sample_app/__init__.py:5:#
+sample_app/__init__.py:6:#   $ pip install -r sample_app/requirements.txt
+sample_app/__init__.py:7:#
+sample_app/__init__.py:8:# Then, you can actually run the application.
+sample_app/__init__.py:9:#
+sample_app/__init__.py:10:#   $ flask --app=sample_app dev
+sample_app/__init__.py:11:#
+sample_app/__init__.py:12:# Afterwards, point your browser to http://localhost:5000, then check out the
+sample_app/__init__.py:13:# source.
+sample_app/__init__.py:14:
+sample_app/__init__.py:15:from flask import Flask
+sample_app/__init__.py:16:from flask_appconfig import AppConfig
+sample_app/__init__.py:17:from flask_bootstrap import Bootstrap
+sample_app/__init__.py:18:
+sample_app/__init__.py:19:from .frontend import frontend
+sample_app/__init__.py:20:from .nav import nav
+sample_app/__init__.py:21:
+sample_app/__init__.py:22:
+sample_app/__init__.py:23:def create_app(configfile=None):
+sample_app/__init__.py:24:    # We are using the "Application Factory"-pattern here, which is described
+sample_app/__init__.py:25:    # in detail inside the Flask docs:
+sample_app/__init__.py:26:    # http://flask.pocoo.org/docs/patterns/appfactories/
+sample_app/__init__.py:27:
+sample_app/__init__.py:28:    app = Flask(__name__)
+sample_app/__init__.py:29:
+sample_app/__init__.py:30:    # We use Flask-Appconfig here, but this is not a requirement
+sample_app/__init__.py:31:    AppConfig(app)
+sample_app/__init__.py:32:
+sample_app/__init__.py:33:    # Install our Bootstrap extension
+sample_app/__init__.py:34:    Bootstrap(app)
+sample_app/__init__.py:35:
+sample_app/__init__.py:36:    # Our application uses blueprints as well; these go well with the
+sample_app/__init__.py:37:    # application factory. We already imported the blueprint, now we just need
+sample_app/__init__.py:38:    # to register it:
+sample_app/__init__.py:39:    app.register_blueprint(frontend)
+sample_app/__init__.py:40:
+sample_app/__init__.py:41:    # Because we're security-conscious developers, we also hard-code disabling
+sample_app/__init__.py:42:    # the CDN support (this might become a default in later versions):
+sample_app/__init__.py:43:    app.config['BOOTSTRAP_SERVE_LOCAL'] = True
+sample_app/__init__.py:44:
+sample_app/__init__.py:45:    # We initialize the navigation as well
+sample_app/__init__.py:46:    nav.init_app(app)
+sample_app/__init__.py:47:
+sample_app/__init__.py:48:    return app
+sample_app/default_config.py:1:# The default_config module automatically gets imported by Appconfig, if it
+sample_app/default_config.py:2:# exists. See https://pypi.python.org/pypi/flask-appconfig for details.
+sample_app/default_config.py:3:
+sample_app/default_config.py:4:# Note: Don't *ever* do this in a real app. A secret key should not have a
+sample_app/default_config.py:5:#       default, rather the app should fail if it is missing. For the sample
+sample_app/default_config.py:6:#       application, one is provided for convenience.
+sample_app/default_config.py:7:SECRET_KEY = 'devkey'
+sample_app/forms.py:1:from flask_wtf import Form
+sample_app/forms.py:2:from wtforms.fields import *
+sample_app/forms.py:3:from wtforms.validators import Required, Email
+sample_app/forms.py:4:
+sample_app/forms.py:5:
+sample_app/forms.py:6:class SignupForm(Form):
+sample_app/forms.py:7:    name = TextField(u'Your name', validators=[Required()])
+sample_app/forms.py:8:    password = TextField(u'Your favorite password', validators=[Required()])
+sample_app/forms.py:9:    email = TextField(u'Your email address', validators=[Email()])
+sample_app/forms.py:10:    birthday = DateField(u'Your birthday')
+sample_app/forms.py:11:
+sample_app/forms.py:12:    a_float = FloatField(u'A floating point number')
+sample_app/forms.py:13:    a_decimal = DecimalField(u'Another floating point number')
+sample_app/forms.py:14:    a_integer = IntegerField(u'An integer')
+sample_app/forms.py:15:
+sample_app/forms.py:16:    now = DateTimeField(u'Current time',
+sample_app/forms.py:17:                        description='...for no particular reason')
+sample_app/forms.py:18:    sample_file = FileField(u'Your favorite file')
+sample_app/forms.py:19:    eula = BooleanField(u'I did not read the terms and conditions',
+sample_app/forms.py:20:                        validators=[Required('You must agree to not agree!')])
+sample_app/forms.py:21:
+sample_app/forms.py:22:    submit = SubmitField(u'Signup')
+sample_app/frontend.py:1:# This contains our frontend; since it is a bit messy to use the @app.route
+sample_app/frontend.py:2:# decorator style when using application factories, all of our routes are
+sample_app/frontend.py:3:# inside blueprints. This is the front-facing blueprint.
+sample_app/frontend.py:4:#
+sample_app/frontend.py:5:# You can find out more about blueprints at
+sample_app/frontend.py:6:# http://flask.pocoo.org/docs/blueprints/
+sample_app/frontend.py:7:
+sample_app/frontend.py:8:from flask import Blueprint, render_template, flash, redirect, url_for
+sample_app/frontend.py:9:from flask_bootstrap import __version__ as FLASK_BOOTSTRAP_VERSION
+sample_app/frontend.py:10:from flask_nav.elements import Navbar, View, Subgroup, Link, Text, Separator
+sample_app/frontend.py:11:from markupsafe import escape
+sample_app/frontend.py:12:
+sample_app/frontend.py:13:from .forms import SignupForm
+sample_app/frontend.py:14:from .nav import nav
+sample_app/frontend.py:15:
+sample_app/frontend.py:16:frontend = Blueprint('frontend', __name__)
+sample_app/frontend.py:17:
+sample_app/frontend.py:18:# We're adding a navbar as well through flask-navbar. In our example, the
+sample_app/frontend.py:19:# navbar has an usual amount of Link-Elements, more commonly you will have a
+sample_app/frontend.py:20:# lot more View instances.
+sample_app/frontend.py:21:nav.register_element('frontend_top', Navbar(
+sample_app/frontend.py:22:    View('Flask-Bootstrap', '.index'),
+sample_app/frontend.py:23:    View('Home', '.index'),
+sample_app/frontend.py:24:    View('Forms Example', '.example_form'),
+sample_app/frontend.py:25:    View('Debug-Info', 'debug.debug_root'),
+sample_app/frontend.py:26:    Subgroup(
+sample_app/frontend.py:27:        'Docs',
+sample_app/frontend.py:28:        Link('Flask-Bootstrap', 'http://pythonhosted.org/Flask-Bootstrap'),
+sample_app/frontend.py:29:        Link('Flask-AppConfig', 'https://github.com/mbr/flask-appconfig'),
+sample_app/frontend.py:30:        Link('Flask-Debug', 'https://github.com/mbr/flask-debug'),
+sample_app/frontend.py:31:        Separator(),
+sample_app/frontend.py:32:        Text('Bootstrap'),
+sample_app/frontend.py:33:        Link('Getting started', 'http://getbootstrap.com/getting-started/'),
+sample_app/frontend.py:34:        Link('CSS', 'http://getbootstrap.com/css/'),
+sample_app/frontend.py:35:        Link('Components', 'http://getbootstrap.com/components/'),
+sample_app/frontend.py:36:        Link('Javascript', 'http://getbootstrap.com/javascript/'),
+sample_app/frontend.py:37:        Link('Customize', 'http://getbootstrap.com/customize/'), ),
+sample_app/frontend.py:38:    Text('Using Flask-Bootstrap {}'.format(FLASK_BOOTSTRAP_VERSION)), ))
+sample_app/frontend.py:39:
+sample_app/frontend.py:40:
+sample_app/frontend.py:41:# Our index-page just shows a quick explanation. Check out the template
+sample_app/frontend.py:42:# "templates/index.html" documentation for more details.
+sample_app/frontend.py:43:@frontend.route('/')
+sample_app/frontend.py:44:def index():
+sample_app/frontend.py:45:    return render_template('index.html')
+sample_app/frontend.py:46:
+sample_app/frontend.py:47:
+sample_app/frontend.py:48:# Shows a long signup form, demonstrating form rendering.
+sample_app/frontend.py:49:@frontend.route('/example-form/', methods=('GET', 'POST'))
+sample_app/frontend.py:50:def example_form():
+sample_app/frontend.py:51:    form = SignupForm()
+sample_app/frontend.py:52:
+sample_app/frontend.py:53:    if form.validate_on_submit():
+sample_app/frontend.py:54:        # We don't have anything fancy in our application, so we are just
+sample_app/frontend.py:55:        # flashing a message when a user completes the form successfully.
+sample_app/frontend.py:56:        #
+sample_app/frontend.py:57:        # Note that the default flashed messages rendering allows HTML, so
+sample_app/frontend.py:58:        # we need to escape things if we input user values:
+sample_app/frontend.py:59:        flash('Hello, {}. You have successfully signed up'
+sample_app/frontend.py:60:              .format(escape(form.name.data)))
+sample_app/frontend.py:61:
+sample_app/frontend.py:62:        # In a real application, you may wish to avoid this tedious redirect.
+sample_app/frontend.py:63:        return redirect(url_for('.index'))
+sample_app/frontend.py:64:
+sample_app/frontend.py:65:    return render_template('signup.html', form=form)
+sample_app/nav.py:1:from flask_nav import Nav
+sample_app/nav.py:2:
+sample_app/nav.py:3:# To keep things clean, we keep our Flask-Nav instance in here. We will define
+sample_app/nav.py:4:# frontend-specific navbars in the respective frontend, but it is also possible
+sample_app/nav.py:5:# to put share navigational items in here.
+sample_app/nav.py:6:
+sample_app/nav.py:7:nav = Nav()
+sample_application/__init__.py:1:from flask import Flask, render_template, flash
+sample_application/__init__.py:2:from flask_bootstrap import Bootstrap
+sample_application/__init__.py:3:from flask_appconfig import AppConfig
+sample_application/__init__.py:4:from flask_wtf import Form, RecaptchaField
+sample_application/__init__.py:5:from flask_wtf.file import FileField
+sample_application/__init__.py:6:from wtforms import TextField, HiddenField, ValidationError, RadioField,\
+sample_application/__init__.py:7:    BooleanField, SubmitField, IntegerField, FormField, validators
+sample_application/__init__.py:8:from wtforms.validators import Required
+sample_application/__init__.py:9:
+sample_application/__init__.py:10:
+sample_application/__init__.py:11:# straight from the wtforms docs:
+sample_application/__init__.py:12:class TelephoneForm(Form):
+sample_application/__init__.py:13:    country_code = IntegerField('Country Code', [validators.required()])
+sample_application/__init__.py:14:    area_code = IntegerField('Area Code/Exchange', [validators.required()])
+sample_application/__init__.py:15:    number = TextField('Number')
+sample_application/__init__.py:16:
+sample_application/__init__.py:17:
+sample_application/__init__.py:18:class ExampleForm(Form):
+sample_application/__init__.py:19:    field1 = TextField('First Field', description='This is field one.')
+sample_application/__init__.py:20:    field2 = TextField('Second Field', description='This is field two.',
+sample_application/__init__.py:21:                       validators=[Required()])
+sample_application/__init__.py:22:    hidden_field = HiddenField('You cannot see this', description='Nope')
+sample_application/__init__.py:23:    recaptcha = RecaptchaField('A sample recaptcha field')
+sample_application/__init__.py:24:    radio_field = RadioField('This is a radio field', choices=[
+sample_application/__init__.py:25:        ('head_radio', 'Head radio'),
+sample_application/__init__.py:26:        ('radio_76fm', "Radio '76 FM"),
+sample_application/__init__.py:27:        ('lips_106', 'Lips 106'),
+sample_application/__init__.py:28:        ('wctr', 'WCTR'),
+sample_application/__init__.py:29:    ])
+sample_application/__init__.py:30:    checkbox_field = BooleanField('This is a checkbox',
+sample_application/__init__.py:31:                                  description='Checkboxes can be tricky.')
+sample_application/__init__.py:32:
+sample_application/__init__.py:33:    # subforms
+sample_application/__init__.py:34:    mobile_phone = FormField(TelephoneForm)
+sample_application/__init__.py:35:
+sample_application/__init__.py:36:    # you can change the label as well
+sample_application/__init__.py:37:    office_phone = FormField(TelephoneForm, label='Your office phone')
+sample_application/__init__.py:38:
+sample_application/__init__.py:39:    ff = FileField('Sample upload')
+sample_application/__init__.py:40:
+sample_application/__init__.py:41:    submit_button = SubmitField('Submit Form')
+sample_application/__init__.py:42:
+sample_application/__init__.py:43:
+sample_application/__init__.py:44:    def validate_hidden_field(form, field):
+sample_application/__init__.py:45:        raise ValidationError('Always wrong')
+sample_application/__init__.py:46:
+sample_application/__init__.py:47:
+sample_application/__init__.py:48:def create_app(configfile=None):
+sample_application/__init__.py:49:    app = Flask(__name__)
+sample_application/__init__.py:50:    AppConfig(app, configfile)  # Flask-Appconfig is not necessary, but
+sample_application/__init__.py:51:                                # highly recommend =)
+sample_application/__init__.py:52:                                # https://github.com/mbr/flask-appconfig
+sample_application/__init__.py:53:    Bootstrap(app)
+sample_application/__init__.py:54:
+sample_application/__init__.py:55:    # in a real app, these should be configured through Flask-Appconfig
+sample_application/__init__.py:56:    app.config['SECRET_KEY'] = 'devkey'
+sample_application/__init__.py:57:    app.config['RECAPTCHA_PUBLIC_KEY'] = \
+sample_application/__init__.py:58:        '6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw'
+sample_application/__init__.py:59:
+sample_application/__init__.py:60:    @app.route('/', methods=('GET', 'POST'))
+sample_application/__init__.py:61:    def index():
+sample_application/__init__.py:62:        form = ExampleForm()
+sample_application/__init__.py:63:        form.validate_on_submit()  # to get error messages to the browser
+sample_application/__init__.py:64:        flash('critical message', 'critical')
+sample_application/__init__.py:65:        flash('error message', 'error')
+sample_application/__init__.py:66:        flash('warning message', 'warning')
+sample_application/__init__.py:67:        flash('info message', 'info')
+sample_application/__init__.py:68:        flash('debug message', 'debug')
+sample_application/__init__.py:69:        flash('different message', 'different')
+sample_application/__init__.py:70:        flash('uncategorized message')
+sample_application/__init__.py:71:        return render_template('index.html', form=form)
+sample_application/__init__.py:72:
+sample_application/__init__.py:73:    return app
+sample_application/__init__.py:74:
+sample_application/__init__.py:75:if __name__ == '__main__':
+sample_application/__init__.py:76:    create_app().run(debug=True)
+setup.py:1:import os
+setup.py:2:
+setup.py:3:from setuptools import setup
+setup.py:4:
+setup.py:5:
+setup.py:6:def read(fname):
+setup.py:7:    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+setup.py:8:
+setup.py:9:
+setup.py:10:setup(
+setup.py:11:    name='Flask-Bootstrap',
+setup.py:12:    version='3.3.7.2.dev1',
+setup.py:13:    url='http://github.com/mbr/flask-bootstrap',
+setup.py:14:    license='BSD',
+setup.py:15:    author='Marc Brinkmann',
+setup.py:16:    author_email='git@marcbrinkmann.de',
+setup.py:17:    description='An extension that includes Bootstrap in your '
+setup.py:18:    'project, without any boilerplate code.',
+setup.py:19:    long_description=read('README.rst'),
+setup.py:20:    packages=['flask_bootstrap'],
+setup.py:21:    zip_safe=False,
+setup.py:22:    include_package_data=True,
+setup.py:23:    platforms='any',
+setup.py:24:    install_requires=[
+setup.py:25:        'Flask>=0.8',
+setup.py:26:        'dominate',
+setup.py:27:        'visitor',
+setup.py:28:    ],
+setup.py:29:    classifiers=[
+setup.py:30:        'Environment :: Web Environment', 'Intended Audience :: Developers',
+setup.py:31:        'License :: OSI Approved :: BSD License',
+setup.py:32:        'Operating System :: OS Independent', 'Programming Language :: Python',
+setup.py:33:        'Programming Language :: Python :: 2',
+setup.py:34:        'Programming Language :: Python :: 3',
+setup.py:35:        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+setup.py:36:        'Topic :: Software Development :: Libraries :: Python Modules'
+setup.py:37:    ])
+tests/test_sample_app.py:1:import pytest
+tests/test_sample_app.py:2:
+tests/test_sample_app.py:3:
+tests/test_sample_app.py:4:@pytest.fixture
+tests/test_sample_app.py:5:def app():
+tests/test_sample_app.py:6:    import sys
+tests/test_sample_app.py:7:    sys.path.append('.')
+tests/test_sample_app.py:8:
+tests/test_sample_app.py:9:    from sample_app import create_app
+tests/test_sample_app.py:10:
+tests/test_sample_app.py:11:    app = create_app()
+tests/test_sample_app.py:12:    app.debug = True
+tests/test_sample_app.py:13:    app.testing = True
+tests/test_sample_app.py:14:
+tests/test_sample_app.py:15:    # manually add flask-debug
+tests/test_sample_app.py:16:    from flask_debug import Debug
+tests/test_sample_app.py:17:    Debug(app)
+tests/test_sample_app.py:18:
+tests/test_sample_app.py:19:    return app
+tests/test_sample_app.py:20:
+tests/test_sample_app.py:21:
+tests/test_sample_app.py:22:@pytest.fixture
+tests/test_sample_app.py:23:def client(app):
+tests/test_sample_app.py:24:    return app.test_client()
+tests/test_sample_app.py:25:
+tests/test_sample_app.py:26:
+tests/test_sample_app.py:27:def test_index(client):
+tests/test_sample_app.py:28:    resp = client.get('/')
+tests/test_sample_app.py:29:    assert resp.status_code == 200
+tests/test_sanity.py:1:def test_can_import_package():
+tests/test_sanity.py:2:    import flask_bootstrap
+tests/test_sanity.py:3:
+tests/test_sanity.py:4:
+tests/test_sanity.py:5:def test_can_initialize_app_and_extesion():
+tests/test_sanity.py:6:    from flask import Flask
+tests/test_sanity.py:7:    from flask_bootstrap import Bootstrap
+tests/test_sanity.py:8:
+tests/test_sanity.py:9:    app = Flask(__name__)
+tests/test_sanity.py:10:    Bootstrap(app)
+tests/test_versions_match.py:1:import re
+tests/test_versions_match.py:2:
+tests/test_versions_match.py:3:from flask import Flask
+tests/test_versions_match.py:4:from flask_bootstrap import Bootstrap
+tests/test_versions_match.py:5:import flask_bootstrap
+tests/test_versions_match.py:6:import requests
+tests/test_versions_match.py:7:
+tests/test_versions_match.py:8:import pytest
+tests/test_versions_match.py:9:
+tests/test_versions_match.py:10:
+tests/test_versions_match.py:11:@pytest.fixture
+tests/test_versions_match.py:12:def app():
+tests/test_versions_match.py:13:    app = Flask(__name__)
+tests/test_versions_match.py:14:    Bootstrap(app)
+tests/test_versions_match.py:15:    return app
+tests/test_versions_match.py:16:
+tests/test_versions_match.py:17:
+tests/test_versions_match.py:18:@pytest.fixture
+tests/test_versions_match.py:19:def client(app):
+tests/test_versions_match.py:20:    return app.test_client()
+tests/test_versions_match.py:21:
+tests/test_versions_match.py:22:
+tests/test_versions_match.py:23:@pytest.fixture
+tests/test_versions_match.py:24:def bsv():
+tests/test_versions_match.py:25:    bootstrap_version = re.search(r'(\d+\.\d+\.\d+)',
+tests/test_versions_match.py:26:                                  str(flask_bootstrap.__version__)).group(1)
+tests/test_versions_match.py:27:    return bootstrap_version
+tests/test_versions_match.py:28:
+tests/test_versions_match.py:29:
+tests/test_versions_match.py:30:def test_bootstrap_version_matches(app, client, bsv):
+tests/test_versions_match.py:31:    bootstrap_vre = re.compile(r'Bootstrap v(\d+\.\d+\.\d+).*')
+tests/test_versions_match.py:32:
+tests/test_versions_match.py:33:    # find local version
+tests/test_versions_match.py:34:    local_version = bootstrap_vre.search(
+tests/test_versions_match.py:35:        str(client.get('/static/bootstrap/css/bootstrap.css').data)
+tests/test_versions_match.py:36:    ).group(1)
+tests/test_versions_match.py:37:
+tests/test_versions_match.py:38:    # find cdn version
+tests/test_versions_match.py:39:    cdn = app.extensions['bootstrap']['cdns']['bootstrap']
+tests/test_versions_match.py:40:    with app.app_context():
+tests/test_versions_match.py:41:        cdn_url = 'https:' + cdn.get_resource_url('css/bootstrap.css')
+tests/test_versions_match.py:42:    cdn_version = bootstrap_vre.search(requests.get(cdn_url).text).group(1)
+tests/test_versions_match.py:43:
+tests/test_versions_match.py:44:    # get package version
+tests/test_versions_match.py:45:
+tests/test_versions_match.py:46:    assert local_version == bsv
+tests/test_versions_match.py:47:    assert cdn_version == bsv

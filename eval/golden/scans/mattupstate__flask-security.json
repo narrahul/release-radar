@@ -1,0 +1,7340 @@
+{
+ "files_scanned": 35,
+ "usages": {
+  "__future__.absolute_import": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "absolute_import"
+   }
+  ],
+  "__future__.print_function": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "print_function"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "print_function"
+   }
+  ],
+  "base64": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "base64"
+   }
+  ],
+  "base64.b64encode": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 129,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 222,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 238,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 249,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 260,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 270,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 281,
+    "kind": "reference",
+    "local_name": "base64"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "base64"
+   }
+  ],
+  "blinker": [
+   {
+    "file": "flask_security/signals.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "blinker"
+   }
+  ],
+  "blinker.Namespace": [
+   {
+    "file": "flask_security/signals.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "blinker"
+   }
+  ],
+  "click": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "click"
+   }
+  ],
+  "click.UsageError": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 74,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 99,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 104,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 116,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 118,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 150,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.argument": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 90,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 108,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 127,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 143,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.echo": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.group": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.option": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 79,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.password_option": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.secho": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 120,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 136,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 138,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 152,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 155,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.testing.CliRunner": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "CliRunner"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "CliRunner"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "CliRunner"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "CliRunner"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 126,
+    "kind": "reference",
+    "local_name": "CliRunner"
+   }
+  ],
+  "collections.namedtuple": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "namedtuple"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "namedtuple"
+   }
+  ],
+  "contextlib.contextmanager": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "contextmanager"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 465,
+    "kind": "reference",
+    "local_name": "contextmanager"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 480,
+    "kind": "reference",
+    "local_name": "contextmanager"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 500,
+    "kind": "reference",
+    "local_name": "contextmanager"
+   }
+  ],
+  "cookielib.Cookie": [
+   {
+    "file": "tests/test_common.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "Cookie"
+   }
+  ],
+  "datetime.date": [
+   {
+    "file": "scripts/release.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "date"
+   }
+  ],
+  "datetime.date.today": [
+   {
+    "file": "scripts/release.py",
+    "line": 174,
+    "kind": "reference",
+    "local_name": "date"
+   }
+  ],
+  "datetime.datetime": [
+   {
+    "file": "flask_security/core.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "datetime"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 364,
+    "kind": "reference",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 365,
+    "kind": "reference",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 370,
+    "kind": "reference",
+    "local_name": "datetime"
+   }
+  ],
+  "datetime.datetime.strptime": [
+   {
+    "file": "scripts/release.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "datetime"
+   }
+  ],
+  "datetime.datetime.utcnow": [
+   {
+    "file": "flask_security/core.py",
+    "line": 140,
+    "kind": "reference",
+    "local_name": "datetime"
+   }
+  ],
+  "datetime.timedelta": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 370,
+    "kind": "reference",
+    "local_name": "timedelta"
+   }
+  ],
+  "flask.Blueprint": [
+   {
+    "file": "flask_security/views.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 340,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   }
+  ],
+  "flask.Flask": [
+   {
+    "file": "tests/conftest.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "Flask"
+   }
+  ],
+  "flask.Markup": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "Markup"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 222,
+    "kind": "reference",
+    "local_name": "Markup"
+   }
+  ],
+  "flask.Response": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "Response"
+   },
+   {
+    "file": "tests/utils.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "BaseResponse"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "Response"
+   },
+   {
+    "file": "tests/utils.py",
+    "line": 84,
+    "kind": "reference",
+    "local_name": "BaseResponse"
+   }
+  ],
+  "flask._request_ctx_stack": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "_request_ctx_stack"
+   }
+  ],
+  "flask._request_ctx_stack.top.user": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "_request_ctx_stack"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "_request_ctx_stack"
+   }
+  ],
+  "flask.abort": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "abort"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "abort"
+   }
+  ],
+  "flask.after_this_request": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 66,
+    "kind": "import",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 79,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 122,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 181,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 236,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 292,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 318,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "after_this_request"
+   }
+  ],
+  "flask.cli.ScriptInfo": [
+   {
+    "file": "tests/conftest.py",
+    "line": 474,
+    "kind": "import",
+    "local_name": "ScriptInfo"
+   }
+  ],
+  "flask.cli.with_appcontext": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 24,
+    "kind": "import",
+    "local_name": "with_appcontext"
+   }
+  ],
+  "flask.current_app": [
+   {
+    "file": "flask_security/changeable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 66,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/passwordless.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/registerable.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 344,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 442,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app._get_current_object": [
+   {
+    "file": "flask_security/changeable.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 84,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 69,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/passwordless.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/registerable.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 312,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config.get": [
+   {
+    "file": "flask_security/core.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.extensions": [
+   {
+    "file": "flask_security/changeable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 220,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/passwordless.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/registerable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "app"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.extensions.get": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 403,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.testing": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.flash": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "flash"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "flash"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 139,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 228,
+    "kind": "reference",
+    "local_name": "flash"
+   }
+  ],
+  "flask.has_app_context": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 66,
+    "kind": "import",
+    "local_name": "has_app_context"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "has_app_context"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "has_app_context"
+   }
+  ],
+  "flask.has_request_context": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 66,
+    "kind": "import",
+    "local_name": "has_request_context"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "has_request_context"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "has_request_context"
+   }
+  ],
+  "flask.json": [
+   {
+    "file": "tests/utils.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "json"
+   }
+  ],
+  "flask.json.JSONEncoder": [
+   {
+    "file": "tests/conftest.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "BaseEncoder"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "BaseEncoder"
+   }
+  ],
+  "flask.json.JSONEncoder.default": [
+   {
+    "file": "tests/conftest.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "BaseEncoder"
+   }
+  ],
+  "flask.json.loads": [
+   {
+    "file": "tests/utils.py",
+    "line": 92,
+    "kind": "reference",
+    "local_name": "json"
+   }
+  ],
+  "flask.jsonify": [
+   {
+    "file": "flask_security/views.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "jsonify"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "jsonify"
+   }
+  ],
+  "flask.redirect": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "redirect"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 235,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 98,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 131,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 178,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 184,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 229,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 243,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 287,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 295,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 323,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 76,
+    "kind": "reference",
+    "local_name": "redirect"
+   }
+  ],
+  "flask.render_template": [
+   {
+    "file": "flask_security/core.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 563,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 76,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 115,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 124,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 129,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 138,
+    "kind": "reference",
+    "local_name": "render_template"
+   }
+  ],
+  "flask.request": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 66,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.args.get": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 163,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 218,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 266,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 283,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.authorization": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.form": [
+   {
+    "file": "flask_security/views.py",
+    "line": 75,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 113,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.form.get": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 284,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.get_json": [
+   {
+    "file": "flask_security/views.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 193,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 254,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 313,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.host_url": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 274,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.is_json": [
+   {
+    "file": "flask_security/views.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 84,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 105,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 110,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 147,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 154,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 192,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 199,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 203,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 253,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 260,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 264,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 312,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 321,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 326,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.method": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 162,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.path": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.referrer": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 57,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.referrer.split": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.remote_addr": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.session": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.pop": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 108,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 311,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.signals.appcontext_popped": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 68,
+    "kind": "import",
+    "local_name": "appcontext_popped"
+   }
+  ],
+  "flask.signals.appcontext_popped.connect_via": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "appcontext_popped"
+   }
+  ],
+  "flask.url_for": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "url_for"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "url_for"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "url_for"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 238,
+    "kind": "reference",
+    "local_name": "url_for"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "url_for"
+   }
+  ],
+  "flask_babelex.Babel": [
+   {
+    "file": "tests/conftest.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "Babel"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "Babel"
+   }
+  ],
+  "flask_babelex.Domain": [
+   {
+    "file": "flask_security/babel.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "Domain"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "Domain"
+   },
+   {
+    "file": "flask_security/babel.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "Domain"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 317,
+    "kind": "reference",
+    "local_name": "Domain"
+   }
+  ],
+  "flask_cli.ScriptInfo": [
+   {
+    "file": "tests/conftest.py",
+    "line": 476,
+    "kind": "import",
+    "local_name": "ScriptInfo"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 484,
+    "kind": "reference",
+    "local_name": "ScriptInfo"
+   }
+  ],
+  "flask_cli.with_appcontext": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 26,
+    "kind": "import",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 80,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 110,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 144,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   }
+  ],
+  "flask_login.AnonymousUserMixin": [
+   {
+    "file": "flask_security/core.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "AnonymousUserMixin"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 260,
+    "kind": "reference",
+    "local_name": "AnonymousUserMixin"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 417,
+    "kind": "reference",
+    "local_name": "AnonymousUserMixin"
+   }
+  ],
+  "flask_login.LoginManager": [
+   {
+    "file": "flask_security/core.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 276,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   }
+  ],
+  "flask_login.UserMixin": [
+   {
+    "file": "flask_security/core.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "BaseUserMixin"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 386,
+    "kind": "reference",
+    "local_name": "BaseUserMixin"
+   }
+  ],
+  "flask_login.current_user": [
+   {
+    "file": "flask_security/core.py",
+    "line": 21,
+    "kind": "import",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 266,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 269,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 272,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 232,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 327,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user._get_current_object": [
+   {
+    "file": "flask_security/core.py",
+    "line": 260,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 319,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.id": [
+   {
+    "file": "flask_security/core.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.is_authenticated": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 151,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 234,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 95,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.verify_and_update_password": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 294,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.login_required": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "login_required"
+   }
+  ],
+  "flask_login.login_user": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 21,
+    "kind": "import",
+    "local_name": "_login_user"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "_login_user"
+   }
+  ],
+  "flask_login.logout_user": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "_logout_user"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "_logout_user"
+   }
+  ],
+  "flask_mail.Mail": [
+   {
+    "file": "tests/conftest.py",
+    "line": 21,
+    "kind": "import",
+    "local_name": "Mail"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "Mail"
+   }
+  ],
+  "flask_mail.Message": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 23,
+    "kind": "import",
+    "local_name": "Message"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 389,
+    "kind": "reference",
+    "local_name": "Message"
+   }
+  ],
+  "flask_mongoengine.MongoEngine": [
+   {
+    "file": "tests/conftest.py",
+    "line": 148,
+    "kind": "import",
+    "local_name": "MongoEngine"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 158,
+    "kind": "reference",
+    "local_name": "MongoEngine"
+   }
+  ],
+  "flask_peewee.db.Database": [
+   {
+    "file": "tests/conftest.py",
+    "line": 297,
+    "kind": "import",
+    "local_name": "Database"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 307,
+    "kind": "reference",
+    "local_name": "Database"
+   }
+  ],
+  "flask_principal.AnonymousIdentity": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 24,
+    "kind": "import",
+    "local_name": "AnonymousIdentity"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 110,
+    "kind": "reference",
+    "local_name": "AnonymousIdentity"
+   }
+  ],
+  "flask_principal.Identity": [
+   {
+    "file": "flask_security/core.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "Identity"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "Identity"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 24,
+    "kind": "import",
+    "local_name": "Identity"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "Identity"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "Identity"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "Identity"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "Identity"
+   }
+  ],
+  "flask_principal.Permission": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "Permission"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "Permission"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 220,
+    "kind": "reference",
+    "local_name": "Permission"
+   }
+  ],
+  "flask_principal.Principal": [
+   {
+    "file": "flask_security/core.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "Principal"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 296,
+    "kind": "reference",
+    "local_name": "Principal"
+   }
+  ],
+  "flask_principal.RoleNeed": [
+   {
+    "file": "flask_security/core.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "RoleNeed"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "RoleNeed"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 270,
+    "kind": "reference",
+    "local_name": "RoleNeed"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "RoleNeed"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 220,
+    "kind": "reference",
+    "local_name": "RoleNeed"
+   }
+  ],
+  "flask_principal.UserNeed": [
+   {
+    "file": "flask_security/core.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "UserNeed"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "UserNeed"
+   }
+  ],
+  "flask_principal.identity_changed": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "identity_changed"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 24,
+    "kind": "import",
+    "local_name": "identity_changed"
+   }
+  ],
+  "flask_principal.identity_changed.send": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "identity_changed"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "identity_changed"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "identity_changed"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "identity_changed"
+   }
+  ],
+  "flask_principal.identity_loaded": [
+   {
+    "file": "flask_security/core.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "identity_loaded"
+   }
+  ],
+  "flask_principal.identity_loaded.connect_via": [
+   {
+    "file": "flask_security/core.py",
+    "line": 536,
+    "kind": "reference",
+    "local_name": "identity_loaded"
+   }
+  ],
+  "flask_script.Command": [
+   {
+    "file": "flask_security/script.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "Command"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "Command"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "Command"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 92,
+    "kind": "reference",
+    "local_name": "Command"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "Command"
+   }
+  ],
+  "flask_script.Option": [
+   {
+    "file": "flask_security/script.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 95,
+    "kind": "reference",
+    "local_name": "Option"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 121,
+    "kind": "reference",
+    "local_name": "Option"
+   }
+  ],
+  "flask_security.AnonymousUser": [
+   {
+    "file": "tests/test_entities.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "AnonymousUser"
+   },
+   {
+    "file": "tests/test_entities.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "AnonymousUser"
+   }
+  ],
+  "flask_security.MongoEngineUserDatastore": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "MongoEngineUserDatastore"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 179,
+    "kind": "reference",
+    "local_name": "MongoEngineUserDatastore"
+   }
+  ],
+  "flask_security.PeeweeUserDatastore": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "PeeweeUserDatastore"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 344,
+    "kind": "reference",
+    "local_name": "PeeweeUserDatastore"
+   }
+  ],
+  "flask_security.PonyUserDatastore": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "PonyUserDatastore"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 384,
+    "kind": "reference",
+    "local_name": "PonyUserDatastore"
+   }
+  ],
+  "flask_security.RoleMixin": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/test_entities.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 160,
+    "kind": "reference",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 200,
+    "kind": "reference",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 259,
+    "kind": "reference",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 309,
+    "kind": "reference",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "RoleMixin"
+   },
+   {
+    "file": "tests/test_entities.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "RoleMixin"
+   }
+  ],
+  "flask_security.SQLAlchemySessionUserDatastore": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "SQLAlchemySessionUserDatastore"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 290,
+    "kind": "reference",
+    "local_name": "SQLAlchemySessionUserDatastore"
+   }
+  ],
+  "flask_security.SQLAlchemyUserDatastore": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "SQLAlchemyUserDatastore"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 228,
+    "kind": "reference",
+    "local_name": "SQLAlchemyUserDatastore"
+   }
+  ],
+  "flask_security.Security": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/utils.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 390,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 398,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 406,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 414,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 422,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 482,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 164,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 172,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 180,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 66,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 131,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 176,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "Security"
+   },
+   {
+    "file": "tests/utils.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "Security"
+   }
+  ],
+  "flask_security.UserMixin": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_entities.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 165,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 205,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 265,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 313,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_entities.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   }
+  ],
+  "flask_security.auth_required": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "auth_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 99,
+    "kind": "reference",
+    "local_name": "auth_required"
+   }
+  ],
+  "flask_security.auth_token_required": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "auth_token_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "auth_token_required"
+   }
+  ],
+  "flask_security.cli.roles_add": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "roles_add"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 75,
+    "kind": "reference",
+    "local_name": "roles_add"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "roles_add"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "roles_add"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 112,
+    "kind": "reference",
+    "local_name": "roles_add"
+   }
+  ],
+  "flask_security.cli.roles_create": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "roles_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "roles_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "roles_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "roles_create"
+   }
+  ],
+  "flask_security.cli.roles_remove": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "roles_remove"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "roles_remove"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 92,
+    "kind": "reference",
+    "local_name": "roles_remove"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "roles_remove"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 102,
+    "kind": "reference",
+    "local_name": "roles_remove"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "roles_remove"
+   }
+  ],
+  "flask_security.cli.users_activate": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "users_activate"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "users_activate"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 144,
+    "kind": "reference",
+    "local_name": "users_activate"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 147,
+    "kind": "reference",
+    "local_name": "users_activate"
+   }
+  ],
+  "flask_security.cli.users_create": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "users_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "users_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "users_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "users_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "users_create"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 130,
+    "kind": "reference",
+    "local_name": "users_create"
+   }
+  ],
+  "flask_security.cli.users_deactivate": [
+   {
+    "file": "tests/test_cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "users_deactivate"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 140,
+    "kind": "reference",
+    "local_name": "users_deactivate"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 152,
+    "kind": "reference",
+    "local_name": "users_deactivate"
+   },
+   {
+    "file": "tests/test_cli.py",
+    "line": 155,
+    "kind": "reference",
+    "local_name": "users_deactivate"
+   }
+  ],
+  "flask_security.confirmable.generate_confirmation_token": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "generate_confirmation_token"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 92,
+    "kind": "reference",
+    "local_name": "generate_confirmation_token"
+   }
+  ],
+  "flask_security.core.UserMixin": [
+   {
+    "file": "tests/test_changeable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   }
+  ],
+  "flask_security.datastore.Datastore": [
+   {
+    "file": "tests/test_datastore.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "Datastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "Datastore"
+   }
+  ],
+  "flask_security.datastore.UserDatastore": [
+   {
+    "file": "tests/test_datastore.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "UserDatastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "UserDatastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "UserDatastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "UserDatastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "UserDatastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "UserDatastore"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "UserDatastore"
+   }
+  ],
+  "flask_security.forms.ChangePasswordForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "ChangePasswordForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "ChangePasswordForm"
+   }
+  ],
+  "flask_security.forms.ConfirmRegisterForm": [
+   {
+    "file": "flask_security/script.py",
+    "line": 62,
+    "kind": "import",
+    "local_name": "ConfirmRegisterForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "ConfirmRegisterForm"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "ConfirmRegisterForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 105,
+    "kind": "reference",
+    "local_name": "ConfirmRegisterForm"
+   }
+  ],
+  "flask_security.forms.ForgotPasswordForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "ForgotPasswordForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "ForgotPasswordForm"
+   }
+  ],
+  "flask_security.forms.LoginForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "LoginForm"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "LoginForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "LoginForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 258,
+    "kind": "reference",
+    "local_name": "LoginForm"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 127,
+    "kind": "reference",
+    "local_name": "LoginForm"
+   }
+  ],
+  "flask_security.forms.PasswordField": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   }
+  ],
+  "flask_security.forms.PasswordlessLoginForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "PasswordlessLoginForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "PasswordlessLoginForm"
+   }
+  ],
+  "flask_security.forms.RegisterForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "RegisterForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 49,
+    "kind": "reference",
+    "local_name": "RegisterForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "RegisterForm"
+   }
+  ],
+  "flask_security.forms.ResetPasswordForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "ResetPasswordForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 60,
+    "kind": "reference",
+    "local_name": "ResetPasswordForm"
+   }
+  ],
+  "flask_security.forms.SendConfirmationForm": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "SendConfirmationForm"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 108,
+    "kind": "reference",
+    "local_name": "SendConfirmationForm"
+   }
+  ],
+  "flask_security.forms.StringField": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 106,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 129,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 259,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 262,
+    "kind": "reference",
+    "local_name": "StringField"
+   }
+  ],
+  "flask_security.forms.email_required": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "email_required"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 56,
+    "kind": "reference",
+    "local_name": "email_required"
+   }
+  ],
+  "flask_security.forms.email_validator": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "email_validator"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 57,
+    "kind": "reference",
+    "local_name": "email_validator"
+   }
+  ],
+  "flask_security.forms.valid_user_email": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "valid_user_email"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "valid_user_email"
+   }
+  ],
+  "flask_security.http_auth_required": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "http_auth_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 84,
+    "kind": "reference",
+    "local_name": "http_auth_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "http_auth_required"
+   }
+  ],
+  "flask_security.login_required": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 74,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 79,
+    "kind": "reference",
+    "local_name": "login_required"
+   }
+  ],
+  "flask_security.login_user": [
+   {
+    "file": "tests/test_trackable.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 69,
+    "kind": "reference",
+    "local_name": "login_user"
+   }
+  ],
+  "flask_security.roles_accepted": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "roles_accepted"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 132,
+    "kind": "reference",
+    "local_name": "roles_accepted"
+   }
+  ],
+  "flask_security.roles_required": [
+   {
+    "file": "tests/conftest.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "roles_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 122,
+    "kind": "reference",
+    "local_name": "roles_required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 127,
+    "kind": "reference",
+    "local_name": "roles_required"
+   }
+  ],
+  "flask_security.signals.confirm_instructions_sent": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "confirm_instructions_sent"
+   }
+  ],
+  "flask_security.signals.confirm_instructions_sent.connect_via": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "confirm_instructions_sent"
+   }
+  ],
+  "flask_security.signals.login_instructions_sent": [
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "login_instructions_sent"
+   }
+  ],
+  "flask_security.signals.login_instructions_sent.connect_via": [
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "login_instructions_sent"
+   }
+  ],
+  "flask_security.signals.password_changed": [
+   {
+    "file": "tests/test_changeable.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "password_changed"
+   }
+  ],
+  "flask_security.signals.password_changed.connect_via": [
+   {
+    "file": "tests/test_changeable.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "password_changed"
+   }
+  ],
+  "flask_security.signals.password_reset": [
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "password_reset"
+   }
+  ],
+  "flask_security.signals.password_reset.connect_via": [
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "password_reset"
+   }
+  ],
+  "flask_security.signals.reset_password_instructions_sent": [
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "reset_password_instructions_sent"
+   }
+  ],
+  "flask_security.signals.reset_password_instructions_sent.connect_via": [
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "reset_password_instructions_sent"
+   }
+  ],
+  "flask_security.signals.user_confirmed": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "user_confirmed"
+   }
+  ],
+  "flask_security.signals.user_confirmed.connect_via": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "user_confirmed"
+   }
+  ],
+  "flask_security.signals.user_registered": [
+   {
+    "file": "tests/test_registerable.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "user_registered"
+   }
+  ],
+  "flask_security.signals.user_registered.connect_via": [
+   {
+    "file": "tests/test_registerable.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "user_registered"
+   }
+  ],
+  "flask_security.utils.capture_passwordless_login_requests": [
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "capture_passwordless_login_requests"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "capture_passwordless_login_requests"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "capture_passwordless_login_requests"
+   }
+  ],
+  "flask_security.utils.capture_registrations": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 145,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 177,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 198,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 215,
+    "kind": "reference",
+    "local_name": "capture_registrations"
+   }
+  ],
+  "flask_security.utils.capture_reset_password_requests": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 160,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 185,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 215,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 238,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 255,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 286,
+    "kind": "reference",
+    "local_name": "capture_reset_password_requests"
+   }
+  ],
+  "flask_security.utils.encode_string": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "encode_string"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 209,
+    "kind": "reference",
+    "local_name": "encode_string"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 226,
+    "kind": "reference",
+    "local_name": "encode_string"
+   }
+  ],
+  "flask_security.utils.encrypt_password": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "encrypt_password"
+   },
+   {
+    "file": "tests/utils.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "encrypt_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "encrypt_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "encrypt_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "encrypt_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "encrypt_password"
+   },
+   {
+    "file": "tests/utils.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "encrypt_password"
+   }
+  ],
+  "flask_security.utils.get_hmac": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "get_hmac"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "get_hmac"
+   }
+  ],
+  "flask_security.utils.hash_data": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "hash_data"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 210,
+    "kind": "reference",
+    "local_name": "hash_data"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 215,
+    "kind": "reference",
+    "local_name": "hash_data"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 217,
+    "kind": "reference",
+    "local_name": "hash_data"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 222,
+    "kind": "reference",
+    "local_name": "hash_data"
+   }
+  ],
+  "flask_security.utils.string_types": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 216,
+    "kind": "reference",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 218,
+    "kind": "reference",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "string_types"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "string_types"
+   }
+  ],
+  "flask_security.utils.verify_hash": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "verify_hash"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 223,
+    "kind": "reference",
+    "local_name": "verify_hash"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 224,
+    "kind": "reference",
+    "local_name": "verify_hash"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 227,
+    "kind": "reference",
+    "local_name": "verify_hash"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 228,
+    "kind": "reference",
+    "local_name": "verify_hash"
+   }
+  ],
+  "flask_security.utils.verify_password": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "verify_password"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "verify_password"
+   }
+  ],
+  "flask_sqlalchemy.SQLAlchemy": [
+   {
+    "file": "tests/conftest.py",
+    "line": 187,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 193,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   }
+  ],
+  "flask_wtf.FlaskForm": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "BaseForm"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "BaseForm"
+   }
+  ],
+  "functools.wraps": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 60,
+    "kind": "import",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 99,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 155,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 189,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 218,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 232,
+    "kind": "reference",
+    "local_name": "wraps"
+   }
+  ],
+  "hashlib": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "hashlib"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "hashlib"
+   }
+  ],
+  "hashlib.md5": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 209,
+    "kind": "reference",
+    "local_name": "hashlib"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 226,
+    "kind": "reference",
+    "local_name": "hashlib"
+   }
+  ],
+  "hashlib.sha512": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "hashlib"
+   }
+  ],
+  "hmac": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "hmac"
+   }
+  ],
+  "hmac.new": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "hmac"
+   }
+  ],
+  "http.cookiejar.Cookie": [
+   {
+    "file": "tests/test_common.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "Cookie"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 327,
+    "kind": "reference",
+    "local_name": "Cookie"
+   }
+  ],
+  "inspect": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "inspect"
+   }
+  ],
+  "inspect.getmembers": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 151,
+    "kind": "reference",
+    "local_name": "inspect"
+   }
+  ],
+  "itsdangerous.BadSignature": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "BadSignature"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 427,
+    "kind": "reference",
+    "local_name": "BadSignature"
+   }
+  ],
+  "itsdangerous.SignatureExpired": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "SignatureExpired"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 424,
+    "kind": "reference",
+    "local_name": "SignatureExpired"
+   }
+  ],
+  "itsdangerous.URLSafeTimedSerializer": [
+   {
+    "file": "flask_security/core.py",
+    "line": 24,
+    "kind": "import",
+    "local_name": "URLSafeTimedSerializer"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 334,
+    "kind": "reference",
+    "local_name": "URLSafeTimedSerializer"
+   }
+  ],
+  "json": [
+   {
+    "file": "flask_security/script.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "json"
+   }
+  ],
+  "json.dumps": [
+   {
+    "file": "flask_security/script.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "json"
+   }
+  ],
+  "mongoengine.ValidationError": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 308,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 311,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   }
+  ],
+  "mongoengine.errors.ValidationError": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 325,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 331,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   }
+  ],
+  "mongoengine.queryset.Q": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 322,
+    "kind": "import",
+    "local_name": "Q"
+   }
+  ],
+  "mongoengine.queryset.QCombination": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 322,
+    "kind": "import",
+    "local_name": "QCombination"
+   }
+  ],
+  "mongoengine.queryset.visitor.Q": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 324,
+    "kind": "import",
+    "local_name": "Q"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 327,
+    "kind": "reference",
+    "local_name": "Q"
+   }
+  ],
+  "mongoengine.queryset.visitor.QCombination": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 324,
+    "kind": "import",
+    "local_name": "QCombination"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 328,
+    "kind": "reference",
+    "local_name": "QCombination"
+   }
+  ],
+  "mongoengine.queryset.visitor.QCombination.AND": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 328,
+    "kind": "reference",
+    "local_name": "QCombination"
+   }
+  ],
+  "os": [
+   {
+    "file": "docs/conf.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "os"
+   }
+  ],
+  "os.chdir": [
+   {
+    "file": "scripts/release.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.close": [
+   {
+    "file": "tests/conftest.py",
+    "line": 224,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 286,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 339,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.abspath": [
+   {
+    "file": "docs/conf.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.dirname": [
+   {
+    "file": "scripts/release.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.join": [
+   {
+    "file": "scripts/release.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.remove": [
+   {
+    "file": "tests/conftest.py",
+    "line": 225,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 287,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 340,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "passlib.context.CryptContext": [
+   {
+    "file": "flask_security/core.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "CryptContext"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 310,
+    "kind": "reference",
+    "local_name": "CryptContext"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 326,
+    "kind": "reference",
+    "local_name": "CryptContext"
+   }
+  ],
+  "passlib.hash.django_pbkdf2_sha256": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "django_pbkdf2_sha256"
+   }
+  ],
+  "passlib.hash.django_pbkdf2_sha256.hash": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "django_pbkdf2_sha256"
+   }
+  ],
+  "passlib.hash.pbkdf2_sha256": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "pbkdf2_sha256"
+   }
+  ],
+  "passlib.hash.pbkdf2_sha256.hash": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "pbkdf2_sha256"
+   }
+  ],
+  "passlib.hash.plaintext": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "plaintext"
+   }
+  ],
+  "passlib.hash.plaintext.hash": [
+   {
+    "file": "tests/test_hashing.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "plaintext"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "plaintext"
+   }
+  ],
+  "peewee.BooleanField": [
+   {
+    "file": "tests/conftest.py",
+    "line": 295,
+    "kind": "import",
+    "local_name": "BooleanField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 322,
+    "kind": "reference",
+    "local_name": "BooleanField"
+   }
+  ],
+  "peewee.DateTimeField": [
+   {
+    "file": "tests/conftest.py",
+    "line": 295,
+    "kind": "import",
+    "local_name": "DateTimeField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 317,
+    "kind": "reference",
+    "local_name": "DateTimeField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 318,
+    "kind": "reference",
+    "local_name": "DateTimeField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 323,
+    "kind": "reference",
+    "local_name": "DateTimeField"
+   }
+  ],
+  "peewee.ForeignKeyField": [
+   {
+    "file": "tests/conftest.py",
+    "line": 295,
+    "kind": "import",
+    "local_name": "ForeignKeyField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 328,
+    "kind": "reference",
+    "local_name": "ForeignKeyField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 329,
+    "kind": "reference",
+    "local_name": "ForeignKeyField"
+   }
+  ],
+  "peewee.IntegerField": [
+   {
+    "file": "tests/conftest.py",
+    "line": 295,
+    "kind": "import",
+    "local_name": "IntegerField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 321,
+    "kind": "reference",
+    "local_name": "IntegerField"
+   }
+  ],
+  "peewee.TextField": [
+   {
+    "file": "tests/conftest.py",
+    "line": 295,
+    "kind": "import",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 310,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 311,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 314,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 315,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 316,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 319,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 320,
+    "kind": "reference",
+    "local_name": "TextField"
+   }
+  ],
+  "peewee.fn": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 360,
+    "kind": "import",
+    "local_name": "peeweeFn"
+   }
+  ],
+  "peewee.fn.Lower": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 370,
+    "kind": "reference",
+    "local_name": "peeweeFn"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 370,
+    "kind": "reference",
+    "local_name": "peeweeFn"
+   }
+  ],
+  "pkg_resources": [
+   {
+    "file": "flask_security/core.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "pkg_resources"
+   }
+  ],
+  "pkg_resources.resource_filename": [
+   {
+    "file": "flask_security/core.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "pkg_resources"
+   }
+  ],
+  "pony.orm.Database": [
+   {
+    "file": "tests/conftest.py",
+    "line": 349,
+    "kind": "import",
+    "local_name": "Database"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 353,
+    "kind": "reference",
+    "local_name": "Database"
+   }
+  ],
+  "pony.orm.Optional": [
+   {
+    "file": "tests/conftest.py",
+    "line": 349,
+    "kind": "import",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 357,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 362,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 363,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 364,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 365,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 366,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 367,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 368,
+    "kind": "reference",
+    "local_name": "Optional"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 370,
+    "kind": "reference",
+    "local_name": "Optional"
+   }
+  ],
+  "pony.orm.Required": [
+   {
+    "file": "tests/conftest.py",
+    "line": 349,
+    "kind": "import",
+    "local_name": "Required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 356,
+    "kind": "reference",
+    "local_name": "Required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 361,
+    "kind": "reference",
+    "local_name": "Required"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 369,
+    "kind": "reference",
+    "local_name": "Required"
+   }
+  ],
+  "pony.orm.Set": [
+   {
+    "file": "tests/conftest.py",
+    "line": 349,
+    "kind": "import",
+    "local_name": "Set"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 358,
+    "kind": "reference",
+    "local_name": "Set"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 371,
+    "kind": "reference",
+    "local_name": "Set"
+   }
+  ],
+  "pony.orm.core.SetInstance": [
+   {
+    "file": "tests/conftest.py",
+    "line": 350,
+    "kind": "import",
+    "local_name": "SetInstance"
+   }
+  ],
+  "pony.orm.core.SetInstance.add": [
+   {
+    "file": "tests/conftest.py",
+    "line": 352,
+    "kind": "reference",
+    "local_name": "SetInstance"
+   }
+  ],
+  "pony.orm.core.SetInstance.append": [
+   {
+    "file": "tests/conftest.py",
+    "line": 352,
+    "kind": "reference",
+    "local_name": "SetInstance"
+   }
+  ],
+  "pony.orm.core.local": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 65,
+    "kind": "import",
+    "local_name": "local"
+   }
+  ],
+  "pony.orm.core.local.db_context_counter": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "local"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "local"
+   }
+  ],
+  "pony.orm.db_session": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 64,
+    "kind": "import",
+    "local_name": "db_session"
+   }
+  ],
+  "pony.orm.db_session.__enter__": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "db_session"
+   }
+  ],
+  "pony.orm.db_session.__exit__": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 80,
+    "kind": "reference",
+    "local_name": "db_session"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 88,
+    "kind": "reference",
+    "local_name": "db_session"
+   }
+  ],
+  "pytest": [
+   {
+    "file": "tests/conftest.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.fixture": [
+   {
+    "file": "tests/conftest.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 185,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 231,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 293,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 347,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 387,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 395,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 403,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 411,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 419,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 427,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 441,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 449,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 471,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.babel": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 279,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.changeable": [
+   {
+    "file": "tests/test_changeable.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.confirmable": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.parametrize": [
+   {
+    "file": "tests/test_misc.py",
+    "line": 204,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.passwordless": [
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.recoverable": [
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.registerable": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 122,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 142,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 163,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 171,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 196,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 225,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 99,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 256,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.settings": [
+   {
+    "file": "tests/test_changeable.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 116,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 124,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 135,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 164,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 172,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 213,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 226,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 200,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 231,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 132,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 236,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 273,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 279,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 130,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.mark.trackable": [
+   {
+    "file": "tests/test_trackable.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.raises": [
+   {
+    "file": "tests/test_datastore.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 68,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 88,
+    "kind": "reference",
+    "local_name": "raises"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 160,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.yield_fixture": [
+   {
+    "file": "tests/conftest.py",
+    "line": 146,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 434,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "re": [
+   {
+    "file": "flask_security/script.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "re"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "re"
+   }
+  ],
+  "re.compile": [
+   {
+    "file": "scripts/release.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "re"
+   }
+  ],
+  "re.search": [
+   {
+    "file": "scripts/release.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "re"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "re"
+   }
+  ],
+  "re.sub": [
+   {
+    "file": "flask_security/script.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "re"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "re"
+   }
+  ],
+  "setuptools.find_packages": [
+   {
+    "file": "setup.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "find_packages"
+   },
+   {
+    "file": "setup.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "find_packages"
+   }
+  ],
+  "setuptools.setup": [
+   {
+    "file": "setup.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "setup"
+   },
+   {
+    "file": "setup.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "setup"
+   }
+  ],
+  "simplejson": [
+   {
+    "file": "flask_security/script.py",
+    "line": 23,
+    "kind": "import",
+    "local_name": "json"
+   }
+  ],
+  "speaklater.is_lazy_string": [
+   {
+    "file": "tests/conftest.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "is_lazy_string"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "is_lazy_string"
+   }
+  ],
+  "speaklater.make_lazy_gettext": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "make_lazy_gettext"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "make_lazy_gettext"
+   }
+  ],
+  "sqlalchemy": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 294,
+    "kind": "import",
+    "local_name": "sqlalchemy"
+   }
+  ],
+  "sqlalchemy.Boolean": [
+   {
+    "file": "tests/conftest.py",
+    "line": 237,
+    "kind": "import",
+    "local_name": "Boolean"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 276,
+    "kind": "reference",
+    "local_name": "Boolean"
+   }
+  ],
+  "sqlalchemy.Column": [
+   {
+    "file": "tests/conftest.py",
+    "line": 237,
+    "kind": "import",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 255,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 256,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 257,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 262,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 263,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 268,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 269,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 270,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 271,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 272,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 273,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 274,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 275,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 276,
+    "kind": "reference",
+    "local_name": "Column"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 277,
+    "kind": "reference",
+    "local_name": "Column"
+   }
+  ],
+  "sqlalchemy.DateTime": [
+   {
+    "file": "tests/conftest.py",
+    "line": 237,
+    "kind": "import",
+    "local_name": "DateTime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 271,
+    "kind": "reference",
+    "local_name": "DateTime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 272,
+    "kind": "reference",
+    "local_name": "DateTime"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 277,
+    "kind": "reference",
+    "local_name": "DateTime"
+   }
+  ],
+  "sqlalchemy.ForeignKey": [
+   {
+    "file": "tests/conftest.py",
+    "line": 237,
+    "kind": "import",
+    "local_name": "ForeignKey"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 256,
+    "kind": "reference",
+    "local_name": "ForeignKey"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 257,
+    "kind": "reference",
+    "local_name": "ForeignKey"
+   }
+  ],
+  "sqlalchemy.Integer": [
+   {
+    "file": "tests/conftest.py",
+    "line": 237,
+    "kind": "import",
+    "local_name": "Integer"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 255,
+    "kind": "reference",
+    "local_name": "Integer"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 256,
+    "kind": "reference",
+    "local_name": "Integer"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 257,
+    "kind": "reference",
+    "local_name": "Integer"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "Integer"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "Integer"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 275,
+    "kind": "reference",
+    "local_name": "Integer"
+   }
+  ],
+  "sqlalchemy.String": [
+   {
+    "file": "tests/conftest.py",
+    "line": 237,
+    "kind": "import",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 262,
+    "kind": "reference",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 263,
+    "kind": "reference",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 268,
+    "kind": "reference",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 269,
+    "kind": "reference",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 270,
+    "kind": "reference",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 273,
+    "kind": "reference",
+    "local_name": "String"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 274,
+    "kind": "reference",
+    "local_name": "String"
+   }
+  ],
+  "sqlalchemy.create_engine": [
+   {
+    "file": "tests/conftest.py",
+    "line": 233,
+    "kind": "import",
+    "local_name": "create_engine"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 245,
+    "kind": "reference",
+    "local_name": "create_engine"
+   }
+  ],
+  "sqlalchemy.ext.declarative.declarative_base": [
+   {
+    "file": "tests/conftest.py",
+    "line": 236,
+    "kind": "import",
+    "local_name": "declarative_base"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 250,
+    "kind": "reference",
+    "local_name": "declarative_base"
+   }
+  ],
+  "sqlalchemy.func": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 236,
+    "kind": "import",
+    "local_name": "alchemyFn"
+   }
+  ],
+  "sqlalchemy.func.lower": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 245,
+    "kind": "reference",
+    "local_name": "alchemyFn"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 246,
+    "kind": "reference",
+    "local_name": "alchemyFn"
+   }
+  ],
+  "sqlalchemy.orm.Session._model_changes": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 295,
+    "kind": "reference",
+    "local_name": "sqlalchemy"
+   }
+  ],
+  "sqlalchemy.orm.backref": [
+   {
+    "file": "tests/conftest.py",
+    "line": 234,
+    "kind": "import",
+    "local_name": "backref"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 279,
+    "kind": "reference",
+    "local_name": "backref"
+   }
+  ],
+  "sqlalchemy.orm.joinedload": [
+   {
+    "file": "flask_security/datastore.py",
+    "line": 239,
+    "kind": "import",
+    "local_name": "joinedload"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 261,
+    "kind": "import",
+    "local_name": "joinedload"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 240,
+    "kind": "reference",
+    "local_name": "joinedload"
+   },
+   {
+    "file": "flask_security/datastore.py",
+    "line": 262,
+    "kind": "reference",
+    "local_name": "joinedload"
+   }
+  ],
+  "sqlalchemy.orm.relationship": [
+   {
+    "file": "tests/conftest.py",
+    "line": 234,
+    "kind": "import",
+    "local_name": "relationship"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 278,
+    "kind": "reference",
+    "local_name": "relationship"
+   }
+  ],
+  "sqlalchemy.orm.scoped_session": [
+   {
+    "file": "tests/conftest.py",
+    "line": 234,
+    "kind": "import",
+    "local_name": "scoped_session"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 247,
+    "kind": "reference",
+    "local_name": "scoped_session"
+   }
+  ],
+  "sqlalchemy.orm.sessionmaker": [
+   {
+    "file": "tests/conftest.py",
+    "line": 234,
+    "kind": "import",
+    "local_name": "sessionmaker"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 247,
+    "kind": "reference",
+    "local_name": "sessionmaker"
+   }
+  ],
+  "subprocess.PIPE": [
+   {
+    "file": "scripts/release.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "PIPE"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "PIPE"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "PIPE"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "PIPE"
+   }
+  ],
+  "subprocess.Popen": [
+   {
+    "file": "scripts/release.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 133,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 138,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 139,
+    "kind": "reference",
+    "local_name": "Popen"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "Popen"
+   }
+  ],
+  "sys": [
+   {
+    "file": "docs/conf.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "sys"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "sys"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "sys"
+   }
+  ],
+  "sys.executable": [
+   {
+    "file": "scripts/release.py",
+    "line": 109,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "sys.exit": [
+   {
+    "file": "scripts/release.py",
+    "line": 115,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "sys.path.insert": [
+   {
+    "file": "docs/conf.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "sys.stderr": [
+   {
+    "file": "scripts/release.py",
+    "line": 114,
+    "kind": "reference",
+    "local_name": "sys"
+   },
+   {
+    "file": "scripts/release.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "sys.version_info": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "tempfile": [
+   {
+    "file": "tests/conftest.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "tempfile"
+   }
+  ],
+  "tempfile.mkstemp": [
+   {
+    "file": "tests/conftest.py",
+    "line": 189,
+    "kind": "reference",
+    "local_name": "tempfile"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 240,
+    "kind": "reference",
+    "local_name": "tempfile"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 299,
+    "kind": "reference",
+    "local_name": "tempfile"
+   }
+  ],
+  "time": [
+   {
+    "file": "tests/conftest.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "time"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "time"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "time"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "time"
+   }
+  ],
+  "time.sleep": [
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 132,
+    "kind": "reference",
+    "local_name": "time"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "time"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 144,
+    "kind": "reference",
+    "local_name": "time"
+   }
+  ],
+  "time.time": [
+   {
+    "file": "tests/conftest.py",
+    "line": 150,
+    "kind": "reference",
+    "local_name": "time"
+   }
+  ],
+  "urllib.parse.urlsplit": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 34,
+    "kind": "import",
+    "local_name": "urlsplit"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 273,
+    "kind": "reference",
+    "local_name": "urlsplit"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 274,
+    "kind": "reference",
+    "local_name": "urlsplit"
+   }
+  ],
+  "urlparse.urlsplit": [
+   {
+    "file": "flask_security/utils.py",
+    "line": 32,
+    "kind": "import",
+    "local_name": "urlsplit"
+   }
+  ],
+  "utils.Response": [
+   {
+    "file": "tests/conftest.py",
+    "line": 23,
+    "kind": "import",
+    "local_name": "Response"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "Response"
+   }
+  ],
+  "utils.authenticate": [
+   {
+    "file": "tests/test_changeable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_changeable.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 92,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 102,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 108,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 131,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 162,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 174,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 179,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 302,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 308,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 320,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 188,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_context_processors.py",
+    "line": 66,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 146,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 234,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 236,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 248,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 49,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "authenticate"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 79,
+    "kind": "reference",
+    "local_name": "authenticate"
+   }
+  ],
+  "utils.init_app_with_options": [
+   {
+    "file": "tests/test_datastore.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 118,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 139,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_datastore.py",
+    "line": 153,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 69,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_hashing.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 142,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 151,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 161,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 167,
+    "kind": "reference",
+    "local_name": "init_app_with_options"
+   }
+  ],
+  "utils.json_authenticate": [
+   {
+    "file": "tests/test_common.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "json_authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 185,
+    "kind": "reference",
+    "local_name": "json_authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "json_authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 196,
+    "kind": "reference",
+    "local_name": "json_authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 203,
+    "kind": "reference",
+    "local_name": "json_authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 295,
+    "kind": "reference",
+    "local_name": "json_authenticate"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 340,
+    "kind": "reference",
+    "local_name": "json_authenticate"
+   }
+  ],
+  "utils.logout": [
+   {
+    "file": "tests/test_common.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 103,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_common.py",
+    "line": 160,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_configuration.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 98,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 181,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_confirmable.py",
+    "line": 187,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_passwordless.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 74,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 84,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 103,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_recoverable.py",
+    "line": 202,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 84,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_registerable.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "logout"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 80,
+    "kind": "reference",
+    "local_name": "logout"
+   }
+  ],
+  "utils.populate_data": [
+   {
+    "file": "tests/conftest.py",
+    "line": 23,
+    "kind": "import",
+    "local_name": "populate_data"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "populate_data"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 430,
+    "kind": "reference",
+    "local_name": "populate_data"
+   },
+   {
+    "file": "tests/test_misc.py",
+    "line": 74,
+    "kind": "reference",
+    "local_name": "populate_data"
+   }
+  ],
+  "warnings": [
+   {
+    "file": "flask_security/script.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "warnings"
+   }
+  ],
+  "warnings.warn": [
+   {
+    "file": "flask_security/script.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 176,
+    "kind": "reference",
+    "local_name": "warnings"
+   }
+  ],
+  "werkzeug.contrib.fixers.ProxyFix": [
+   {
+    "file": "tests/test_trackable.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "ProxyFix"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "ProxyFix"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "ProxyFix"
+   },
+   {
+    "file": "tests/test_trackable.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "ProxyFix"
+   }
+  ],
+  "werkzeug.datastructures.ImmutableList": [
+   {
+    "file": "flask_security/core.py",
+    "line": 26,
+    "kind": "import",
+    "local_name": "ImmutableList"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 421,
+    "kind": "reference",
+    "local_name": "ImmutableList"
+   }
+  ],
+  "werkzeug.datastructures.MultiDict": [
+   {
+    "file": "flask_security/cli.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 63,
+    "kind": "import",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 111,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 193,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 254,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 313,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   }
+  ],
+  "werkzeug.local.LocalProxy": [
+   {
+    "file": "flask_security/changeable.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 27,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/passwordless.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/registerable.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 26,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/changeable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/changeable.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/cli.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/confirmable.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/core.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/passwordless.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/passwordless.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/recoverable.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/registerable.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/registerable.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/script.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/utils.py",
+    "line": 386,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "flask_security/views.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   }
+  ],
+  "werkzeug.routing.BuildError": [
+   {
+    "file": "flask_security/decorators.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "BuildError"
+   },
+   {
+    "file": "flask_security/decorators.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "BuildError"
+   }
+  ],
+  "wtforms.BooleanField": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "BooleanField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "BooleanField"
+   }
+  ],
+  "wtforms.Field": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "Field"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "Field"
+   }
+  ],
+  "wtforms.HiddenField": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "HiddenField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "HiddenField"
+   }
+  ],
+  "wtforms.PasswordField": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 116,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 121,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 127,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 210,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 278,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 282,
+    "kind": "reference",
+    "local_name": "PasswordField"
+   }
+  ],
+  "wtforms.StringField": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "StringField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 104,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 110,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 208,
+    "kind": "reference",
+    "local_name": "StringField"
+   }
+  ],
+  "wtforms.SubmitField": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 144,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 158,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 177,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 213,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 272,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 288,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   }
+  ],
+  "wtforms.ValidationError": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 80,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_security/forms.py",
+    "line": 140,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   }
+  ],
+  "wtforms.i18n.messages_path": [
+   {
+    "file": "flask_security/babel.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "messages_path"
+   },
+   {
+    "file": "flask_security/babel.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "messages_path"
+   }
+  ],
+  "wtforms.validators": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "validators"
+   }
+  ],
+  "wtforms.validators.DataRequired": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "validators"
+   }
+  ],
+  "wtforms.validators.Email": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "validators"
+   }
+  ],
+  "wtforms.validators.EqualTo": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "validators"
+   }
+  ],
+  "wtforms.validators.Length": [
+   {
+    "file": "flask_security/forms.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "validators"
+   }
+  ]
+ },
+ "star_imports": []
+}

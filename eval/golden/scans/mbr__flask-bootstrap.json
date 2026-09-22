@@ -1,0 +1,1381 @@
+{
+ "files_scanned": 15,
+ "usages": {
+  "dominate.tags": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.a": [
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 98,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.button": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 138,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.comment": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.div": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.form": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 102,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.input": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.label": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.li": [
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 60,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 75,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.nav": [
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.p": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.span": [
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.tags.ul": [
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "tags"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "tags"
+   }
+  ],
+  "dominate.util.raw": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "raw"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "raw"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "raw"
+   }
+  ],
+  "flask.Blueprint": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   }
+  ],
+  "flask.Flask": [
+   {
+    "file": "sample_app/__init__.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_sanity.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "sample_app/__init__.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 49,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_sanity.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "Flask"
+   }
+  ],
+  "flask.current_app": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 106,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.debug": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.extensions": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 114,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.flash": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 66,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 67,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 68,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 69,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "flash"
+   }
+  ],
+  "flask.redirect": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "redirect"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "redirect"
+   }
+  ],
+  "flask.render_template": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "render_template"
+   }
+  ],
+  "flask.url_for": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "url_for"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "url_for"
+   },
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "url_for"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "url_for"
+   }
+  ],
+  "flask_appconfig.AppConfig": [
+   {
+    "file": "sample_app/__init__.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "AppConfig"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "AppConfig"
+   },
+   {
+    "file": "sample_app/__init__.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "AppConfig"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "AppConfig"
+   }
+  ],
+  "flask_bootstrap": [
+   {
+    "file": "tests/test_sanity.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "flask_bootstrap"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "flask_bootstrap"
+   }
+  ],
+  "flask_bootstrap.Bootstrap": [
+   {
+    "file": "sample_app/__init__.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "tests/test_sanity.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "sample_app/__init__.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "tests/test_sanity.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "Bootstrap"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "Bootstrap"
+   }
+  ],
+  "flask_bootstrap.__version__": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "FLASK_BOOTSTRAP_VERSION"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "FLASK_BOOTSTRAP_VERSION"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "flask_bootstrap"
+   }
+  ],
+  "flask_debug.Debug": [
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "Debug"
+   },
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "Debug"
+   }
+  ],
+  "flask_nav.Nav": [
+   {
+    "file": "sample_app/nav.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Nav"
+   },
+   {
+    "file": "sample_app/nav.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "Nav"
+   }
+  ],
+  "flask_nav.elements.Link": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 33,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "Link"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "Link"
+   }
+  ],
+  "flask_nav.elements.Navbar": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Navbar"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "Navbar"
+   }
+  ],
+  "flask_nav.elements.Separator": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Separator"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "Separator"
+   }
+  ],
+  "flask_nav.elements.Subgroup": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Subgroup"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "Subgroup"
+   }
+  ],
+  "flask_nav.elements.Text": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Text"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "Text"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "Text"
+   }
+  ],
+  "flask_nav.elements.View": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "View"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "View"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "View"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "View"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "View"
+   }
+  ],
+  "flask_wtf.Form": [
+   {
+    "file": "sample_app/forms.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Form"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Form"
+   },
+   {
+    "file": "sample_app/forms.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "Form"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "Form"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "Form"
+   }
+  ],
+  "flask_wtf.RecaptchaField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "RecaptchaField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "RecaptchaField"
+   }
+  ],
+  "flask_wtf.file.FileField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "FileField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "FileField"
+   }
+  ],
+  "hashlib.sha1": [
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "sha1"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "sha1"
+   }
+  ],
+  "markupsafe.Markup": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Markup"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "Markup"
+   }
+  ],
+  "markupsafe.escape": [
+   {
+    "file": "sample_app/frontend.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "escape"
+   },
+   {
+    "file": "sample_app/frontend.py",
+    "line": 60,
+    "kind": "reference",
+    "local_name": "escape"
+   }
+  ],
+  "os": [
+   {
+    "file": "run_sample_app.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "setup.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   }
+  ],
+  "os.path.dirname": [
+   {
+    "file": "run_sample_app.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "setup.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.join": [
+   {
+    "file": "setup.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "pytest": [
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.fixture": [
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 4,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "re": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "re"
+   },
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "re"
+   }
+  ],
+  "re.compile": [
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "re"
+   }
+  ],
+  "re.search": [
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "re"
+   }
+  ],
+  "re.sub": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "re"
+   }
+  ],
+  "requests": [
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "requests"
+   }
+  ],
+  "requests.get": [
+   {
+    "file": "tests/test_versions_match.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "requests"
+   }
+  ],
+  "sample_app.create_app": [
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "create_app"
+   },
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "create_app"
+   }
+  ],
+  "sample_application.create_app": [
+   {
+    "file": "run_sample_app.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "create_app"
+   },
+   {
+    "file": "run_sample_app.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "create_app"
+   }
+  ],
+  "setuptools.setup": [
+   {
+    "file": "setup.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "setup"
+   },
+   {
+    "file": "setup.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "setup"
+   }
+  ],
+  "sys": [
+   {
+    "file": "run_sample_app.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "sys"
+   },
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "sys"
+   }
+  ],
+  "sys.path.append": [
+   {
+    "file": "run_sample_app.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "sys"
+   },
+   {
+    "file": "tests/test_sample_app.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "visitor.Visitor": [
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "Visitor"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Visitor"
+   },
+   {
+    "file": "flask_bootstrap/forms.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "Visitor"
+   },
+   {
+    "file": "flask_bootstrap/nav.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "Visitor"
+   }
+  ],
+  "wtforms.BooleanField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "BooleanField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "BooleanField"
+   }
+  ],
+  "wtforms.FormField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "FormField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "FormField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "FormField"
+   }
+  ],
+  "wtforms.HiddenField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "HiddenField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "HiddenField"
+   }
+  ],
+  "wtforms.IntegerField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "IntegerField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "IntegerField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "IntegerField"
+   }
+  ],
+  "wtforms.RadioField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "RadioField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "RadioField"
+   }
+  ],
+  "wtforms.SubmitField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "SubmitField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "SubmitField"
+   }
+  ],
+  "wtforms.TextField": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "TextField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "TextField"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "TextField"
+   }
+  ],
+  "wtforms.ValidationError": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   }
+  ],
+  "wtforms.fields.HiddenField": [
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "HiddenField"
+   },
+   {
+    "file": "flask_bootstrap/__init__.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "HiddenField"
+   }
+  ],
+  "wtforms.validators": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "validators"
+   }
+  ],
+  "wtforms.validators.Email": [
+   {
+    "file": "sample_app/forms.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Email"
+   },
+   {
+    "file": "sample_app/forms.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "Email"
+   }
+  ],
+  "wtforms.validators.Required": [
+   {
+    "file": "sample_app/forms.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Required"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "Required"
+   },
+   {
+    "file": "sample_app/forms.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "Required"
+   },
+   {
+    "file": "sample_app/forms.py",
+    "line": 8,
+    "kind": "reference",
+    "local_name": "Required"
+   },
+   {
+    "file": "sample_app/forms.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "Required"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "Required"
+   }
+  ],
+  "wtforms.validators.required": [
+   {
+    "file": "sample_application/__init__.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "validators"
+   },
+   {
+    "file": "sample_application/__init__.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "validators"
+   }
+  ]
+ },
+ "star_imports": [
+  {
+   "file": "sample_app/forms.py",
+   "line": 2,
+   "kind": "import",
+   "local_name": "wtforms.fields"
+  }
+ ]
+}

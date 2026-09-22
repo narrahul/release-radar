@@ -18,6 +18,10 @@ code compares the two — so every alert points at a line you can open:
        used at app/aliased.py:5  (reference of `pd`)
 ```
 
+On a golden set of 18 real releases: **precision 1.00, recall 1.00** —
+against 0.07 precision for asking an LLM directly, and 0.05 for keyword
+matching. [Full evaluation](eval/README.md).
+
 **The model reads prose. The code decides.** The LLM is never asked whether a
 release is breaking — it only reports what the notes say changed. Whether that
 matters to a given repo is a deterministic comparison against real import
@@ -115,6 +119,32 @@ outranks `SECURITY` (the release fixes a vulnerability), which outranks
 `ROUTINE`. A breaking release that is also a security fix reports `BREAKING`
 and keeps the security note.
 
+## Does it actually work?
+
+18 hand-labelled cases, real repos pinned to real tags, real releases
+([methodology and every mistake](eval/README.md)):
+
+| System | Precision | Recall | F1 | Verdict accuracy |
+|---|---|---|---|---|
+| **Radar** (LLM extracts, code decides) | **1.00** | **1.00** | **1.00** | **100%** |
+| LLM-only (model decides) | 0.07 | 1.00 | 0.13 | 56% |
+| Keyword (no model) | 0.05 | 0.33 | 0.09 | 39% |
+
+The LLM-only baseline is the interesting one. Given the same notes and the
+same import list, it finds *every* real break — recall 1.00, identical to
+Radar — and also flags 118 things that are fine, 76 of them in a single
+repo. Its recall is worth having; its judgement is not. Replacing the
+decision with a deterministic match keeps the recall and takes precision
+from 0.07 to 1.00.
+
+A perfect score on 18 cases means the set is too small to discriminate
+further, not that the system is perfect — the next step is growing it until
+it fails again.
+
+```bash
+python -m eval.run_eval --no-llm-baseline   # free, no model calls
+```
+
 ## Known limits
 
 - **Scope model.** Alias bindings are tracked per file, not per function
@@ -188,14 +218,11 @@ portfolio link, worth warming before you show it to anyone.
 
 ## Not built yet
 
-Deliberately out of scope for the detection engine — these are the next two
-layers:
+Deliberately out of scope for the detection engine:
 
 - **Reliability.** Durable ingest worker, exponential backoff with jitter,
   dead-letter queue for unparseable releases, idempotency on release ID.
   `fetch.py` is one request with one timeout, on purpose.
-- **Evaluation.** Hand-labelled golden set of real PyPI releases,
-  precision/recall against a keyword baseline and an LLM-only baseline.
 
 ## Cost
 

@@ -1,0 +1,71 @@
+{
+  "removed": [
+    {
+      "name": "jinja2.ext.WithExtension",
+      "note": "WithExtension and AutoEscapeExtension are built-in now."
+    },
+    {
+      "name": "jinja2.ext.AutoEscapeExtension",
+      "note": "WithExtension and AutoEscapeExtension are built-in now."
+    },
+    {
+      "name": "jinja2.contextfilter",
+      "note": "contextfilter and contextfunction are replaced by pass_context."
+    },
+    {
+      "name": "jinja2.contextfunction",
+      "note": "contextfilter and contextfunction are replaced by pass_context."
+    },
+    {
+      "name": "jinja2.evalcontextfilter",
+      "note": "evalcontextfilter and evalcontextfunction are replaced by pass_eval_context."
+    },
+    {
+      "name": "jinja2.evalcontextfunction",
+      "note": "evalcontextfilter and evalcontextfunction are replaced by pass_eval_context."
+    },
+    {
+      "name": "jinja2.environmentfilter",
+      "note": "environmentfilter and environmentfunction are replaced by pass_environment."
+    },
+    {
+      "name": "jinja2.environmentfunction",
+      "note": "environmentfilter and environmentfunction are replaced by pass_environment."
+    },
+    {
+      "name": "jinja2.Markup",
+      "note": "Markup and escape should be imported from MarkupSafe."
+    },
+    {
+      "name": "jinja2.escape",
+      "note": "Markup and escape should be imported from MarkupSafe."
+    },
+    {
+      "name": "jinja2.Context.resolve",
+      "note": "Legacy resolve mode for Context subclasses is no longer supported. Override resolve_or_missing instead of resolve."
+    }
+  ],
+  "renamed": [
+    {
+      "old_name": "jinja2.unicode_urlencode",
+      "new_name": "jinja2.url_quote",
+      "note": "unicode_urlencode is renamed to url_quote."
+    }
+  ],
+  "behaviour_changed": [
+    {
+      "name": "jinja2.filters.groupby",
+      "note": "The groupby filter is case-insensitive by default, matching other comparison filters. Added the case_sensitive parameter to control this."
+    },
+    {
+      "name": "jinja2.FileSystemLoader",
+      "note": "Windows drive-relative path segments in template names will not result in FileSystemLoader and PackageLoader loading from drive-relative paths."
+    },
+    {
+      "name": "jinja2.PackageLoader",
+      "note": "Windows drive-relative path segments in template names will not result in FileSystemLoader and PackageLoader loading from drive-relative paths."
+    }
+  ],
+  "security": false,
+  "security_note": ""
+}

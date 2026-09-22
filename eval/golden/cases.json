@@ -1,0 +1,189 @@
+[
+  {
+    "id": "flask-security vs flask 2.3.0",
+    "repo": "mattupstate/flask-security",
+    "ref": "",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "BREAKING",
+    "symbols": [
+      "flask.json.JSONEncoder"
+    ],
+    "note": "Subclassed as BaseEncoder - a grep for JSONEncoder misses the two later uses. flask.Markup is also imported but is only DEPRECATED in 2.3.0, not removed."
+  },
+  {
+    "id": "flask-wtf@v0.14.3 vs flask 2.3.0",
+    "repo": "wtforms/flask-wtf",
+    "ref": "v0.14.3",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "BREAKING",
+    "symbols": [
+      "flask.json.JSONEncoder"
+    ],
+    "note": "Also imports flask.Markup, deprecated-not-removed: flagging it is a false positive."
+  },
+  {
+    "id": "flask-admin@v1.5.7 vs flask 2.3.0",
+    "repo": "pallets-eco/flask-admin",
+    "ref": "v1.5.7",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": [],
+    "note": "Imports flask.Markup only. The notes deprecate it; removal came later. The keyword baseline flags it because the line contains 'deprecated'."
+  },
+  {
+    "id": "Flask-User vs flask 2.3.0",
+    "repo": "lingthio/Flask-User",
+    "ref": "",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": [],
+    "note": "Uses flask, but none of the removed APIs."
+  },
+  {
+    "id": "flask-login vs flask 2.3.0",
+    "repo": "maxcountryman/flask-login",
+    "ref": "",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": []
+  },
+  {
+    "id": "Flask-Migrate vs flask 2.3.0",
+    "repo": "miguelgrinberg/Flask-Migrate",
+    "ref": "",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": []
+  },
+  {
+    "id": "flask-admin vs flask 2.3.0",
+    "repo": "pallets-eco/flask-admin",
+    "ref": "",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": [],
+    "note": "Current code; already migrated to markupsafe."
+  },
+  {
+    "id": "flask vs flask 2.3.0",
+    "repo": "pallets/flask",
+    "ref": "",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": []
+  },
+  {
+    "id": "sphinx@v4.0.0 vs flask 2.3.0",
+    "repo": "sphinx-doc/sphinx",
+    "ref": "v4.0.0",
+    "package": "flask",
+    "version": "2.3.0",
+    "verdict": "ROUTINE",
+    "symbols": [],
+    "note": "Does not depend on flask at all - the trivial negative."
+  },
+  {
+    "id": "flask-admin@v1.5.7 vs jinja2 3.1.0",
+    "repo": "pallets-eco/flask-admin",
+    "ref": "v1.5.7",
+    "package": "jinja2",
+    "version": "3.1.0",
+    "verdict": "BREAKING",
+    "symbols": [
+      "jinja2.contextfunction",
+      "jinja2.Markup",
+      "jinja2.escape"
+    ]
+  },
+  {
+    "id": "flask-wtf@v0.14.3 vs jinja2 3.1.0",
+    "repo": "wtforms/flask-wtf",
+    "ref": "v0.14.3",
+    "package": "jinja2",
+    "version": "3.1.0",
+    "verdict": "BREAKING",
+    "symbols": [
+      "jinja2.Markup"
+    ]
+  },
+  {
+    "id": "sphinx@v4.0.0 vs jinja2 3.1.0",
+    "repo": "sphinx-doc/sphinx",
+    "ref": "v4.0.0",
+    "package": "jinja2",
+    "version": "3.1.0",
+    "verdict": "BREAKING",
+    "symbols": [
+      "jinja2.contextfunction",
+      "jinja2.environmentfilter"
+    ],
+    "note": "sphinx.util.rst.escape exists too - same word, different package."
+  },
+  {
+    "id": "flask-admin vs jinja2 3.1.0",
+    "repo": "pallets-eco/flask-admin",
+    "ref": "",
+    "package": "jinja2",
+    "version": "3.1.0",
+    "verdict": "ROUTINE",
+    "symbols": [],
+    "note": "Markup and escape come from markupsafe here, not jinja2."
+  },
+  {
+    "id": "flask vs jinja2 3.1.0",
+    "repo": "pallets/flask",
+    "ref": "",
+    "package": "jinja2",
+    "version": "3.1.0",
+    "verdict": "ROUTINE",
+    "symbols": []
+  },
+  {
+    "id": "flask-security vs werkzeug 3.0.0",
+    "repo": "mattupstate/flask-security",
+    "ref": "",
+    "package": "werkzeug",
+    "version": "3.0.0",
+    "verdict": "ROUTINE",
+    "symbols": [],
+    "note": "These notes say only 'Remove previously deprecated code' and name nothing, so no system can name a symbol from them. Flagging one is a hallucination."
+  },
+  {
+    "id": "flask vs werkzeug 3.0.0",
+    "repo": "pallets/flask",
+    "ref": "",
+    "package": "werkzeug",
+    "version": "3.0.0",
+    "verdict": "ROUTINE",
+    "symbols": []
+  },
+  {
+    "id": "flask-admin@v1.5.7 vs werkzeug 3.0.0",
+    "repo": "pallets-eco/flask-admin",
+    "ref": "v1.5.7",
+    "package": "werkzeug",
+    "version": "3.0.0",
+    "verdict": "ROUTINE",
+    "symbols": []
+  },
+  {
+    "id": "requests vs urllib3 2.0.0",
+    "repo": "psf/requests",
+    "ref": "",
+    "package": "urllib3",
+    "version": "2.0.0",
+    "verdict": "BREAKING",
+    "symbols": [
+      "urllib3.exceptions.SNIMissingWarning"
+    ],
+    "note": "Label corrected after the first run: the notes do say 'Removed urllib3.exceptions.SNIMissingWarning', and requests imports it at tests/__init__.py:6. The original label was wrong because only the first part of urllib3's 14k-character notes was read. Radar found it; the eval found the labelling error. Adjacent near-misses that are NOT breaks: pyopenssl (only SSLv3 support dropped), HTTPConnectionPool (only _prepare_conn), Retry (only method_whitelist)."
+  }
+]

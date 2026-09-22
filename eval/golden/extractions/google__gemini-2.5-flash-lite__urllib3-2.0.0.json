@@ -1,0 +1,99 @@
+{
+  "removed": [
+    {
+      "name": "urllib3.contrib.appengine.AppEngineManager",
+      "note": "Removed support for Google App Engine Standard Environment"
+    },
+    {
+      "name": "Retry.method_whitelist",
+      "note": "Removed deprecated Retry options method_whitelist"
+    },
+    {
+      "name": "Retry.DEFAULT_REDIRECT_HEADERS_BLACKLIST",
+      "note": "Removed deprecated Retry options DEFAULT_REDIRECT_HEADERS_BLACKLIST"
+    },
+    {
+      "name": "urllib3.HTTPResponse.from_httplib",
+      "note": "Removed urllib3.HTTPResponse.from_httplib"
+    },
+    {
+      "name": "urllib3.PoolManager.connection_from_pool_key",
+      "note": "Removed default value of None for the request_context parameter"
+    },
+    {
+      "name": "urllib3.request",
+      "note": "Removed the urllib3.request module"
+    },
+    {
+      "name": "urllib3.util.ssl_.DEFAULT_CIPHERS",
+      "note": "Removed DEFAULT_CIPHERS from the private module urllib3.util.ssl_"
+    },
+    {
+      "name": "urllib3.util.ssl_.HAS_SNI",
+      "note": "Removed HAS_SNI from the private module urllib3.util.ssl_"
+    },
+    {
+      "name": "urllib3.util.ssl_.USE_DEFAULT_SSLCONTEXT_CIPHERS",
+      "note": "Removed USE_DEFAULT_SSLCONTEXT_CIPHERS from the private module urllib3.util.ssl_"
+    },
+    {
+      "name": "urllib3.exceptions.SNIMissingWarning",
+      "note": "Removed urllib3.exceptions.SNIMissingWarning"
+    },
+    {
+      "name": "urllib3.HTTPConnectionPool._prepare_conn",
+      "note": "Removed the _prepare_conn method from HTTPConnectionPool"
+    },
+    {
+      "name": "urllib3.HTTPSConnection.tls_in_tls_required",
+      "note": "Removed tls_in_tls_required property from HTTPSConnection"
+    },
+    {
+      "name": "urllib3.contrib.ntlmpool",
+      "note": "Removed the deprecated urllib3.contrib.ntlmpool module"
+    }
+  ],
+  "renamed": [
+    {
+      "old_name": "urllib3.util.ssl_.BACK0FF_MAX",
+      "new_name": "urllib3.util.ssl_.DEFAULT_BACKOFF_MAX",
+      "note": "Changed name of Retry.BACK0FF_MAX to be Retry.DEFAULT_BACKOFF_MAX."
+    }
+  ],
+  "behaviour_changed": [
+    {
+      "name": "urllib3.match_hostname",
+      "note": "Removed fallback on certificate commonName in match_hostname() function. Instead only subjectAltName is used to verify the hostname by default."
+    },
+    {
+      "name": "urllib3.response.HTTPResponse.read",
+      "note": "Only returns an empty bytes object to indicate EOF, never returns more bytes than requested, and can issue any number of system calls."
+    },
+    {
+      "name": "urllib3.HTTPConnection.getresponse",
+      "note": "Returns an instance of urllib3.HTTPResponse instead of http.client.HTTPResponse"
+    },
+    {
+      "name": "urllib3.util.ssl_.create_urllib3_context",
+      "note": "Changed to not override the system cipher suites with a default value. The new default will be cipher suites configured by the operating system."
+    },
+    {
+      "name": "urllib3.response.HTTPResponse.read",
+      "note": "Changed to raise an error when calling with decode_content=False after using decode_content=True to prevent data loss"
+    },
+    {
+      "name": "urllib3.HTTPConnection",
+      "note": "All parameters in the HTTPConnection and HTTPSConnection constructors are now keyword-only except host and port"
+    },
+    {
+      "name": "urllib3.HTTPConnection.getresponse()",
+      "note": "Changed to set the socket timeout from HTTPConnection.timeout value before reading data from the socket."
+    },
+    {
+      "name": "urllib3.PoolManager",
+      "note": "Changed the _proxy_host property to _tunnel_host in HTTPConnectionPool to more closely match how the property is used (value in HTTPConnection.set_tunnel())."
+    }
+  ],
+  "security": false,
+  "security_note": ""
+}

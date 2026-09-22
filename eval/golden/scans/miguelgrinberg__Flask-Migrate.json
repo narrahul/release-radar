@@ -1,0 +1,2780 @@
+{
+ "files_scanned": 18,
+ "usages": {
+  "alembic.__version__": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "__alembic_version__"
+   }
+  ],
+  "alembic.__version__.split": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "__alembic_version__"
+   }
+  ],
+  "alembic.command": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "command"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 49,
+    "kind": "reference",
+    "local_name": "command"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 60,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.branches": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 244,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.check": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 266,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.current": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 251,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.downgrade": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 210,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.edit": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 181,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.heads": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 236,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.history": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 226,
+    "kind": "reference",
+    "local_name": "command"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 229,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.init": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.merge": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.revision": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 159,
+    "kind": "reference",
+    "local_name": "command"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 170,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.show": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 217,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.stamp": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 259,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.command.upgrade": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 200,
+    "kind": "reference",
+    "local_name": "command"
+   }
+  ],
+  "alembic.config.Config": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "AlembicConfig"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "AlembicConfig"
+   }
+  ],
+  "alembic.context": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.begin_transaction": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 114,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 112,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 106,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 86,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.config": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.config.get_main_option": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.config.get_section_option": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 99,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.config.set_section_option": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.configure": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 108,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 68,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 106,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 164,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 67,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 80,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.is_offline_mode": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 199,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 115,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 188,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 110,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 90,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.context.run_migrations": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 115,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 155,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 98,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 113,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 171,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "context"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "context"
+   }
+  ],
+  "alembic.util.CommandError": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "CommandError"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 112,
+    "kind": "reference",
+    "local_name": "CommandError"
+   }
+  ],
+  "argparse": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "argparse"
+   }
+  ],
+  "argparse.Namespace": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "argparse"
+   }
+  ],
+  "asyncio": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "asyncio"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "asyncio"
+   }
+  ],
+  "asyncio.get_event_loop": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 202,
+    "kind": "reference",
+    "local_name": "asyncio"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 118,
+    "kind": "reference",
+    "local_name": "asyncio"
+   }
+  ],
+  "click": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "click"
+   }
+  ],
+  "click.argument": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 135,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 153,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 171,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 181,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 247,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.group": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "click.option": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 57,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 60,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 66,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 69,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 75,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 90,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 98,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 102,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 105,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 117,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 127,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 129,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 130,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 132,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 143,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 145,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 151,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 161,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 163,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 166,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 169,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 179,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 189,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 193,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 194,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 204,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 206,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 207,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 216,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 218,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 226,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 228,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 236,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 238,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 241,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 244,
+    "kind": "reference",
+    "local_name": "click"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 256,
+    "kind": "reference",
+    "local_name": "click"
+   }
+  ],
+  "flask.Flask": [
+   {
+    "file": "tests/app.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 8,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 8,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 8,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "Flask"
+   }
+  ],
+  "flask.cli.with_appcontext": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 78,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 107,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 120,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 136,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 154,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 172,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 182,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 197,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 209,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 219,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 229,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 248,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 258,
+    "kind": "reference",
+    "local_name": "with_appcontext"
+   }
+  ],
+  "flask.current_app": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config.get": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.extensions": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 135,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 142,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 168,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 179,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 190,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 198,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 206,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 216,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 224,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 235,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 243,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 250,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 258,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 265,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 139,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.g": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.g.directory": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 112,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 139,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 175,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 185,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 200,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 222,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 232,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 252,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.g.x_arg": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 113,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 175,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask_migrate.Migrate": [
+   {
+    "file": "tests/app.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "Migrate"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "Migrate"
+   }
+  ],
+  "flask_migrate.alembic_version": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 51,
+    "kind": "import",
+    "local_name": "alembic_version"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 51,
+    "kind": "import",
+    "local_name": "alembic_version"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "alembic_version"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "alembic_version"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "alembic_version"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "alembic_version"
+   }
+  ],
+  "flask_migrate.branches": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "_branches"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 222,
+    "kind": "reference",
+    "local_name": "_branches"
+   }
+  ],
+  "flask_migrate.check": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "_check"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "_check"
+   }
+  ],
+  "flask_migrate.cli.db": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 72,
+    "kind": "import",
+    "local_name": "db_cli_group"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "db_cli_group"
+   }
+  ],
+  "flask_migrate.current": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "_current"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 232,
+    "kind": "reference",
+    "local_name": "_current"
+   }
+  ],
+  "flask_migrate.downgrade": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "_downgrade"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 175,
+    "kind": "reference",
+    "local_name": "_downgrade"
+   }
+  ],
+  "flask_migrate.edit": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "_edit"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "_edit"
+   }
+  ],
+  "flask_migrate.heads": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "_heads"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "_heads"
+   }
+  ],
+  "flask_migrate.history": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "_history"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 200,
+    "kind": "reference",
+    "local_name": "_history"
+   }
+  ],
+  "flask_migrate.init": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "_init"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 53,
+    "kind": "reference",
+    "local_name": "_init"
+   }
+  ],
+  "flask_migrate.list_templates": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "_list_templates"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "_list_templates"
+   }
+  ],
+  "flask_migrate.merge": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "_merge"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 139,
+    "kind": "reference",
+    "local_name": "_merge"
+   }
+  ],
+  "flask_migrate.migrate": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "_migrate"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 112,
+    "kind": "reference",
+    "local_name": "_migrate"
+   }
+  ],
+  "flask_migrate.revision": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "_revision"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "_revision"
+   }
+  ],
+  "flask_migrate.show": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "_show"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 185,
+    "kind": "reference",
+    "local_name": "_show"
+   }
+  ],
+  "flask_migrate.stamp": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 17,
+    "kind": "import",
+    "local_name": "_stamp"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 252,
+    "kind": "reference",
+    "local_name": "_stamp"
+   }
+  ],
+  "flask_migrate.upgrade": [
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "_upgrade"
+   },
+   {
+    "file": "src/flask_migrate/cli.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "_upgrade"
+   }
+  ],
+  "flask_sqlalchemy.SQLAlchemy": [
+   {
+    "file": "tests/app.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "SQLAlchemy"
+   }
+  ],
+  "functools.wraps": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "wraps"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 108,
+    "kind": "reference",
+    "local_name": "wraps"
+   }
+  ],
+  "logging": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "logging"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "logging"
+   }
+  ],
+  "logging.config.fileConfig": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "fileConfig"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "fileConfig"
+   }
+  ],
+  "logging.getLogger": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask/env.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "logging"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask/env.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "logging"
+   },
+   {
+    "file": "tests/custom_template/env.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "logging"
+   }
+  ],
+  "os": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "os"
+   }
+  ],
+  "os.chdir": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.environ": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.listdir": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 123,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.abspath": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.dirname": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.join": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 88,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 141,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type1.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_compare_type2.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/app_multidb.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.split": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 138,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.remove": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "pathlib.Path": [
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "Path"
+   },
+   {
+    "file": "tests/app_custom_directory_path.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "Path"
+   }
+  ],
+  "shlex": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "shlex"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "shlex"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "shlex"
+   }
+  ],
+  "shlex.split": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "shlex"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "shlex"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "shlex"
+   }
+  ],
+  "shutil": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "shutil"
+   }
+  ],
+  "shutil.rmtree": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "shutil"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "shutil"
+   }
+  ],
+  "sqlalchemy.MetaData": [
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "MetaData"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "MetaData"
+   },
+   {
+    "file": "src/flask_migrate/templates/aioflask-multidb/env.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "MetaData"
+   },
+   {
+    "file": "src/flask_migrate/templates/flask-multidb/env.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "MetaData"
+   }
+  ],
+  "sqlite3": [
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "sqlite3"
+   }
+  ],
+  "sqlite3.connect": [
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "sqlite3"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "sqlite3"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "sqlite3"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 90,
+    "kind": "reference",
+    "local_name": "sqlite3"
+   }
+  ],
+  "subprocess": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "subprocess"
+   }
+  ],
+  "subprocess.PIPE": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 13,
+    "kind": "reference",
+    "local_name": "subprocess"
+   }
+  ],
+  "subprocess.Popen": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "subprocess"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "subprocess"
+   }
+  ],
+  "sys": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "sys"
+   }
+  ],
+  "sys.exit": [
+   {
+    "file": "src/flask_migrate/__init__.py",
+    "line": 114,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "unittest": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "unittest"
+   }
+  ],
+  "unittest.TestCase": [
+   {
+    "file": "tests/test_custom_template.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_migrate.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_multidb_migrate.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "unittest"
+   }
+  ]
+ },
+ "star_imports": []
+}

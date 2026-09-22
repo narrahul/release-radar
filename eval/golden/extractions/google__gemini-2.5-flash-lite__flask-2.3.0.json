@@ -1,0 +1,125 @@
+{
+  "removed": [
+    {
+      "name": "_app_ctx_stack.push",
+      "note": "The ``push`` and ``pop`` methods of the deprecated ``_app_ctx_stack`` and ``_request_ctx_stack`` objects are removed."
+    },
+    {
+      "name": "_app_ctx_stack.pop",
+      "note": "The ``push`` and ``pop`` methods of the deprecated ``_app_ctx_stack`` and ``_request_ctx_stack`` objects are removed."
+    },
+    {
+      "name": "_request_ctx_stack.push",
+      "note": "The ``push`` and ``pop`` methods of the deprecated ``_app_ctx_stack`` and ``_request_ctx_stack`` objects are removed."
+    },
+    {
+      "name": "_request_ctx_stack.pop",
+      "note": "The ``push`` and ``pop`` methods of the deprecated ``_app_ctx_stack`` and ``_request_ctx_stack`` objects are removed."
+    },
+    {
+      "name": "FLASK_ENV",
+      "note": "The ``FLASK_ENV`` environment variable, ``ENV`` config key, and ``app.env`` property are removed."
+    },
+    {
+      "name": "app.env",
+      "note": "The ``FLASK_ENV`` environment variable, ``ENV`` config key, and ``app.env`` property are removed."
+    },
+    {
+      "name": "app.session_cookie_name",
+      "note": "The ``session_cookie_name``, ``send_file_max_age_default``, ``use_x_sendfile``, ``propagate_exceptions``, and ``templates_auto_reload`` properties on ``app`` are removed."
+    },
+    {
+      "name": "app.send_file_max_age_default",
+      "note": "The ``session_cookie_name``, ``send_file_max_age_default``, ``use_x_sendfile``, ``propagate_exceptions``, and ``templates_auto_reload`` properties on ``app`` are removed."
+    },
+    {
+      "name": "app.use_x_sendfile",
+      "note": "The ``session_cookie_name``, ``send_file_max_age_default``, ``use_x_sendfile``, ``propagate_exceptions``, and ``templates_auto_reload`` properties on ``app`` are removed."
+    },
+    {
+      "name": "app.propagate_exceptions",
+      "note": "The ``session_cookie_name``, ``send_file_max_age_default``, ``use_x_sendfile``, ``propagate_exceptions``, and ``templates_auto_reload`` properties on ``app`` are removed."
+    },
+    {
+      "name": "app.templates_auto_reload",
+      "note": "The ``session_cookie_name``, ``send_file_max_age_default``, ``use_x_sendfile``, ``propagate_exceptions``, and ``templates_auto_reload`` properties on ``app`` are removed."
+    },
+    {
+      "name": "JSON_AS_ASCII",
+      "note": "The ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_MIMETYPE``, and ``JSONIFY_PRETTYPRINT_REGULAR`` config keys are removed."
+    },
+    {
+      "name": "JSON_SORT_KEYS",
+      "note": "The ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_MIMETYPE``, and ``JSONIFY_PRETTYPRINT_REGULAR`` config keys are removed."
+    },
+    {
+      "name": "JSONIFY_MIMETYPE",
+      "note": "The ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_MIMETYPE``, and ``JSONIFY_PRETTYPRINT_REGULAR`` config keys are removed."
+    },
+    {
+      "name": "JSONIFY_PRETTYPRINT_REGULAR",
+      "note": "The ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_MIMETYPE``, and ``JSONIFY_PRETTYPRINT_REGULAR`` config keys are removed."
+    },
+    {
+      "name": "app.before_first_request",
+      "note": "The ``app.before_first_request`` and ``bp.before_app_first_request`` decorators are removed."
+    },
+    {
+      "name": "bp.before_app_first_request",
+      "note": "The ``app.before_first_request`` and ``bp.before_app_first_request`` decorators are removed."
+    },
+    {
+      "name": "app.json_encoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "app.json_decoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "bp.json_encoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "bp.json_decoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "json.JSONEncoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "json.JSONEncoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "json.JSONDecoder",
+      "note": "``json_encoder`` and ``json_decoder`` attributes on app and blueprint, and the corresponding ``json.JSONEncoder`` and ``json.JSONDecoder`` classes, are removed."
+    },
+    {
+      "name": "json.htmlsafe_dumps",
+      "note": "The ``json.htmlsafe_dumps`` and ``htmlsafe_dump`` functions are removed."
+    },
+    {
+      "name": "htmlsafe_dump",
+      "note": "The ``json.htmlsafe_dumps`` and ``htmlsafe_dump`` functions are removed."
+    }
+  ],
+  "renamed": [],
+  "behaviour_changed": [
+    {
+      "name": "app.config.from_file",
+      "note": "``config.from_file`` can use ``text=False`` to indicate that the parser wants a binary file instead."
+    },
+    {
+      "name": "flask.Flask",
+      "note": "If a blueprint is created with an empty name it raises a ``ValueError``."
+    },
+    {
+      "name": "SESSION_COOKIE_DOMAIN",
+      "note": "``SESSION_COOKIE_DOMAIN`` does not fall back to ``SERVER_NAME``. The default is not to set the domain, which modern browsers interpret as an exact match rather than a subdomain match."
+    }
+  ],
+  "security": false,
+  "security_note": ""
+}

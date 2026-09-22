@@ -1,0 +1,2969 @@
+{
+ "files_scanned": 24,
+ "usages": {
+  "__future__.absolute_import": [
+   {
+    "file": "flask_wtf/__init__.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "absolute_import"
+   }
+  ],
+  "babel.support": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "support"
+   }
+  ],
+  "babel.support.Translations.load": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "support"
+   }
+  ],
+  "collections": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "abc"
+   }
+  ],
+  "collections.abc": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "abc"
+   }
+  ],
+  "datetime.datetime": [
+   {
+    "file": "docs/conf.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "datetime"
+   }
+  ],
+  "datetime.datetime.utcnow": [
+   {
+    "file": "docs/conf.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "datetime"
+   }
+  ],
+  "flask.Blueprint": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 289,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 136,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   }
+  ],
+  "flask.Flask": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "_Flask"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 5,
+    "kind": "reference",
+    "local_name": "_Flask"
+   }
+  ],
+  "flask.Markup": [
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Markup"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "Markup"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "Markup"
+   }
+  ],
+  "flask.abort": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "abort"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 182,
+    "kind": "reference",
+    "local_name": "abort"
+   }
+  ],
+  "flask.current_app": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 228,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 243,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 252,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config.get": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 71,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.extensions": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.make_response": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 331,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.secret_key": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 79,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.testing": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.flash": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "flash"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "flash"
+   }
+  ],
+  "flask.g": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.g.csrf_token": [
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 76,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.g.csrf_valid": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 270,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.g.get": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 56,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 145,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.json": [
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "json"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "json"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "json"
+   }
+  ],
+  "flask.json.JSONEncoder": [
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "json"
+   }
+  ],
+  "flask.json.dumps": [
+   {
+    "file": "tests/test_form.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "json"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "json"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 115,
+    "kind": "reference",
+    "local_name": "json"
+   }
+  ],
+  "flask.redirect": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "redirect"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "redirect"
+   }
+  ],
+  "flask.render_template": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "render_template"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "render_template"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "render_template"
+   }
+  ],
+  "flask.render_template_string": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "render_template_string"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "render_template_string"
+   }
+  ],
+  "flask.request": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 143,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.accept_languages.best_match": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.args": [
+   {
+    "file": "tests/test_form.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.args.get": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 35,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.blueprint": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 215,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.endpoint": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 218,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.files": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 57,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.form": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 235,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 237,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 181,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.form.get": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 229,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.get_json": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 63,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.headers.get": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 244,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.host": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 265,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.is_secure": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 261,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.json": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.json.get": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.method": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 209,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 252,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 143,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.referrer": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 262,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 267,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.remote_addr": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.wtforms_translations": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.session": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 49,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 105,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.get": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.pop": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 41,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.url_for": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "url_for"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 45,
+    "kind": "reference",
+    "local_name": "url_for"
+   }
+  ],
+  "flask_babel.Babel": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "Babel"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 31,
+    "kind": "import",
+    "local_name": "Babel"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 21,
+    "kind": "reference",
+    "local_name": "Babel"
+   }
+  ],
+  "flask_babel.get_locale": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "get_locale"
+   }
+  ],
+  "flask_babel.lazy_gettext": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "_"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "_"
+   }
+  ],
+  "flask_babelex.Babel": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 34,
+    "kind": "import",
+    "local_name": "Babel"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 38,
+    "kind": "reference",
+    "local_name": "Babel"
+   }
+  ],
+  "flask_babelex.get_locale": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "get_locale"
+   },
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "get_locale"
+   }
+  ],
+  "flask_uploads.UploadSet": [
+   {
+    "file": "tests/test_file.py",
+    "line": 62,
+    "kind": "import",
+    "local_name": "UploadSet"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "UploadSet"
+   }
+  ],
+  "flask_uploads.configure_uploads": [
+   {
+    "file": "tests/test_file.py",
+    "line": 62,
+    "kind": "import",
+    "local_name": "configure_uploads"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 66,
+    "kind": "reference",
+    "local_name": "configure_uploads"
+   }
+  ],
+  "flask_wtf.FlaskForm": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 130,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 152,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "FlaskForm"
+   }
+  ],
+  "flask_wtf.Form": [
+   {
+    "file": "tests/test_form.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "Form"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 110,
+    "kind": "reference",
+    "local_name": "Form"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 122,
+    "kind": "reference",
+    "local_name": "Form"
+   }
+  ],
+  "flask_wtf._compat.FlaskWTFDeprecationWarning": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_html5.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 174,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 186,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 114,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 126,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 134,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   },
+   {
+    "file": "tests/test_html5.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "FlaskWTFDeprecationWarning"
+   }
+  ],
+  "flask_wtf._compat.to_bytes": [
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "to_bytes"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "to_bytes"
+   }
+  ],
+  "flask_wtf.csrf.CSRFError": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "CSRFError"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 149,
+    "kind": "reference",
+    "local_name": "CSRFError"
+   }
+  ],
+  "flask_wtf.csrf.CSRFProtect": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "CSRFProtect"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "CSRFProtect"
+   }
+  ],
+  "flask_wtf.csrf.CsrfProtect": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "CsrfProtect"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 173,
+    "kind": "reference",
+    "local_name": "CsrfProtect"
+   }
+  ],
+  "flask_wtf.csrf.generate_csrf": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 31,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 20,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 30,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 57,
+    "kind": "reference",
+    "local_name": "generate_csrf"
+   }
+  ],
+  "flask_wtf.csrf.logger": [
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 158,
+    "kind": "import",
+    "local_name": "logger"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 86,
+    "kind": "import",
+    "local_name": "logger"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 165,
+    "kind": "reference",
+    "local_name": "logger"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 93,
+    "kind": "reference",
+    "local_name": "logger"
+   }
+  ],
+  "flask_wtf.csrf.validate_csrf": [
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "validate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "validate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "validate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "validate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "validate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "validate_csrf"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "validate_csrf"
+   }
+  ],
+  "flask_wtf.file.FileAllowed": [
+   {
+    "file": "tests/test_file.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "FileAllowed"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "FileAllowed"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 67,
+    "kind": "reference",
+    "local_name": "FileAllowed"
+   }
+  ],
+  "flask_wtf.file.FileField": [
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "FileField"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "FileField"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "FileField"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "FileField"
+   }
+  ],
+  "flask_wtf.file.FileRequired": [
+   {
+    "file": "tests/test_file.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "FileRequired"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "FileRequired"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "FileRequired"
+   }
+  ],
+  "flask_wtf.i18n.translations": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 66,
+    "kind": "import",
+    "local_name": "translations"
+   }
+  ],
+  "flask_wtf.i18n.translations.gettext": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 69,
+    "kind": "reference",
+    "local_name": "translations"
+   }
+  ],
+  "flask_wtf.i18n.translations.ngettext": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 73,
+    "kind": "reference",
+    "local_name": "translations"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 74,
+    "kind": "reference",
+    "local_name": "translations"
+   }
+  ],
+  "flask_wtf.recaptcha.RecaptchaField": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "RecaptchaField"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "RecaptchaField"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 23,
+    "kind": "reference",
+    "local_name": "RecaptchaField"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "RecaptchaField"
+   }
+  ],
+  "flask_wtf.recaptcha.validators.Recaptcha": [
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "Recaptcha"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 149,
+    "kind": "reference",
+    "local_name": "Recaptcha"
+   }
+  ],
+  "flask_wtf.recaptcha.validators.http": [
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "http"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "http"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 112,
+    "kind": "reference",
+    "local_name": "http"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 127,
+    "kind": "reference",
+    "local_name": "http"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "http"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 147,
+    "kind": "reference",
+    "local_name": "http"
+   }
+  ],
+  "functools.wraps": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "wraps"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 329,
+    "kind": "reference",
+    "local_name": "wraps"
+   }
+  ],
+  "hashlib": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "hashlib"
+   }
+  ],
+  "hashlib.sha1": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "hashlib"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "hashlib"
+   }
+  ],
+  "io.BytesIO": [
+   {
+    "file": "tests/test_form.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "BytesIO"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "BytesIO"
+   }
+  ],
+  "itsdangerous.BadData": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "BadData"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 102,
+    "kind": "reference",
+    "local_name": "BadData"
+   }
+  ],
+  "itsdangerous.SignatureExpired": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "SignatureExpired"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "SignatureExpired"
+   }
+  ],
+  "itsdangerous.URLSafeTimedSerializer": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "URLSafeTimedSerializer"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "URLSafeTimedSerializer"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 96,
+    "kind": "reference",
+    "local_name": "URLSafeTimedSerializer"
+   }
+  ],
+  "jinja2.Markup": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "Markup"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 133,
+    "kind": "reference",
+    "local_name": "Markup"
+   }
+  ],
+  "json": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "json"
+   }
+  ],
+  "json.loads": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 70,
+    "kind": "reference",
+    "local_name": "json"
+   }
+  ],
+  "logging": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "logging"
+   }
+  ],
+  "logging.getLogger": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 17,
+    "kind": "reference",
+    "local_name": "logging"
+   }
+  ],
+  "markupsafe.Markup": [
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "Markup"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "Markup"
+   }
+  ],
+  "os": [
+   {
+    "file": "docs/conf.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "os"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "os"
+   }
+  ],
+  "os.path.dirname": [
+   {
+    "file": "docs/conf.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.path.join": [
+   {
+    "file": "docs/conf.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "os.urandom": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "os"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "os"
+   }
+  ],
+  "pkg_resources.get_distribution": [
+   {
+    "file": "docs/conf.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "get_distribution"
+   },
+   {
+    "file": "docs/conf.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "get_distribution"
+   }
+  ],
+  "pytest": [
+   {
+    "file": "tests/conftest.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.fixture": [
+   {
+    "file": "tests/conftest.py",
+    "line": 16,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 34,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_extension.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.importorskip": [
+   {
+    "file": "tests/test_file.py",
+    "line": 61,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.raises": [
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 43,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.skip": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "pytest.yield_fixture": [
+   {
+    "file": "tests/conftest.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/conftest.py",
+    "line": 28,
+    "kind": "reference",
+    "local_name": "pytest"
+   },
+   {
+    "file": "tests/test_recaptcha.py",
+    "line": 27,
+    "kind": "reference",
+    "local_name": "pytest"
+   }
+  ],
+  "setuptools.find_packages": [
+   {
+    "file": "setup.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "find_packages"
+   },
+   {
+    "file": "setup.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "find_packages"
+   }
+  ],
+  "setuptools.setup": [
+   {
+    "file": "setup.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "setup"
+   },
+   {
+    "file": "setup.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "setup"
+   }
+  ],
+  "sys": [
+   {
+    "file": "docs/conf.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "sys"
+   },
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "sys"
+   }
+  ],
+  "sys.path.insert": [
+   {
+    "file": "docs/conf.py",
+    "line": 12,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "sys.version_info": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 4,
+    "kind": "reference",
+    "local_name": "sys"
+   }
+  ],
+  "urllib.parse.urlparse": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "urlparse"
+   }
+  ],
+  "urllib.request": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "http"
+   }
+  ],
+  "urllib.request.urlopen": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 65,
+    "kind": "reference",
+    "local_name": "http"
+   }
+  ],
+  "urllib2": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "http"
+   }
+  ],
+  "urlparse.urlparse": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "urlparse"
+   }
+  ],
+  "warnings": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/html5.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "warnings"
+   }
+  ],
+  "warnings.filterwarnings": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 37,
+    "kind": "reference",
+    "local_name": "warnings"
+   }
+  ],
+  "warnings.simplefilter": [
+   {
+    "file": "flask_wtf/_compat.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "warnings"
+   }
+  ],
+  "warnings.warn": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 323,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 345,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 80,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 153,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "flask_wtf/html5.py",
+    "line": 5,
+    "kind": "reference",
+    "local_name": "warnings"
+   }
+  ],
+  "werkzeug.datastructures.CombinedMultiDict": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "CombinedMultiDict"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "CombinedMultiDict"
+   }
+  ],
+  "werkzeug.datastructures.FileStorage": [
+   {
+    "file": "flask_wtf/file.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 15,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 49,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 74,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 42,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 52,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 55,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 72,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 75,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 88,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 89,
+    "kind": "reference",
+    "local_name": "FileStorage"
+   }
+  ],
+  "werkzeug.datastructures.ImmutableMultiDict": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "ImmutableMultiDict"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 64,
+    "kind": "reference",
+    "local_name": "ImmutableMultiDict"
+   }
+  ],
+  "werkzeug.datastructures.MultiDict": [
+   {
+    "file": "tests/test_file.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "MultiDict"
+   }
+  ],
+  "werkzeug.exceptions.BadRequest": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "BadRequest"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 352,
+    "kind": "reference",
+    "local_name": "BadRequest"
+   }
+  ],
+  "werkzeug.security.safe_str_cmp": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "safe_str_cmp"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 105,
+    "kind": "reference",
+    "local_name": "safe_str_cmp"
+   }
+  ],
+  "werkzeug.urls.url_encode": [
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "url_encode"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "url_encode"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 59,
+    "kind": "reference",
+    "local_name": "url_encode"
+   },
+   {
+    "file": "flask_wtf/recaptcha/widgets.py",
+    "line": 26,
+    "kind": "reference",
+    "local_name": "url_encode"
+   }
+  ],
+  "werkzeug.utils.cached_property": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "cached_property"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 36,
+    "kind": "reference",
+    "local_name": "cached_property"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 40,
+    "kind": "reference",
+    "local_name": "cached_property"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "cached_property"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "cached_property"
+   }
+  ],
+  "wtforms.FieldList": [
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "FieldList"
+   },
+   {
+    "file": "examples/uploadr/app.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "FieldList"
+   }
+  ],
+  "wtforms.FileField": [
+   {
+    "file": "flask_wtf/file.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "_FileField"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "BaseFileField"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "FileField"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 11,
+    "kind": "reference",
+    "local_name": "_FileField"
+   },
+   {
+    "file": "tests/test_file.py",
+    "line": 85,
+    "kind": "reference",
+    "local_name": "BaseFileField"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 19,
+    "kind": "reference",
+    "local_name": "FileField"
+   }
+  ],
+  "wtforms.Form": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "Form"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 24,
+    "kind": "reference",
+    "local_name": "Form"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "Form"
+   }
+  ],
+  "wtforms.HiddenField": [
+   {
+    "file": "tests/test_form.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "HiddenField"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 99,
+    "kind": "reference",
+    "local_name": "HiddenField"
+   }
+  ],
+  "wtforms.IntegerField": [
+   {
+    "file": "tests/test_form.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "IntegerField"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "IntegerField"
+   }
+  ],
+  "wtforms.StringField": [
+   {
+    "file": "tests/test_form.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 158,
+    "kind": "reference",
+    "local_name": "StringField"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "StringField"
+   }
+  ],
+  "wtforms.TextAreaField": [
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "TextAreaField"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "TextAreaField"
+   }
+  ],
+  "wtforms.TextField": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "TextField"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "TextField"
+   }
+  ],
+  "wtforms.ValidationError": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 91,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 94,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 101,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 103,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 106,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 156,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 257,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 46,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "flask_wtf/recaptcha/validators.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 44,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 47,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 51,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 54,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   },
+   {
+    "file": "tests/test_csrf_form.py",
+    "line": 58,
+    "kind": "reference",
+    "local_name": "ValidationError"
+   }
+  ],
+  "wtforms.compat.with_metaclass": [
+   {
+    "file": "tests/test_form.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "with_metaclass"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 122,
+    "kind": "reference",
+    "local_name": "with_metaclass"
+   }
+  ],
+  "wtforms.csrf.core.CSRF": [
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "CSRF"
+   },
+   {
+    "file": "flask_wtf/csrf.py",
+    "line": 133,
+    "kind": "reference",
+    "local_name": "CSRF"
+   }
+  ],
+  "wtforms.fields.Field": [
+   {
+    "file": "flask_wtf/recaptcha/fields.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Field"
+   },
+   {
+    "file": "flask_wtf/recaptcha/fields.py",
+    "line": 9,
+    "kind": "reference",
+    "local_name": "Field"
+   }
+  ],
+  "wtforms.form.FormMeta": [
+   {
+    "file": "tests/test_form.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "FormMeta"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 119,
+    "kind": "reference",
+    "local_name": "FormMeta"
+   }
+  ],
+  "wtforms.i18n.messages_path": [
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "messages_path"
+   },
+   {
+    "file": "flask_wtf/i18n.py",
+    "line": 29,
+    "kind": "reference",
+    "local_name": "messages_path"
+   }
+  ],
+  "wtforms.meta.DefaultMeta": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "DefaultMeta"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 32,
+    "kind": "reference",
+    "local_name": "DefaultMeta"
+   }
+  ],
+  "wtforms.validators.DataRequired": [
+   {
+    "file": "examples/babel/app.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "examples/babel/app.py",
+    "line": 10,
+    "kind": "reference",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "examples/recaptcha/app.py",
+    "line": 22,
+    "kind": "reference",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 39,
+    "kind": "reference",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 18,
+    "kind": "reference",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 158,
+    "kind": "reference",
+    "local_name": "DataRequired"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "DataRequired"
+   }
+  ],
+  "wtforms.validators.Length": [
+   {
+    "file": "tests/test_i18n.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "Length"
+   },
+   {
+    "file": "tests/test_i18n.py",
+    "line": 14,
+    "kind": "reference",
+    "local_name": "Length"
+   }
+  ],
+  "wtforms.validators.StopValidation": [
+   {
+    "file": "flask_wtf/file.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "StopValidation"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 50,
+    "kind": "reference",
+    "local_name": "StopValidation"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 83,
+    "kind": "reference",
+    "local_name": "StopValidation"
+   },
+   {
+    "file": "flask_wtf/file.py",
+    "line": 88,
+    "kind": "reference",
+    "local_name": "StopValidation"
+   }
+  ],
+  "wtforms.widgets.HiddenInput": [
+   {
+    "file": "flask_wtf/form.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "HiddenInput"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "HiddenInput"
+   },
+   {
+    "file": "flask_wtf/form.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "HiddenInput"
+   },
+   {
+    "file": "tests/test_form.py",
+    "line": 100,
+    "kind": "reference",
+    "local_name": "HiddenInput"
+   }
+  ]
+ },
+ "star_imports": [
+  {
+   "file": "flask_wtf/html5.py",
+   "line": 11,
+   "kind": "import",
+   "local_name": "wtforms.widgets.html5"
+  },
+  {
+   "file": "flask_wtf/html5.py",
+   "line": 12,
+   "kind": "import",
+   "local_name": "wtforms.fields.html5"
+  }
+ ]
+}

@@ -1,0 +1,2640 @@
+{
+ "files_scanned": 10,
+ "usages": {
+  "asyncio": [
+   {
+    "file": "tests/test_login.py",
+    "line": 1081,
+    "kind": "import",
+    "local_name": "asyncio"
+   }
+  ],
+  "asyncio.sleep": [
+   {
+    "file": "tests/test_login.py",
+    "line": 1086,
+    "kind": "reference",
+    "local_name": "asyncio"
+   }
+  ],
+  "collections.abc.Hashable": [
+   {
+    "file": "tests/test_login.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "Hashable"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1391,
+    "kind": "reference",
+    "local_name": "Hashable"
+   }
+  ],
+  "contextlib.contextmanager": [
+   {
+    "file": "tests/test_login.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "contextmanager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 48,
+    "kind": "reference",
+    "local_name": "contextmanager"
+   }
+  ],
+  "datetime.datetime": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "datetime"
+   }
+  ],
+  "datetime.datetime.now": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 433,
+    "kind": "reference",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 641,
+    "kind": "reference",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 657,
+    "kind": "reference",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 673,
+    "kind": "reference",
+    "local_name": "datetime"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 731,
+    "kind": "reference",
+    "local_name": "datetime"
+   }
+  ],
+  "datetime.timedelta": [
+   {
+    "file": "src/flask_login/config.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "src/flask_login/config.py",
+    "line": 7,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 422,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 430,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 245,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 633,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 643,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 644,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 649,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 659,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 660,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 664,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 675,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 676,
+    "kind": "reference",
+    "local_name": "timedelta"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 741,
+    "kind": "reference",
+    "local_name": "timedelta"
+   }
+  ],
+  "datetime.timezone": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "timezone"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "timezone"
+   }
+  ],
+  "datetime.timezone.utc": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 433,
+    "kind": "reference",
+    "local_name": "timezone"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 641,
+    "kind": "reference",
+    "local_name": "timezone"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 657,
+    "kind": "reference",
+    "local_name": "timezone"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 673,
+    "kind": "reference",
+    "local_name": "timezone"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 731,
+    "kind": "reference",
+    "local_name": "timezone"
+   }
+  ],
+  "flask.Blueprint": [
+   {
+    "file": "tests/test_login.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 497,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 498,
+    "kind": "reference",
+    "local_name": "Blueprint"
+   }
+  ],
+  "flask.Flask": [
+   {
+    "file": "tests/test_login.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 126,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 141,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 161,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 187,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 216,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1079,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1136,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1244,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1292,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1310,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1331,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1406,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1473,
+    "kind": "reference",
+    "local_name": "Flask"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1532,
+    "kind": "reference",
+    "local_name": "Flask"
+   }
+  ],
+  "flask.Response": [
+   {
+    "file": "tests/test_login.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "Response"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 439,
+    "kind": "reference",
+    "local_name": "Response"
+   }
+  ],
+  "flask.abort": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "abort"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 160,
+    "kind": "reference",
+    "local_name": "abort"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 268,
+    "kind": "reference",
+    "local_name": "abort"
+   }
+  ],
+  "flask.current_app": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 282,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app._get_current_object": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 149,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 262,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 312,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 342,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 375,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 384,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 200,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 227,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 240,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 171,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 282,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 327,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 390,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 412,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 452,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 144,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 388,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.config.get": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 393,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 128,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 221,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.ensure_sync": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 283,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 324,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager._load_user": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 363,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager._session_identifier_generator": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 184,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 239,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager._update_request_context_with_user": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 199,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 229,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager.blueprint_login_views": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 343,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 345,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 349,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 352,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager.id_attribute": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 181,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager.login_view": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 348,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 353,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 355,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 357,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager.needs_refresh": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 321,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.current_app.login_manager.unauthorized": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 278,
+    "kind": "reference",
+    "local_name": "current_app"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 319,
+    "kind": "reference",
+    "local_name": "current_app"
+   }
+  ],
+  "flask.flash": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "flash"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 164,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 169,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 272,
+    "kind": "reference",
+    "local_name": "flash"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 277,
+    "kind": "reference",
+    "local_name": "flash"
+   }
+  ],
+  "flask.g": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 362,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.g._login_user": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 300,
+    "kind": "reference",
+    "local_name": "g"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 365,
+    "kind": "reference",
+    "local_name": "g"
+   }
+  ],
+  "flask.get_flashed_messages": [
+   {
+    "file": "tests/test_login.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "get_flashed_messages"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 415,
+    "kind": "reference",
+    "local_name": "get_flashed_messages"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 432,
+    "kind": "reference",
+    "local_name": "get_flashed_messages"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 812,
+    "kind": "reference",
+    "local_name": "get_flashed_messages"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 830,
+    "kind": "reference",
+    "local_name": "get_flashed_messages"
+   }
+  ],
+  "flask.has_request_context": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "has_request_context"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 361,
+    "kind": "reference",
+    "local_name": "has_request_context"
+   }
+  ],
+  "flask.redirect": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "redirect"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 180,
+    "kind": "reference",
+    "local_name": "redirect"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 292,
+    "kind": "reference",
+    "local_name": "redirect"
+   }
+  ],
+  "flask.request": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 10,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 12,
+    "kind": "import",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 334,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 382,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.blueprint": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 154,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 155,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.cookies": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 329,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 331,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 392,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 146,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 148,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 222,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.method": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 275,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 316,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.remote_addr": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 378,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.url": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 175,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 178,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 286,
+    "kind": "reference",
+    "local_name": "request"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 290,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.request.user_agent.string": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 378,
+    "kind": "reference",
+    "local_name": "request"
+   }
+  ],
+  "flask.session": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 11,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 13,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 174,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 175,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 285,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 286,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 369,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 370,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 408,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 421,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 422,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 427,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 182,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 183,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 184,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 187,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 191,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 215,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 218,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 223,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 224,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 238,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 239,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 178,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 393,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 700,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1024,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1042,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session._get_current_object": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 339,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.get": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 321,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 329,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 392,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 137,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 146,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1164,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.modified": [
+   {
+    "file": "tests/test_login.py",
+    "line": 295,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 892,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.permanent": [
+   {
+    "file": "tests/test_login.py",
+    "line": 250,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.session.pop": [
+   {
+    "file": "src/flask_login/login_manager.py",
+    "line": 395,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 213,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 216,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 219,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 225,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 469,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 487,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 856,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1509,
+    "kind": "reference",
+    "local_name": "session"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1522,
+    "kind": "reference",
+    "local_name": "session"
+   }
+  ],
+  "flask.signals.Namespace": [
+   {
+    "file": "src/flask_login/signals.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "Namespace"
+   },
+   {
+    "file": "src/flask_login/signals.py",
+    "line": 3,
+    "kind": "reference",
+    "local_name": "Namespace"
+   }
+  ],
+  "flask.testing.FlaskClient": [
+   {
+    "file": "src/flask_login/test_client.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "FlaskClient"
+   },
+   {
+    "file": "src/flask_login/test_client.py",
+    "line": 4,
+    "kind": "reference",
+    "local_name": "FlaskClient"
+   }
+  ],
+  "flask.url_for": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 14,
+    "kind": "import",
+    "local_name": "url_for"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 97,
+    "kind": "reference",
+    "local_name": "url_for"
+   }
+  ],
+  "flask.views.MethodView": [
+   {
+    "file": "tests/test_login.py",
+    "line": 16,
+    "kind": "import",
+    "local_name": "MethodView"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 192,
+    "kind": "reference",
+    "local_name": "MethodView"
+   }
+  ],
+  "flask_login.AnonymousUserMixin": [
+   {
+    "file": "tests/test_login.py",
+    "line": 18,
+    "kind": "import",
+    "local_name": "AnonymousUserMixin"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1129,
+    "kind": "reference",
+    "local_name": "AnonymousUserMixin"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1396,
+    "kind": "reference",
+    "local_name": "AnonymousUserMixin"
+   }
+  ],
+  "flask_login.FlaskLoginClient": [
+   {
+    "file": "tests/test_login.py",
+    "line": 23,
+    "kind": "import",
+    "local_name": "FlaskLoginClient"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1539,
+    "kind": "reference",
+    "local_name": "FlaskLoginClient"
+   }
+  ],
+  "flask_login.LoginManager": [
+   {
+    "file": "tests/test_login.py",
+    "line": 30,
+    "kind": "import",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 129,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 144,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 165,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 168,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 171,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 173,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 176,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 189,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 221,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1141,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1245,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1411,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1478,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1537,
+    "kind": "reference",
+    "local_name": "LoginManager"
+   }
+  ],
+  "flask_login.UserMixin": [
+   {
+    "file": "tests/test_login.py",
+    "line": 43,
+    "kind": "import",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 102,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1347,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1354,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1391,
+    "kind": "reference",
+    "local_name": "UserMixin"
+   }
+  ],
+  "flask_login.confirm_login": [
+   {
+    "file": "tests/test_login.py",
+    "line": 19,
+    "kind": "import",
+    "local_name": "confirm_login"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 259,
+    "kind": "reference",
+    "local_name": "confirm_login"
+   }
+  ],
+  "flask_login.current_user": [
+   {
+    "file": "tests/test_login.py",
+    "line": 20,
+    "kind": "import",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.id": [
+   {
+    "file": "tests/test_login.py",
+    "line": 1431,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.is_anonymous": [
+   {
+    "file": "tests/test_login.py",
+    "line": 138,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 320,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 350,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 381,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1186,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.is_authenticated": [
+   {
+    "file": "tests/test_login.py",
+    "line": 264,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 484,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1154,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1424,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1430,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1543,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.current_user.name": [
+   {
+    "file": "tests/test_login.py",
+    "line": 265,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 331,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 338,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 356,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1155,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1425,
+    "kind": "reference",
+    "local_name": "current_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1544,
+    "kind": "reference",
+    "local_name": "current_user"
+   }
+  ],
+  "flask_login.decode_cookie": [
+   {
+    "file": "tests/test_login.py",
+    "line": 21,
+    "kind": "import",
+    "local_name": "decode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1305,
+    "kind": "reference",
+    "local_name": "decode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1306,
+    "kind": "reference",
+    "local_name": "decode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1307,
+    "kind": "reference",
+    "local_name": "decode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1324,
+    "kind": "reference",
+    "local_name": "decode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1325,
+    "kind": "reference",
+    "local_name": "decode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1326,
+    "kind": "reference",
+    "local_name": "decode_cookie"
+   }
+  ],
+  "flask_login.encode_cookie": [
+   {
+    "file": "tests/test_login.py",
+    "line": 22,
+    "kind": "import",
+    "local_name": "encode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1304,
+    "kind": "reference",
+    "local_name": "encode_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1323,
+    "kind": "reference",
+    "local_name": "encode_cookie"
+   }
+  ],
+  "flask_login.fresh_login_required": [
+   {
+    "file": "tests/test_login.py",
+    "line": 24,
+    "kind": "import",
+    "local_name": "fresh_login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 195,
+    "kind": "reference",
+    "local_name": "fresh_login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1103,
+    "kind": "reference",
+    "local_name": "fresh_login_required"
+   }
+  ],
+  "flask_login.login_fresh": [
+   {
+    "file": "tests/test_login.py",
+    "line": 25,
+    "kind": "import",
+    "local_name": "login_fresh"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 270,
+    "kind": "reference",
+    "local_name": "login_fresh"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 332,
+    "kind": "reference",
+    "local_name": "login_fresh"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 339,
+    "kind": "reference",
+    "local_name": "login_fresh"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1549,
+    "kind": "reference",
+    "local_name": "login_fresh"
+   }
+  ],
+  "flask_login.login_remembered": [
+   {
+    "file": "tests/test_login.py",
+    "line": 26,
+    "kind": "import",
+    "local_name": "login_remembered"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 274,
+    "kind": "reference",
+    "local_name": "login_remembered"
+   }
+  ],
+  "flask_login.login_required": [
+   {
+    "file": "tests/test_login.py",
+    "line": 27,
+    "kind": "import",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 194,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 513,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 518,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 523,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 558,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1067,
+    "kind": "reference",
+    "local_name": "login_required"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1084,
+    "kind": "reference",
+    "local_name": "login_required"
+   }
+  ],
+  "flask_login.login_url": [
+   {
+    "file": "tests/test_login.py",
+    "line": 28,
+    "kind": "import",
+    "local_name": "login_url"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1267,
+    "kind": "reference",
+    "local_name": "login_url"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1269,
+    "kind": "reference",
+    "local_name": "login_url"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1273,
+    "kind": "reference",
+    "local_name": "login_url"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1276,
+    "kind": "reference",
+    "local_name": "login_url"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1284,
+    "kind": "reference",
+    "local_name": "login_url"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1287,
+    "kind": "reference",
+    "local_name": "login_url"
+   }
+  ],
+  "flask_login.login_user": [
+   {
+    "file": "tests/test_login.py",
+    "line": 29,
+    "kind": "import",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 237,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 241,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 246,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 251,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 329,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 336,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 344,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 349,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 355,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 379,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 385,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 392,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 689,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 711,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1150,
+    "kind": "reference",
+    "local_name": "login_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1420,
+    "kind": "reference",
+    "local_name": "login_user"
+   }
+  ],
+  "flask_login.logout_user": [
+   {
+    "file": "tests/test_login.py",
+    "line": 31,
+    "kind": "import",
+    "local_name": "logout_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 278,
+    "kind": "reference",
+    "local_name": "logout_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 380,
+    "kind": "reference",
+    "local_name": "logout_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 387,
+    "kind": "reference",
+    "local_name": "logout_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 395,
+    "kind": "reference",
+    "local_name": "logout_user"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1160,
+    "kind": "reference",
+    "local_name": "logout_user"
+   }
+  ],
+  "flask_login.make_next_param": [
+   {
+    "file": "tests/test_login.py",
+    "line": 32,
+    "kind": "import",
+    "local_name": "make_next_param"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1254,
+    "kind": "reference",
+    "local_name": "make_next_param"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1257,
+    "kind": "reference",
+    "local_name": "make_next_param"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1260,
+    "kind": "reference",
+    "local_name": "make_next_param"
+   }
+  ],
+  "flask_login.session_protected": [
+   {
+    "file": "tests/test_login.py",
+    "line": 33,
+    "kind": "import",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 941,
+    "kind": "reference",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 953,
+    "kind": "reference",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 965,
+    "kind": "reference",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 983,
+    "kind": "reference",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1006,
+    "kind": "reference",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1018,
+    "kind": "reference",
+    "local_name": "session_protected"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1036,
+    "kind": "reference",
+    "local_name": "session_protected"
+   }
+  ],
+  "flask_login.set_login_view": [
+   {
+    "file": "tests/test_login.py",
+    "line": 34,
+    "kind": "import",
+    "local_name": "set_login_view"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 530,
+    "kind": "reference",
+    "local_name": "set_login_view"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 531,
+    "kind": "reference",
+    "local_name": "set_login_view"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 532,
+    "kind": "reference",
+    "local_name": "set_login_view"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 562,
+    "kind": "reference",
+    "local_name": "set_login_view"
+   }
+  ],
+  "flask_login.user_accessed": [
+   {
+    "file": "tests/test_login.py",
+    "line": 35,
+    "kind": "import",
+    "local_name": "user_accessed"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 152,
+    "kind": "reference",
+    "local_name": "user_accessed"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1013,
+    "kind": "reference",
+    "local_name": "user_accessed"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1031,
+    "kind": "reference",
+    "local_name": "user_accessed"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1052,
+    "kind": "reference",
+    "local_name": "user_accessed"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1057,
+    "kind": "reference",
+    "local_name": "user_accessed"
+   }
+  ],
+  "flask_login.user_loaded_from_cookie": [
+   {
+    "file": "tests/test_login.py",
+    "line": 36,
+    "kind": "import",
+    "local_name": "user_loaded_from_cookie"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 757,
+    "kind": "reference",
+    "local_name": "user_loaded_from_cookie"
+   }
+  ],
+  "flask_login.user_loaded_from_request": [
+   {
+    "file": "tests/test_login.py",
+    "line": 37,
+    "kind": "import",
+    "local_name": "user_loaded_from_request"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 765,
+    "kind": "reference",
+    "local_name": "user_loaded_from_request"
+   }
+  ],
+  "flask_login.user_logged_in": [
+   {
+    "file": "tests/test_login.py",
+    "line": 38,
+    "kind": "import",
+    "local_name": "user_logged_in"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 343,
+    "kind": "reference",
+    "local_name": "user_logged_in"
+   }
+  ],
+  "flask_login.user_logged_out": [
+   {
+    "file": "tests/test_login.py",
+    "line": 39,
+    "kind": "import",
+    "local_name": "user_logged_out"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 386,
+    "kind": "reference",
+    "local_name": "user_logged_out"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 394,
+    "kind": "reference",
+    "local_name": "user_logged_out"
+   }
+  ],
+  "flask_login.user_login_confirmed": [
+   {
+    "file": "tests/test_login.py",
+    "line": 40,
+    "kind": "import",
+    "local_name": "user_login_confirmed"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 881,
+    "kind": "reference",
+    "local_name": "user_login_confirmed"
+   }
+  ],
+  "flask_login.user_needs_refresh": [
+   {
+    "file": "tests/test_login.py",
+    "line": 41,
+    "kind": "import",
+    "local_name": "user_needs_refresh"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 798,
+    "kind": "reference",
+    "local_name": "user_needs_refresh"
+   }
+  ],
+  "flask_login.user_unauthorized": [
+   {
+    "file": "tests/test_login.py",
+    "line": 42,
+    "kind": "import",
+    "local_name": "user_unauthorized"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 403,
+    "kind": "reference",
+    "local_name": "user_unauthorized"
+   }
+  ],
+  "flask_login.utils._secret_key": [
+   {
+    "file": "tests/test_login.py",
+    "line": 44,
+    "kind": "import",
+    "local_name": "_secret_key"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1336,
+    "kind": "reference",
+    "local_name": "_secret_key"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1341,
+    "kind": "reference",
+    "local_name": "_secret_key"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1344,
+    "kind": "reference",
+    "local_name": "_secret_key"
+   }
+  ],
+  "flask_login.utils._user_context_processor": [
+   {
+    "file": "tests/test_login.py",
+    "line": 45,
+    "kind": "import",
+    "local_name": "_user_context_processor"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1128,
+    "kind": "reference",
+    "local_name": "_user_context_processor"
+   }
+  ],
+  "functools.wraps": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 2,
+    "kind": "import",
+    "local_name": "wraps"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 273,
+    "kind": "reference",
+    "local_name": "wraps"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 314,
+    "kind": "reference",
+    "local_name": "wraps"
+   }
+  ],
+  "hashlib.sha512": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 3,
+    "kind": "import",
+    "local_name": "sha512"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 373,
+    "kind": "reference",
+    "local_name": "sha512"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 377,
+    "kind": "reference",
+    "local_name": "sha512"
+   }
+  ],
+  "hmac": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "hmac"
+   }
+  ],
+  "hmac.compare_digest": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 62,
+    "kind": "reference",
+    "local_name": "hmac"
+   }
+  ],
+  "hmac.new": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 373,
+    "kind": "reference",
+    "local_name": "hmac"
+   }
+  ],
+  "importlib.metadata": [
+   {
+    "file": "docs/conf.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "importlib"
+   },
+   {
+    "file": "src/flask_login/__init__.py",
+    "line": 78,
+    "kind": "import",
+    "local_name": "importlib"
+   }
+  ],
+  "importlib.metadata.version": [
+   {
+    "file": "docs/conf.py",
+    "line": 6,
+    "kind": "reference",
+    "local_name": "importlib"
+   },
+   {
+    "file": "src/flask_login/__init__.py",
+    "line": 87,
+    "kind": "reference",
+    "local_name": "importlib"
+   }
+  ],
+  "unittest": [
+   {
+    "file": "tests/test_login.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "unittest"
+   }
+  ],
+  "unittest.TestCase": [
+   {
+    "file": "tests/test_login.py",
+    "line": 124,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 157,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 185,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 212,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1132,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1242,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1290,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1329,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1361,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1394,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1404,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1471,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1530,
+    "kind": "reference",
+    "local_name": "unittest"
+   }
+  ],
+  "unittest.TestCase.setUp": [
+   {
+    "file": "tests/test_login.py",
+    "line": 305,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1179,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1446,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1501,
+    "kind": "reference",
+    "local_name": "unittest"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 1563,
+    "kind": "reference",
+    "local_name": "unittest"
+   }
+  ],
+  "unittest.mock.ANY": [
+   {
+    "file": "tests/test_login.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "ANY"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 396,
+    "kind": "reference",
+    "local_name": "ANY"
+   }
+  ],
+  "unittest.mock.Mock": [
+   {
+    "file": "tests/test_login.py",
+    "line": 8,
+    "kind": "import",
+    "local_name": "Mock"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 732,
+    "kind": "reference",
+    "local_name": "Mock"
+   }
+  ],
+  "unittest.mock.patch": [
+   {
+    "file": "tests/test_login.py",
+    "line": 9,
+    "kind": "import",
+    "local_name": "patch"
+   },
+   {
+    "file": "tests/test_login.py",
+    "line": 730,
+    "kind": "reference",
+    "local_name": "patch"
+   }
+  ],
+  "unittest.skipIf": [
+   {
+    "file": "tests/test_login.py",
+    "line": 1079,
+    "kind": "reference",
+    "local_name": "unittest"
+   }
+  ],
+  "urllib.parse.parse_qs": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 4,
+    "kind": "import",
+    "local_name": "parse_qs"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 126,
+    "kind": "reference",
+    "local_name": "parse_qs"
+   }
+  ],
+  "urllib.parse.urlencode": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 5,
+    "kind": "import",
+    "local_name": "urlencode"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 129,
+    "kind": "reference",
+    "local_name": "urlencode"
+   }
+  ],
+  "urllib.parse.urlsplit": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 6,
+    "kind": "import",
+    "local_name": "urlsplit"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 76,
+    "kind": "reference",
+    "local_name": "urlsplit"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 77,
+    "kind": "reference",
+    "local_name": "urlsplit"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 125,
+    "kind": "reference",
+    "local_name": "urlsplit"
+   }
+  ],
+  "urllib.parse.urlunsplit": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 7,
+    "kind": "import",
+    "local_name": "urlunsplit"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 82,
+    "kind": "reference",
+    "local_name": "urlunsplit"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 130,
+    "kind": "reference",
+    "local_name": "urlunsplit"
+   }
+  ],
+  "warnings": [
+   {
+    "file": "src/flask_login/__about__.py",
+    "line": 1,
+    "kind": "import",
+    "local_name": "warnings"
+   },
+   {
+    "file": "src/flask_login/__init__.py",
+    "line": 79,
+    "kind": "import",
+    "local_name": "warnings"
+   }
+  ],
+  "warnings.warn": [
+   {
+    "file": "src/flask_login/__about__.py",
+    "line": 3,
+    "kind": "reference",
+    "local_name": "warnings"
+   },
+   {
+    "file": "src/flask_login/__init__.py",
+    "line": 81,
+    "kind": "reference",
+    "local_name": "warnings"
+   }
+  ],
+  "werkzeug.local.LocalProxy": [
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 15,
+    "kind": "import",
+    "local_name": "LocalProxy"
+   },
+   {
+    "file": "src/flask_login/utils.py",
+    "line": 25,
+    "kind": "reference",
+    "local_name": "LocalProxy"
+   }
+  ]
+ },
+ "star_imports": []
+}

@@ -1,0 +1,7 @@
+{
+  "package": "werkzeug",
+  "version": "3.0.0",
+  "source": "changelog",
+  "url": "https://raw.githubusercontent.com/pallets/werkzeug/HEAD/CHANGES.rst",
+  "body": "Version 3.0.0\n-------------\n\nReleased 2023-09-30\n\n-   Remove previously deprecated code. :pr:`2768`\n-   Deprecate the ``__version__`` attribute. Use feature detection, or\n    ``importlib.metadata.version(\"werkzeug\")``, instead. :issue:`2770`\n-   ``generate_password_hash`` uses scrypt by default. :issue:`2769`\n-   Add the ``\"werkzeug.profiler\"`` item to the  WSGI ``environ`` dictionary\n    passed to `ProfilerMiddleware`'s `filename_format` function. It contains\n    the ``elapsed`` and ``time`` values for the profiled request. :issue:`2775`\n-   Explicitly marked the PathConverter as non path isolating. :pr:`2784`"
+}

@@ -1,0 +1,2806 @@
+docs/conf.py:1:import importlib.metadata
+docs/conf.py:2:
+docs/conf.py:3:# Project --------------------------------------------------------------
+docs/conf.py:4:
+docs/conf.py:5:project = "Flask-Login"
+docs/conf.py:6:version = release = importlib.metadata.version("flask-login").partition(".dev")[0]
+docs/conf.py:7:
+docs/conf.py:8:# General --------------------------------------------------------------
+docs/conf.py:9:
+docs/conf.py:10:default_role = "obj"
+docs/conf.py:11:extensions = [
+docs/conf.py:12:    "sphinx.ext.autodoc",
+docs/conf.py:13:    "sphinx.ext.extlinks",
+docs/conf.py:14:    "sphinx.ext.intersphinx",
+docs/conf.py:15:]
+docs/conf.py:16:autodoc_member_order = "bysource"
+docs/conf.py:17:autodoc_typehints = "description"
+docs/conf.py:18:autodoc_preserve_defaults = True
+docs/conf.py:19:extlinks = {
+docs/conf.py:20:    "issue": ("https://github.com/maxcountryman/flask-login/issues/%s", "#%s"),
+docs/conf.py:21:    "pr": ("https://github.com/maxcountryman/flask-login/pull/%s", "#%s"),
+docs/conf.py:22:}
+docs/conf.py:23:intersphinx_mapping = {
+docs/conf.py:24:    "python": ("https://docs.python.org/3/", None),
+docs/conf.py:25:    "flask": ("https://flask.palletsprojects.com", None),
+docs/conf.py:26:}
+docs/conf.py:27:
+docs/conf.py:28:# HTML -----------------------------------------------------------------
+docs/conf.py:29:
+docs/conf.py:30:html_theme = "furo"
+docs/conf.py:31:html_static_path = ["_static"]
+docs/conf.py:32:html_css_files = ["theme.css"]
+docs/conf.py:33:html_copy_source = False
+docs/conf.py:34:html_theme_options = {
+docs/conf.py:35:    "source_repository": "https://github.com/maxcountryman/flask-login/",
+docs/conf.py:36:    "source_branch": "main",
+docs/conf.py:37:    "source_directory": "docs/",
+docs/conf.py:38:    "light_css_variables": {
+docs/conf.py:39:        "font-stack": "'Atkinson Hyperlegible', sans-serif",
+docs/conf.py:40:        "font-stack--monospace": "'Source Code Pro', monospace",
+docs/conf.py:41:    },
+docs/conf.py:42:}
+docs/conf.py:43:pygments_style = "default"
+docs/conf.py:44:pygments_style_dark = "github-dark"
+docs/conf.py:45:html_show_copyright = False
+docs/conf.py:46:html_use_index = False
+docs/conf.py:47:html_domain_indices = False
+src/flask_login/__about__.py:1:import warnings
+src/flask_login/__about__.py:2:
+src/flask_login/__about__.py:3:warnings.warn(
+src/flask_login/__about__.py:4:    "The '__about__' module is deprecated and will be removed in Flask-Login 1.0. Use"
+src/flask_login/__about__.py:5:    " 'importlib.metadata' instead.",
+src/flask_login/__about__.py:6:    DeprecationWarning,
+src/flask_login/__about__.py:7:    stacklevel=2,
+src/flask_login/__about__.py:8:)
+src/flask_login/__about__.py:9:
+src/flask_login/__about__.py:10:__title__ = "Flask-Login"
+src/flask_login/__about__.py:11:__description__ = "User session management for Flask"
+src/flask_login/__about__.py:12:__url__ = "https://github.com/maxcountryman/flask-login"
+src/flask_login/__about__.py:13:__version_info__ = ("0", "7", "0")
+src/flask_login/__about__.py:14:__version__ = ".".join(__version_info__)
+src/flask_login/__about__.py:15:__author__ = "Matthew Frazier"
+src/flask_login/__about__.py:16:__author_email__ = "leafstormrush@gmail.com"
+src/flask_login/__about__.py:17:__maintainer__ = "Max Countryman"
+src/flask_login/__about__.py:18:__license__ = "MIT"
+src/flask_login/__about__.py:19:__copyright__ = "(c) 2011 by Matthew Frazier"
+src/flask_login/__init__.py:1:from .config import COOKIE_DURATION
+src/flask_login/__init__.py:2:from .config import COOKIE_HTTPONLY
+src/flask_login/__init__.py:3:from .config import COOKIE_NAME
+src/flask_login/__init__.py:4:from .config import COOKIE_SECURE
+src/flask_login/__init__.py:5:from .config import ID_ATTRIBUTE
+src/flask_login/__init__.py:6:from .config import LOGIN_MESSAGE
+src/flask_login/__init__.py:7:from .config import LOGIN_MESSAGE_CATEGORY
+src/flask_login/__init__.py:8:from .config import REFRESH_MESSAGE
+src/flask_login/__init__.py:9:from .config import REFRESH_MESSAGE_CATEGORY
+src/flask_login/__init__.py:10:from .login_manager import LoginManager
+src/flask_login/__init__.py:11:from .mixins import AnonymousUserMixin
+src/flask_login/__init__.py:12:from .mixins import UserMixin
+src/flask_login/__init__.py:13:from .signals import session_protected
+src/flask_login/__init__.py:14:from .signals import user_accessed
+src/flask_login/__init__.py:15:from .signals import user_loaded_from_cookie
+src/flask_login/__init__.py:16:from .signals import user_loaded_from_request
+src/flask_login/__init__.py:17:from .signals import user_logged_in
+src/flask_login/__init__.py:18:from .signals import user_logged_out
+src/flask_login/__init__.py:19:from .signals import user_login_confirmed
+src/flask_login/__init__.py:20:from .signals import user_needs_refresh
+src/flask_login/__init__.py:21:from .signals import user_unauthorized
+src/flask_login/__init__.py:22:from .test_client import FlaskLoginClient
+src/flask_login/__init__.py:23:from .utils import confirm_login
+src/flask_login/__init__.py:24:from .utils import current_user
+src/flask_login/__init__.py:25:from .utils import decode_cookie
+src/flask_login/__init__.py:26:from .utils import encode_cookie
+src/flask_login/__init__.py:27:from .utils import fresh_login_required
+src/flask_login/__init__.py:28:from .utils import login_fresh
+src/flask_login/__init__.py:29:from .utils import login_remembered
+src/flask_login/__init__.py:30:from .utils import login_required
+src/flask_login/__init__.py:31:from .utils import login_url
+src/flask_login/__init__.py:32:from .utils import login_user
+src/flask_login/__init__.py:33:from .utils import logout_user
+src/flask_login/__init__.py:34:from .utils import make_next_param
+src/flask_login/__init__.py:35:from .utils import set_login_view
+src/flask_login/__init__.py:36:
+src/flask_login/__init__.py:37:__all__ = [
+src/flask_login/__init__.py:38:    "COOKIE_DURATION",
+src/flask_login/__init__.py:39:    "COOKIE_HTTPONLY",
+src/flask_login/__init__.py:40:    "COOKIE_NAME",
+src/flask_login/__init__.py:41:    "COOKIE_SECURE",
+src/flask_login/__init__.py:42:    "ID_ATTRIBUTE",
+src/flask_login/__init__.py:43:    "LOGIN_MESSAGE",
+src/flask_login/__init__.py:44:    "LOGIN_MESSAGE_CATEGORY",
+src/flask_login/__init__.py:45:    "REFRESH_MESSAGE",
+src/flask_login/__init__.py:46:    "REFRESH_MESSAGE_CATEGORY",
+src/flask_login/__init__.py:47:    "LoginManager",
+src/flask_login/__init__.py:48:    "AnonymousUserMixin",
+src/flask_login/__init__.py:49:    "UserMixin",
+src/flask_login/__init__.py:50:    "session_protected",
+src/flask_login/__init__.py:51:    "user_accessed",
+src/flask_login/__init__.py:52:    "user_loaded_from_cookie",
+src/flask_login/__init__.py:53:    "user_loaded_from_request",
+src/flask_login/__init__.py:54:    "user_logged_in",
+src/flask_login/__init__.py:55:    "user_logged_out",
+src/flask_login/__init__.py:56:    "user_login_confirmed",
+src/flask_login/__init__.py:57:    "user_needs_refresh",
+src/flask_login/__init__.py:58:    "user_unauthorized",
+src/flask_login/__init__.py:59:    "FlaskLoginClient",
+src/flask_login/__init__.py:60:    "confirm_login",
+src/flask_login/__init__.py:61:    "current_user",
+src/flask_login/__init__.py:62:    "decode_cookie",
+src/flask_login/__init__.py:63:    "encode_cookie",
+src/flask_login/__init__.py:64:    "fresh_login_required",
+src/flask_login/__init__.py:65:    "login_fresh",
+src/flask_login/__init__.py:66:    "login_remembered",
+src/flask_login/__init__.py:67:    "login_required",
+src/flask_login/__init__.py:68:    "login_url",
+src/flask_login/__init__.py:69:    "login_user",
+src/flask_login/__init__.py:70:    "logout_user",
+src/flask_login/__init__.py:71:    "make_next_param",
+src/flask_login/__init__.py:72:    "set_login_view",
+src/flask_login/__init__.py:73:]
+src/flask_login/__init__.py:74:
+src/flask_login/__init__.py:75:
+src/flask_login/__init__.py:76:def __getattr__(name):
+src/flask_login/__init__.py:77:    if name == "__version__":
+src/flask_login/__init__.py:78:        import importlib.metadata
+src/flask_login/__init__.py:79:        import warnings
+src/flask_login/__init__.py:80:
+src/flask_login/__init__.py:81:        warnings.warn(
+src/flask_login/__init__.py:82:            "'__version__' is deprecated and will be removed in Flask-Login 1.0. Use"
+src/flask_login/__init__.py:83:            " 'importlib.metadata.version(\"flask-login\")' instead.",
+src/flask_login/__init__.py:84:            DeprecationWarning,
+src/flask_login/__init__.py:85:            stacklevel=2,
+src/flask_login/__init__.py:86:        )
+src/flask_login/__init__.py:87:        return importlib.metadata.version("flask-login")
+src/flask_login/__init__.py:88:
+src/flask_login/__init__.py:89:    raise AttributeError(name)
+src/flask_login/config.py:1:from datetime import timedelta
+src/flask_login/config.py:2:
+src/flask_login/config.py:3:#: The default name of the "remember me" cookie (``remember_token``)
+src/flask_login/config.py:4:COOKIE_NAME = "remember_token"
+src/flask_login/config.py:5:
+src/flask_login/config.py:6:#: The default time before the "remember me" cookie expires (365 days).
+src/flask_login/config.py:7:COOKIE_DURATION = timedelta(days=365)
+src/flask_login/config.py:8:
+src/flask_login/config.py:9:#: Whether the "remember me" cookie requires Secure; defaults to ``False``
+src/flask_login/config.py:10:COOKIE_SECURE = False
+src/flask_login/config.py:11:
+src/flask_login/config.py:12:#: Whether the "remember me" cookie uses HttpOnly or not; defaults to ``True``
+src/flask_login/config.py:13:COOKIE_HTTPONLY = True
+src/flask_login/config.py:14:
+src/flask_login/config.py:15:#: Whether the "remember me" cookie requires same origin; defaults to ``None``
+src/flask_login/config.py:16:COOKIE_SAMESITE = None
+src/flask_login/config.py:17:
+src/flask_login/config.py:18:#: The default flash message to display when users need to log in.
+src/flask_login/config.py:19:LOGIN_MESSAGE = "Please log in to access this page."
+src/flask_login/config.py:20:
+src/flask_login/config.py:21:#: The default flash message category to display when users need to log in.
+src/flask_login/config.py:22:LOGIN_MESSAGE_CATEGORY = "message"
+src/flask_login/config.py:23:
+src/flask_login/config.py:24:#: The default flash message to display when users need to reauthenticate.
+src/flask_login/config.py:25:REFRESH_MESSAGE = "Please reauthenticate to access this page."
+src/flask_login/config.py:26:
+src/flask_login/config.py:27:#: The default flash message category to display when users need to
+src/flask_login/config.py:28:#: reauthenticate.
+src/flask_login/config.py:29:REFRESH_MESSAGE_CATEGORY = "message"
+src/flask_login/config.py:30:
+src/flask_login/config.py:31:#: The default attribute to retrieve the str id of the user
+src/flask_login/config.py:32:ID_ATTRIBUTE = "get_id"
+src/flask_login/config.py:33:
+src/flask_login/config.py:34:#: A set of session keys that are populated by Flask-Login. Use this set to
+src/flask_login/config.py:35:#: purge keys safely and accurately.
+src/flask_login/config.py:36:SESSION_KEYS = {
+src/flask_login/config.py:37:    "_user_id",
+src/flask_login/config.py:38:    "_remember",
+src/flask_login/config.py:39:    "_remember_seconds",
+src/flask_login/config.py:40:    "_id",
+src/flask_login/config.py:41:    "_fresh",
+src/flask_login/config.py:42:    "next",
+src/flask_login/config.py:43:}
+src/flask_login/config.py:44:
+src/flask_login/config.py:45:#: A set of HTTP methods which are exempt from `login_required` and
+src/flask_login/config.py:46:#: `fresh_login_required`. By default, this is just ``OPTIONS``.
+src/flask_login/config.py:47:EXEMPT_METHODS = {"OPTIONS"}
+src/flask_login/config.py:48:
+src/flask_login/config.py:49:#: If true, the page the user is attempting to access is stored in the session
+src/flask_login/config.py:50:#: rather than a url parameter when redirecting to the login view; defaults to
+src/flask_login/config.py:51:#: ``False``.
+src/flask_login/config.py:52:USE_SESSION_FOR_NEXT = False
+src/flask_login/login_manager.py:1:from datetime import datetime
+src/flask_login/login_manager.py:2:from datetime import timedelta
+src/flask_login/login_manager.py:3:from datetime import timezone
+src/flask_login/login_manager.py:4:
+src/flask_login/login_manager.py:5:from flask import abort
+src/flask_login/login_manager.py:6:from flask import current_app
+src/flask_login/login_manager.py:7:from flask import flash
+src/flask_login/login_manager.py:8:from flask import g
+src/flask_login/login_manager.py:9:from flask import redirect
+src/flask_login/login_manager.py:10:from flask import request
+src/flask_login/login_manager.py:11:from flask import session
+src/flask_login/login_manager.py:12:
+src/flask_login/login_manager.py:13:from .config import COOKIE_DURATION
+src/flask_login/login_manager.py:14:from .config import COOKIE_HTTPONLY
+src/flask_login/login_manager.py:15:from .config import COOKIE_NAME
+src/flask_login/login_manager.py:16:from .config import COOKIE_SAMESITE
+src/flask_login/login_manager.py:17:from .config import COOKIE_SECURE
+src/flask_login/login_manager.py:18:from .config import ID_ATTRIBUTE
+src/flask_login/login_manager.py:19:from .config import LOGIN_MESSAGE
+src/flask_login/login_manager.py:20:from .config import LOGIN_MESSAGE_CATEGORY
+src/flask_login/login_manager.py:21:from .config import REFRESH_MESSAGE
+src/flask_login/login_manager.py:22:from .config import REFRESH_MESSAGE_CATEGORY
+src/flask_login/login_manager.py:23:from .config import SESSION_KEYS
+src/flask_login/login_manager.py:24:from .config import USE_SESSION_FOR_NEXT
+src/flask_login/login_manager.py:25:from .mixins import AnonymousUserMixin
+src/flask_login/login_manager.py:26:from .signals import session_protected
+src/flask_login/login_manager.py:27:from .signals import user_accessed
+src/flask_login/login_manager.py:28:from .signals import user_loaded_from_cookie
+src/flask_login/login_manager.py:29:from .signals import user_loaded_from_request
+src/flask_login/login_manager.py:30:from .signals import user_needs_refresh
+src/flask_login/login_manager.py:31:from .signals import user_unauthorized
+src/flask_login/login_manager.py:32:from .utils import _create_identifier
+src/flask_login/login_manager.py:33:from .utils import _user_context_processor
+src/flask_login/login_manager.py:34:from .utils import decode_cookie
+src/flask_login/login_manager.py:35:from .utils import encode_cookie
+src/flask_login/login_manager.py:36:from .utils import expand_login_view
+src/flask_login/login_manager.py:37:from .utils import login_url as make_login_url
+src/flask_login/login_manager.py:38:from .utils import make_next_param
+src/flask_login/login_manager.py:39:
+src/flask_login/login_manager.py:40:
+src/flask_login/login_manager.py:41:class LoginManager:
+src/flask_login/login_manager.py:42:    """This object is used to hold the settings used for logging in. Instances
+src/flask_login/login_manager.py:43:    of :class:`LoginManager` are *not* bound to specific apps, so you can
+src/flask_login/login_manager.py:44:    create one in the main body of your code and then bind it to your
+src/flask_login/login_manager.py:45:    app in a factory function.
+src/flask_login/login_manager.py:46:    """
+src/flask_login/login_manager.py:47:
+src/flask_login/login_manager.py:48:    def __init__(self, app=None, add_context_processor=True):
+src/flask_login/login_manager.py:49:        #: A class or factory function that produces an anonymous user, which
+src/flask_login/login_manager.py:50:        #: is used when no one is logged in.
+src/flask_login/login_manager.py:51:        self.anonymous_user = AnonymousUserMixin
+src/flask_login/login_manager.py:52:
+src/flask_login/login_manager.py:53:        #: The name of the view to redirect to when the user needs to log in.
+src/flask_login/login_manager.py:54:        #: (This can be an absolute URL as well, if your authentication
+src/flask_login/login_manager.py:55:        #: machinery is external to your application.)
+src/flask_login/login_manager.py:56:        self.login_view = None
+src/flask_login/login_manager.py:57:
+src/flask_login/login_manager.py:58:        #: Names of views to redirect to when the user needs to log in,
+src/flask_login/login_manager.py:59:        #: per blueprint. If the key value is set to None the value of
+src/flask_login/login_manager.py:60:        #: :attr:`login_view` will be used instead.
+src/flask_login/login_manager.py:61:        self.blueprint_login_views = {}
+src/flask_login/login_manager.py:62:
+src/flask_login/login_manager.py:63:        #: The message to flash when a user is redirected to the login page.
+src/flask_login/login_manager.py:64:        self.login_message = LOGIN_MESSAGE
+src/flask_login/login_manager.py:65:
+src/flask_login/login_manager.py:66:        #: The message category to flash when a user is redirected to the login
+src/flask_login/login_manager.py:67:        #: page.
+src/flask_login/login_manager.py:68:        self.login_message_category = LOGIN_MESSAGE_CATEGORY
+src/flask_login/login_manager.py:69:
+src/flask_login/login_manager.py:70:        #: The name of the view to redirect to when the user needs to
+src/flask_login/login_manager.py:71:        #: reauthenticate.
+src/flask_login/login_manager.py:72:        self.refresh_view = None
+src/flask_login/login_manager.py:73:
+src/flask_login/login_manager.py:74:        #: The message to flash when a user is redirected to the 'needs
+src/flask_login/login_manager.py:75:        #: refresh' page.
+src/flask_login/login_manager.py:76:        self.needs_refresh_message = REFRESH_MESSAGE
+src/flask_login/login_manager.py:77:
+src/flask_login/login_manager.py:78:        #: The message category to flash when a user is redirected to the
+src/flask_login/login_manager.py:79:        #: 'needs refresh' page.
+src/flask_login/login_manager.py:80:        self.needs_refresh_message_category = REFRESH_MESSAGE_CATEGORY
+src/flask_login/login_manager.py:81:
+src/flask_login/login_manager.py:82:        #: The mode to use session protection in. This can be either
+src/flask_login/login_manager.py:83:        #: ``'basic'`` (the default) or ``'strong'``, or ``None`` to disable
+src/flask_login/login_manager.py:84:        #: it.
+src/flask_login/login_manager.py:85:        self.session_protection = "basic"
+src/flask_login/login_manager.py:86:
+src/flask_login/login_manager.py:87:        #: If present, used to translate flash messages ``self.login_message``
+src/flask_login/login_manager.py:88:        #: and ``self.needs_refresh_message``
+src/flask_login/login_manager.py:89:        self.localize_callback = None
+src/flask_login/login_manager.py:90:
+src/flask_login/login_manager.py:91:        self.unauthorized_callback = None
+src/flask_login/login_manager.py:92:
+src/flask_login/login_manager.py:93:        self.needs_refresh_callback = None
+src/flask_login/login_manager.py:94:
+src/flask_login/login_manager.py:95:        self.id_attribute = ID_ATTRIBUTE
+src/flask_login/login_manager.py:96:
+src/flask_login/login_manager.py:97:        self._user_callback = None
+src/flask_login/login_manager.py:98:
+src/flask_login/login_manager.py:99:        self._request_callback = None
+src/flask_login/login_manager.py:100:
+src/flask_login/login_manager.py:101:        self._session_identifier_generator = _create_identifier
+src/flask_login/login_manager.py:102:
+src/flask_login/login_manager.py:103:        if app is not None:
+src/flask_login/login_manager.py:104:            self.init_app(app, add_context_processor)
+src/flask_login/login_manager.py:105:
+src/flask_login/login_manager.py:106:    def init_app(self, app, add_context_processor=True):
+src/flask_login/login_manager.py:107:        """
+src/flask_login/login_manager.py:108:        Configures an application. This registers an `after_request` call, and
+src/flask_login/login_manager.py:109:        attaches this `LoginManager` to it as `app.login_manager`.
+src/flask_login/login_manager.py:110:
+src/flask_login/login_manager.py:111:        :param app: The :class:`flask.Flask` object to configure.
+src/flask_login/login_manager.py:112:        :type app: :class:`flask.Flask`
+src/flask_login/login_manager.py:113:        :param add_context_processor: Whether to add a context processor to
+src/flask_login/login_manager.py:114:            the app that adds a `current_user` variable to the template.
+src/flask_login/login_manager.py:115:            Defaults to ``True``.
+src/flask_login/login_manager.py:116:        :type add_context_processor: bool
+src/flask_login/login_manager.py:117:        """
+src/flask_login/login_manager.py:118:        app.login_manager = self
+src/flask_login/login_manager.py:119:        app.after_request(self._update_remember_cookie)
+src/flask_login/login_manager.py:120:
+src/flask_login/login_manager.py:121:        if add_context_processor:
+src/flask_login/login_manager.py:122:            app.context_processor(_user_context_processor)
+src/flask_login/login_manager.py:123:
+src/flask_login/login_manager.py:124:    def unauthorized(self):
+src/flask_login/login_manager.py:125:        """
+src/flask_login/login_manager.py:126:        This is called when the user is required to log in. If you register a
+src/flask_login/login_manager.py:127:        callback with :meth:`LoginManager.unauthorized_handler`, then it will
+src/flask_login/login_manager.py:128:        be called. Otherwise, it will take the following actions:
+src/flask_login/login_manager.py:129:
+src/flask_login/login_manager.py:130:            - Flash :attr:`LoginManager.login_message` to the user.
+src/flask_login/login_manager.py:131:
+src/flask_login/login_manager.py:132:            - If the app is using blueprints find the login view for
+src/flask_login/login_manager.py:133:              the current blueprint using `blueprint_login_views`. If the app
+src/flask_login/login_manager.py:134:              is not using blueprints or the login view for the current
+src/flask_login/login_manager.py:135:              blueprint is not specified use the value of `login_view`.
+src/flask_login/login_manager.py:136:
+src/flask_login/login_manager.py:137:            - Redirect the user to the login view. (The page they were
+src/flask_login/login_manager.py:138:              attempting to access will be passed in the ``next`` query
+src/flask_login/login_manager.py:139:              string variable, so you can redirect there if present instead
+src/flask_login/login_manager.py:140:              of the homepage. Alternatively, it will be added to the session
+src/flask_login/login_manager.py:141:              as ``next`` if USE_SESSION_FOR_NEXT is set.)
+src/flask_login/login_manager.py:142:
+src/flask_login/login_manager.py:143:        If :attr:`LoginManager.login_view` is not defined, then it will simply
+src/flask_login/login_manager.py:144:        raise a HTTP 401 (Unauthorized) error instead.
+src/flask_login/login_manager.py:145:
+src/flask_login/login_manager.py:146:        This should be returned from a view or before/after_request function,
+src/flask_login/login_manager.py:147:        otherwise the redirect will have no effect.
+src/flask_login/login_manager.py:148:        """
+src/flask_login/login_manager.py:149:        user_unauthorized.send(current_app._get_current_object())
+src/flask_login/login_manager.py:150:
+src/flask_login/login_manager.py:151:        if self.unauthorized_callback:
+src/flask_login/login_manager.py:152:            return self.unauthorized_callback()
+src/flask_login/login_manager.py:153:
+src/flask_login/login_manager.py:154:        if request.blueprint in self.blueprint_login_views:
+src/flask_login/login_manager.py:155:            login_view = self.blueprint_login_views[request.blueprint]
+src/flask_login/login_manager.py:156:        else:
+src/flask_login/login_manager.py:157:            login_view = self.login_view
+src/flask_login/login_manager.py:158:
+src/flask_login/login_manager.py:159:        if not login_view:
+src/flask_login/login_manager.py:160:            abort(401)
+src/flask_login/login_manager.py:161:
+src/flask_login/login_manager.py:162:        if self.login_message:
+src/flask_login/login_manager.py:163:            if self.localize_callback is not None:
+src/flask_login/login_manager.py:164:                flash(
+src/flask_login/login_manager.py:165:                    self.localize_callback(self.login_message),
+src/flask_login/login_manager.py:166:                    category=self.login_message_category,
+src/flask_login/login_manager.py:167:                )
+src/flask_login/login_manager.py:168:            else:
+src/flask_login/login_manager.py:169:                flash(self.login_message, category=self.login_message_category)
+src/flask_login/login_manager.py:170:
+src/flask_login/login_manager.py:171:        config = current_app.config
+src/flask_login/login_manager.py:172:        if config.get("USE_SESSION_FOR_NEXT", USE_SESSION_FOR_NEXT):
+src/flask_login/login_manager.py:173:            login_url = expand_login_view(login_view)
+src/flask_login/login_manager.py:174:            session["_id"] = self._session_identifier_generator()
+src/flask_login/login_manager.py:175:            session["next"] = make_next_param(login_url, request.url)
+src/flask_login/login_manager.py:176:            redirect_url = make_login_url(login_view)
+src/flask_login/login_manager.py:177:        else:
+src/flask_login/login_manager.py:178:            redirect_url = make_login_url(login_view, next_url=request.url)
+src/flask_login/login_manager.py:179:
+src/flask_login/login_manager.py:180:        return redirect(redirect_url)
+src/flask_login/login_manager.py:181:
+src/flask_login/login_manager.py:182:    def user_loader(self, callback):
+src/flask_login/login_manager.py:183:        """
+src/flask_login/login_manager.py:184:        This sets the callback for reloading a user from the session. The
+src/flask_login/login_manager.py:185:        function you set should take a user ID (a ``str``) and return a
+src/flask_login/login_manager.py:186:        user object, or ``None`` if the user does not exist.
+src/flask_login/login_manager.py:187:
+src/flask_login/login_manager.py:188:        :param callback: The callback for retrieving a user object.
+src/flask_login/login_manager.py:189:        :type callback: callable
+src/flask_login/login_manager.py:190:        """
+src/flask_login/login_manager.py:191:        self._user_callback = callback
+src/flask_login/login_manager.py:192:        return self.user_callback
+src/flask_login/login_manager.py:193:
+src/flask_login/login_manager.py:194:    @property
+src/flask_login/login_manager.py:195:    def user_callback(self):
+src/flask_login/login_manager.py:196:        """Gets the user_loader callback set by user_loader decorator."""
+src/flask_login/login_manager.py:197:        return self._user_callback
+src/flask_login/login_manager.py:198:
+src/flask_login/login_manager.py:199:    def request_loader(self, callback):
+src/flask_login/login_manager.py:200:        """
+src/flask_login/login_manager.py:201:        This sets the callback for loading a user from a Flask request.
+src/flask_login/login_manager.py:202:        The function you set should take Flask request object and
+src/flask_login/login_manager.py:203:        return a user object, or `None` if the user does not exist.
+src/flask_login/login_manager.py:204:
+src/flask_login/login_manager.py:205:        :param callback: The callback for retrieving a user object.
+src/flask_login/login_manager.py:206:        :type callback: callable
+src/flask_login/login_manager.py:207:        """
+src/flask_login/login_manager.py:208:        self._request_callback = callback
+src/flask_login/login_manager.py:209:        return self.request_callback
+src/flask_login/login_manager.py:210:
+src/flask_login/login_manager.py:211:    @property
+src/flask_login/login_manager.py:212:    def request_callback(self):
+src/flask_login/login_manager.py:213:        """Gets the request_loader callback set by request_loader decorator."""
+src/flask_login/login_manager.py:214:        return self._request_callback
+src/flask_login/login_manager.py:215:
+src/flask_login/login_manager.py:216:    def unauthorized_handler(self, callback):
+src/flask_login/login_manager.py:217:        """
+src/flask_login/login_manager.py:218:        This will set the callback for the `unauthorized` method, which among
+src/flask_login/login_manager.py:219:        other things is used by `login_required`. It takes no arguments, and
+src/flask_login/login_manager.py:220:        should return a response to be sent to the user instead of their
+src/flask_login/login_manager.py:221:        normal view.
+src/flask_login/login_manager.py:222:
+src/flask_login/login_manager.py:223:        :param callback: The callback for unauthorized users.
+src/flask_login/login_manager.py:224:        :type callback: callable
+src/flask_login/login_manager.py:225:        """
+src/flask_login/login_manager.py:226:        self.unauthorized_callback = callback
+src/flask_login/login_manager.py:227:        return callback
+src/flask_login/login_manager.py:228:
+src/flask_login/login_manager.py:229:    def needs_refresh_handler(self, callback):
+src/flask_login/login_manager.py:230:        """
+src/flask_login/login_manager.py:231:        This will set the callback for the `needs_refresh` method, which among
+src/flask_login/login_manager.py:232:        other things is used by `fresh_login_required`. It takes no arguments,
+src/flask_login/login_manager.py:233:        and should return a response to be sent to the user instead of their
+src/flask_login/login_manager.py:234:        normal view.
+src/flask_login/login_manager.py:235:
+src/flask_login/login_manager.py:236:        :param callback: The callback for unauthorized users.
+src/flask_login/login_manager.py:237:        :type callback: callable
+src/flask_login/login_manager.py:238:        """
+src/flask_login/login_manager.py:239:        self.needs_refresh_callback = callback
+src/flask_login/login_manager.py:240:        return callback
+src/flask_login/login_manager.py:241:
+src/flask_login/login_manager.py:242:    def needs_refresh(self):
+src/flask_login/login_manager.py:243:        """
+src/flask_login/login_manager.py:244:        This is called when the user is logged in, but they need to be
+src/flask_login/login_manager.py:245:        reauthenticated because their session is stale. If you register a
+src/flask_login/login_manager.py:246:        callback with `needs_refresh_handler`, then it will be called.
+src/flask_login/login_manager.py:247:        Otherwise, it will take the following actions:
+src/flask_login/login_manager.py:248:
+src/flask_login/login_manager.py:249:            - Flash :attr:`LoginManager.needs_refresh_message` to the user.
+src/flask_login/login_manager.py:250:
+src/flask_login/login_manager.py:251:            - Redirect the user to :attr:`LoginManager.refresh_view`. (The page
+src/flask_login/login_manager.py:252:              they were attempting to access will be passed in the ``next``
+src/flask_login/login_manager.py:253:              query string variable, so you can redirect there if present
+src/flask_login/login_manager.py:254:              instead of the homepage.)
+src/flask_login/login_manager.py:255:
+src/flask_login/login_manager.py:256:        If :attr:`LoginManager.refresh_view` is not defined, then it will
+src/flask_login/login_manager.py:257:        simply raise a HTTP 401 (Unauthorized) error instead.
+src/flask_login/login_manager.py:258:
+src/flask_login/login_manager.py:259:        This should be returned from a view or before/after_request function,
+src/flask_login/login_manager.py:260:        otherwise the redirect will have no effect.
+src/flask_login/login_manager.py:261:        """
+src/flask_login/login_manager.py:262:        user_needs_refresh.send(current_app._get_current_object())
+src/flask_login/login_manager.py:263:
+src/flask_login/login_manager.py:264:        if self.needs_refresh_callback:
+src/flask_login/login_manager.py:265:            return self.needs_refresh_callback()
+src/flask_login/login_manager.py:266:
+src/flask_login/login_manager.py:267:        if not self.refresh_view:
+src/flask_login/login_manager.py:268:            abort(401)
+src/flask_login/login_manager.py:269:
+src/flask_login/login_manager.py:270:        if self.needs_refresh_message:
+src/flask_login/login_manager.py:271:            if self.localize_callback is not None:
+src/flask_login/login_manager.py:272:                flash(
+src/flask_login/login_manager.py:273:                    self.localize_callback(self.needs_refresh_message),
+src/flask_login/login_manager.py:274:                    category=self.needs_refresh_message_category,
+src/flask_login/login_manager.py:275:                )
+src/flask_login/login_manager.py:276:            else:
+src/flask_login/login_manager.py:277:                flash(
+src/flask_login/login_manager.py:278:                    self.needs_refresh_message,
+src/flask_login/login_manager.py:279:                    category=self.needs_refresh_message_category,
+src/flask_login/login_manager.py:280:                )
+src/flask_login/login_manager.py:281:
+src/flask_login/login_manager.py:282:        config = current_app.config
+src/flask_login/login_manager.py:283:        if config.get("USE_SESSION_FOR_NEXT", USE_SESSION_FOR_NEXT):
+src/flask_login/login_manager.py:284:            login_url = expand_login_view(self.refresh_view)
+src/flask_login/login_manager.py:285:            session["_id"] = self._session_identifier_generator()
+src/flask_login/login_manager.py:286:            session["next"] = make_next_param(login_url, request.url)
+src/flask_login/login_manager.py:287:            redirect_url = make_login_url(self.refresh_view)
+src/flask_login/login_manager.py:288:        else:
+src/flask_login/login_manager.py:289:            login_url = self.refresh_view
+src/flask_login/login_manager.py:290:            redirect_url = make_login_url(login_url, next_url=request.url)
+src/flask_login/login_manager.py:291:
+src/flask_login/login_manager.py:292:        return redirect(redirect_url)
+src/flask_login/login_manager.py:293:
+src/flask_login/login_manager.py:294:    def _update_request_context_with_user(self, user=None):
+src/flask_login/login_manager.py:295:        """Store the given user as ctx.user."""
+src/flask_login/login_manager.py:296:
+src/flask_login/login_manager.py:297:        if user is None:
+src/flask_login/login_manager.py:298:            user = self.anonymous_user()
+src/flask_login/login_manager.py:299:
+src/flask_login/login_manager.py:300:        g._login_user = user
+src/flask_login/login_manager.py:301:
+src/flask_login/login_manager.py:302:    def _load_user(self):
+src/flask_login/login_manager.py:303:        """Loads user from session or remember_me cookie as applicable"""
+src/flask_login/login_manager.py:304:
+src/flask_login/login_manager.py:305:        if self._user_callback is None and self._request_callback is None:
+src/flask_login/login_manager.py:306:            raise Exception(
+src/flask_login/login_manager.py:307:                "Missing user_loader or request_loader. Refer to "
+src/flask_login/login_manager.py:308:                "http://flask-login.readthedocs.io/#how-it-works "
+src/flask_login/login_manager.py:309:                "for more info."
+src/flask_login/login_manager.py:310:            )
+src/flask_login/login_manager.py:311:
+src/flask_login/login_manager.py:312:        user_accessed.send(current_app._get_current_object())
+src/flask_login/login_manager.py:313:
+src/flask_login/login_manager.py:314:        # Check SESSION_PROTECTION
+src/flask_login/login_manager.py:315:        if self._session_protection_failed():
+src/flask_login/login_manager.py:316:            return self._update_request_context_with_user()
+src/flask_login/login_manager.py:317:
+src/flask_login/login_manager.py:318:        user = None
+src/flask_login/login_manager.py:319:
+src/flask_login/login_manager.py:320:        # Load user from Flask Session
+src/flask_login/login_manager.py:321:        user_id = session.get("_user_id")
+src/flask_login/login_manager.py:322:        if user_id is not None and self._user_callback is not None:
+src/flask_login/login_manager.py:323:            user = self._user_callback(user_id)
+src/flask_login/login_manager.py:324:
+src/flask_login/login_manager.py:325:        # Load user from Remember Me Cookie or Request Loader
+src/flask_login/login_manager.py:326:        if user is None:
+src/flask_login/login_manager.py:327:            config = current_app.config
+src/flask_login/login_manager.py:328:            cookie_name = config.get("REMEMBER_COOKIE_NAME", COOKIE_NAME)
+src/flask_login/login_manager.py:329:            has_cookie = cookie_name in request.cookies and session.get("_remember") != "clear"
+src/flask_login/login_manager.py:330:            if has_cookie:
+src/flask_login/login_manager.py:331:                cookie = request.cookies[cookie_name]
+src/flask_login/login_manager.py:332:                user = self._load_user_from_remember_cookie(cookie)
+src/flask_login/login_manager.py:333:            elif self._request_callback:
+src/flask_login/login_manager.py:334:                user = self._load_user_from_request(request)
+src/flask_login/login_manager.py:335:
+src/flask_login/login_manager.py:336:        return self._update_request_context_with_user(user)
+src/flask_login/login_manager.py:337:
+src/flask_login/login_manager.py:338:    def _session_protection_failed(self):
+src/flask_login/login_manager.py:339:        sess = session._get_current_object()
+src/flask_login/login_manager.py:340:        ident = self._session_identifier_generator()
+src/flask_login/login_manager.py:341:
+src/flask_login/login_manager.py:342:        app = current_app._get_current_object()
+src/flask_login/login_manager.py:343:        mode = app.config.get("SESSION_PROTECTION", self.session_protection)
+src/flask_login/login_manager.py:344:
+src/flask_login/login_manager.py:345:        if not mode or mode not in ["basic", "strong"]:
+src/flask_login/login_manager.py:346:            return False
+src/flask_login/login_manager.py:347:
+src/flask_login/login_manager.py:348:        # if the sess is empty, it's an anonymous user or just logged out
+src/flask_login/login_manager.py:349:        # so we can skip this
+src/flask_login/login_manager.py:350:        if sess and ident != sess.get("_id", None):
+src/flask_login/login_manager.py:351:            if mode == "basic" or sess.permanent:
+src/flask_login/login_manager.py:352:                if sess.get("_fresh") is not False:
+src/flask_login/login_manager.py:353:                    sess["_fresh"] = False
+src/flask_login/login_manager.py:354:                session_protected.send(app)
+src/flask_login/login_manager.py:355:                return False
+src/flask_login/login_manager.py:356:            elif mode == "strong":
+src/flask_login/login_manager.py:357:                for k in SESSION_KEYS:
+src/flask_login/login_manager.py:358:                    sess.pop(k, None)
+src/flask_login/login_manager.py:359:
+src/flask_login/login_manager.py:360:                sess["_remember"] = "clear"
+src/flask_login/login_manager.py:361:                session_protected.send(app)
+src/flask_login/login_manager.py:362:                return True
+src/flask_login/login_manager.py:363:
+src/flask_login/login_manager.py:364:        return False
+src/flask_login/login_manager.py:365:
+src/flask_login/login_manager.py:366:    def _load_user_from_remember_cookie(self, cookie):
+src/flask_login/login_manager.py:367:        user_id = decode_cookie(cookie)
+src/flask_login/login_manager.py:368:        if user_id is not None:
+src/flask_login/login_manager.py:369:            session["_user_id"] = user_id
+src/flask_login/login_manager.py:370:            session["_fresh"] = False
+src/flask_login/login_manager.py:371:            user = None
+src/flask_login/login_manager.py:372:            if self._user_callback:
+src/flask_login/login_manager.py:373:                user = self._user_callback(user_id)
+src/flask_login/login_manager.py:374:            if user is not None:
+src/flask_login/login_manager.py:375:                app = current_app._get_current_object()
+src/flask_login/login_manager.py:376:                user_loaded_from_cookie.send(app, user=user)
+src/flask_login/login_manager.py:377:                return user
+src/flask_login/login_manager.py:378:        return None
+src/flask_login/login_manager.py:379:
+src/flask_login/login_manager.py:380:    def _load_user_from_request(self, request):
+src/flask_login/login_manager.py:381:        if self._request_callback:
+src/flask_login/login_manager.py:382:            user = self._request_callback(request)
+src/flask_login/login_manager.py:383:            if user is not None:
+src/flask_login/login_manager.py:384:                app = current_app._get_current_object()
+src/flask_login/login_manager.py:385:                user_loaded_from_request.send(app, user=user)
+src/flask_login/login_manager.py:386:                return user
+src/flask_login/login_manager.py:387:        return None
+src/flask_login/login_manager.py:388:
+src/flask_login/login_manager.py:389:    def _update_remember_cookie(self, response):
+src/flask_login/login_manager.py:390:        config = current_app.config
+src/flask_login/login_manager.py:391:        cookie_name = config.get("REMEMBER_COOKIE_NAME", COOKIE_NAME)
+src/flask_login/login_manager.py:392:        has_cookie = cookie_name in request.cookies and session.get("_remember") != "clear"
+src/flask_login/login_manager.py:393:        refresh = current_app.config.get("REMEMBER_COOKIE_REFRESH_EACH_REQUEST") and has_cookie
+src/flask_login/login_manager.py:394:
+src/flask_login/login_manager.py:395:        operation = session.pop("_remember", None)
+src/flask_login/login_manager.py:396:        if not operation and not refresh:
+src/flask_login/login_manager.py:397:            return response
+src/flask_login/login_manager.py:398:
+src/flask_login/login_manager.py:399:        if operation == "clear":
+src/flask_login/login_manager.py:400:            self._clear_cookie(response)
+src/flask_login/login_manager.py:401:
+src/flask_login/login_manager.py:402:        if operation == "set" or refresh:
+src/flask_login/login_manager.py:403:            self._set_cookie(response)
+src/flask_login/login_manager.py:404:
+src/flask_login/login_manager.py:405:        return response
+src/flask_login/login_manager.py:406:
+src/flask_login/login_manager.py:407:    def _set_cookie(self, response):
+src/flask_login/login_manager.py:408:        if "_user_id" not in session:
+src/flask_login/login_manager.py:409:            return
+src/flask_login/login_manager.py:410:
+src/flask_login/login_manager.py:411:        # cookie settings
+src/flask_login/login_manager.py:412:        config = current_app.config
+src/flask_login/login_manager.py:413:        cookie_name = config.get("REMEMBER_COOKIE_NAME", COOKIE_NAME)
+src/flask_login/login_manager.py:414:        domain = config.get("REMEMBER_COOKIE_DOMAIN")
+src/flask_login/login_manager.py:415:        path = config.get("REMEMBER_COOKIE_PATH", "/")
+src/flask_login/login_manager.py:416:
+src/flask_login/login_manager.py:417:        secure = config.get("REMEMBER_COOKIE_SECURE", COOKIE_SECURE)
+src/flask_login/login_manager.py:418:        httponly = config.get("REMEMBER_COOKIE_HTTPONLY", COOKIE_HTTPONLY)
+src/flask_login/login_manager.py:419:        samesite = config.get("REMEMBER_COOKIE_SAMESITE", COOKIE_SAMESITE)
+src/flask_login/login_manager.py:420:
+src/flask_login/login_manager.py:421:        if "_remember_seconds" in session:
+src/flask_login/login_manager.py:422:            duration = timedelta(seconds=session["_remember_seconds"])
+src/flask_login/login_manager.py:423:        else:
+src/flask_login/login_manager.py:424:            duration = config.get("REMEMBER_COOKIE_DURATION", COOKIE_DURATION)
+src/flask_login/login_manager.py:425:
+src/flask_login/login_manager.py:426:        # prepare data
+src/flask_login/login_manager.py:427:        data = encode_cookie(str(session["_user_id"]))
+src/flask_login/login_manager.py:428:
+src/flask_login/login_manager.py:429:        if isinstance(duration, int):
+src/flask_login/login_manager.py:430:            duration = timedelta(seconds=duration)
+src/flask_login/login_manager.py:431:
+src/flask_login/login_manager.py:432:        try:
+src/flask_login/login_manager.py:433:            expires = datetime.now(timezone.utc) + duration
+src/flask_login/login_manager.py:434:        except TypeError as e:
+src/flask_login/login_manager.py:435:            raise Exception(
+src/flask_login/login_manager.py:436:                f"REMEMBER_COOKIE_DURATION must be a datetime.timedelta, instead got: {duration}"
+src/flask_login/login_manager.py:437:            ) from e
+src/flask_login/login_manager.py:438:
+src/flask_login/login_manager.py:439:        # actually set it
+src/flask_login/login_manager.py:440:        response.set_cookie(
+src/flask_login/login_manager.py:441:            cookie_name,
+src/flask_login/login_manager.py:442:            value=data,
+src/flask_login/login_manager.py:443:            expires=expires,
+src/flask_login/login_manager.py:444:            domain=domain,
+src/flask_login/login_manager.py:445:            path=path,
+src/flask_login/login_manager.py:446:            secure=secure,
+src/flask_login/login_manager.py:447:            httponly=httponly,
+src/flask_login/login_manager.py:448:            samesite=samesite,
+src/flask_login/login_manager.py:449:        )
+src/flask_login/login_manager.py:450:
+src/flask_login/login_manager.py:451:    def _clear_cookie(self, response):
+src/flask_login/login_manager.py:452:        config = current_app.config
+src/flask_login/login_manager.py:453:        cookie_name = config.get("REMEMBER_COOKIE_NAME", COOKIE_NAME)
+src/flask_login/login_manager.py:454:        domain = config.get("REMEMBER_COOKIE_DOMAIN")
+src/flask_login/login_manager.py:455:        path = config.get("REMEMBER_COOKIE_PATH", "/")
+src/flask_login/login_manager.py:456:        response.delete_cookie(cookie_name, domain=domain, path=path)
+src/flask_login/mixins.py:1:class UserMixin:
+src/flask_login/mixins.py:2:    """
+src/flask_login/mixins.py:3:    This provides default implementations for the methods that Flask-Login
+src/flask_login/mixins.py:4:    expects user objects to have.
+src/flask_login/mixins.py:5:    """
+src/flask_login/mixins.py:6:
+src/flask_login/mixins.py:7:    # Python 3 implicitly set __hash__ to None if we override __eq__
+src/flask_login/mixins.py:8:    # We set it back to its default implementation
+src/flask_login/mixins.py:9:    __hash__ = object.__hash__
+src/flask_login/mixins.py:10:
+src/flask_login/mixins.py:11:    @property
+src/flask_login/mixins.py:12:    def is_active(self):
+src/flask_login/mixins.py:13:        return True
+src/flask_login/mixins.py:14:
+src/flask_login/mixins.py:15:    @property
+src/flask_login/mixins.py:16:    def is_authenticated(self):
+src/flask_login/mixins.py:17:        return self.is_active
+src/flask_login/mixins.py:18:
+src/flask_login/mixins.py:19:    @property
+src/flask_login/mixins.py:20:    def is_anonymous(self):
+src/flask_login/mixins.py:21:        return False
+src/flask_login/mixins.py:22:
+src/flask_login/mixins.py:23:    def get_id(self):
+src/flask_login/mixins.py:24:        try:
+src/flask_login/mixins.py:25:            return str(self.id)
+src/flask_login/mixins.py:26:        except AttributeError:
+src/flask_login/mixins.py:27:            raise NotImplementedError("No `id` attribute - override `get_id`") from None
+src/flask_login/mixins.py:28:
+src/flask_login/mixins.py:29:    def __eq__(self, other):
+src/flask_login/mixins.py:30:        """
+src/flask_login/mixins.py:31:        Checks the equality of two `UserMixin` objects using `get_id`.
+src/flask_login/mixins.py:32:        """
+src/flask_login/mixins.py:33:        if isinstance(other, UserMixin):
+src/flask_login/mixins.py:34:            return self.get_id() == other.get_id()
+src/flask_login/mixins.py:35:        return NotImplemented
+src/flask_login/mixins.py:36:
+src/flask_login/mixins.py:37:    def __ne__(self, other):
+src/flask_login/mixins.py:38:        """
+src/flask_login/mixins.py:39:        Checks the inequality of two `UserMixin` objects using `get_id`.
+src/flask_login/mixins.py:40:        """
+src/flask_login/mixins.py:41:        equal = self.__eq__(other)
+src/flask_login/mixins.py:42:        if equal is NotImplemented:
+src/flask_login/mixins.py:43:            return NotImplemented
+src/flask_login/mixins.py:44:        return not equal
+src/flask_login/mixins.py:45:
+src/flask_login/mixins.py:46:
+src/flask_login/mixins.py:47:class AnonymousUserMixin:
+src/flask_login/mixins.py:48:    """
+src/flask_login/mixins.py:49:    This is the default object for representing an anonymous user.
+src/flask_login/mixins.py:50:    """
+src/flask_login/mixins.py:51:
+src/flask_login/mixins.py:52:    @property
+src/flask_login/mixins.py:53:    def is_authenticated(self):
+src/flask_login/mixins.py:54:        return False
+src/flask_login/mixins.py:55:
+src/flask_login/mixins.py:56:    @property
+src/flask_login/mixins.py:57:    def is_active(self):
+src/flask_login/mixins.py:58:        return False
+src/flask_login/mixins.py:59:
+src/flask_login/mixins.py:60:    @property
+src/flask_login/mixins.py:61:    def is_anonymous(self):
+src/flask_login/mixins.py:62:        return True
+src/flask_login/mixins.py:63:
+src/flask_login/mixins.py:64:    def get_id(self):
+src/flask_login/mixins.py:65:        return
+src/flask_login/signals.py:1:from flask.signals import Namespace
+src/flask_login/signals.py:2:
+src/flask_login/signals.py:3:_signals = Namespace()
+src/flask_login/signals.py:4:
+src/flask_login/signals.py:5:#: Sent when a user is logged in. In addition to the app (which is the
+src/flask_login/signals.py:6:#: sender), it is passed `user`, which is the user being logged in.
+src/flask_login/signals.py:7:user_logged_in = _signals.signal("logged-in")
+src/flask_login/signals.py:8:
+src/flask_login/signals.py:9:#: Sent when a user is logged out. In addition to the app (which is the
+src/flask_login/signals.py:10:#: sender), it is passed `user`, which is the user being logged out.
+src/flask_login/signals.py:11:user_logged_out = _signals.signal("logged-out")
+src/flask_login/signals.py:12:
+src/flask_login/signals.py:13:#: Sent when the user is loaded from the cookie. In addition to the app (which
+src/flask_login/signals.py:14:#: is the sender), it is passed `user`, which is the user being reloaded.
+src/flask_login/signals.py:15:user_loaded_from_cookie = _signals.signal("loaded-from-cookie")
+src/flask_login/signals.py:16:
+src/flask_login/signals.py:17:#: Sent when the user is loaded from the request. In addition to the app (which
+src/flask_login/signals.py:18:#: is the #: sender), it is passed `user`, which is the user being reloaded.
+src/flask_login/signals.py:19:user_loaded_from_request = _signals.signal("loaded-from-request")
+src/flask_login/signals.py:20:
+src/flask_login/signals.py:21:#: Sent when a user's login is confirmed, marking it as fresh. (It is not
+src/flask_login/signals.py:22:#: called for a normal login.)
+src/flask_login/signals.py:23:#: It receives no additional arguments besides the app.
+src/flask_login/signals.py:24:user_login_confirmed = _signals.signal("login-confirmed")
+src/flask_login/signals.py:25:
+src/flask_login/signals.py:26:#: Sent when the `unauthorized` method is called on a `LoginManager`. It
+src/flask_login/signals.py:27:#: receives no additional arguments besides the app.
+src/flask_login/signals.py:28:user_unauthorized = _signals.signal("unauthorized")
+src/flask_login/signals.py:29:
+src/flask_login/signals.py:30:#: Sent when the `needs_refresh` method is called on a `LoginManager`. It
+src/flask_login/signals.py:31:#: receives no additional arguments besides the app.
+src/flask_login/signals.py:32:user_needs_refresh = _signals.signal("needs-refresh")
+src/flask_login/signals.py:33:
+src/flask_login/signals.py:34:#: Sent whenever the user is accessed/loaded
+src/flask_login/signals.py:35:#: receives no additional arguments besides the app.
+src/flask_login/signals.py:36:user_accessed = _signals.signal("accessed")
+src/flask_login/signals.py:37:
+src/flask_login/signals.py:38:#: Sent whenever session protection takes effect, and a session is either
+src/flask_login/signals.py:39:#: marked non-fresh or deleted. It receives no additional arguments besides
+src/flask_login/signals.py:40:#: the app.
+src/flask_login/signals.py:41:session_protected = _signals.signal("session-protected")
+src/flask_login/test_client.py:1:from flask.testing import FlaskClient
+src/flask_login/test_client.py:2:
+src/flask_login/test_client.py:3:
+src/flask_login/test_client.py:4:class FlaskLoginClient(FlaskClient):
+src/flask_login/test_client.py:5:    """
+src/flask_login/test_client.py:6:    A Flask test client that knows how to log in users
+src/flask_login/test_client.py:7:    using the Flask-Login extension.
+src/flask_login/test_client.py:8:    """
+src/flask_login/test_client.py:9:
+src/flask_login/test_client.py:10:    def __init__(self, *args, **kwargs):
+src/flask_login/test_client.py:11:        user = kwargs.pop("user", None)
+src/flask_login/test_client.py:12:        fresh = kwargs.pop("fresh_login", True)
+src/flask_login/test_client.py:13:
+src/flask_login/test_client.py:14:        super().__init__(*args, **kwargs)
+src/flask_login/test_client.py:15:
+src/flask_login/test_client.py:16:        if user:
+src/flask_login/test_client.py:17:            with self.session_transaction() as sess:
+src/flask_login/test_client.py:18:                sess["_user_id"] = user.get_id()
+src/flask_login/test_client.py:19:                sess["_fresh"] = fresh
+src/flask_login/utils.py:1:import hmac
+src/flask_login/utils.py:2:from functools import wraps
+src/flask_login/utils.py:3:from hashlib import sha512
+src/flask_login/utils.py:4:from urllib.parse import parse_qs
+src/flask_login/utils.py:5:from urllib.parse import urlencode
+src/flask_login/utils.py:6:from urllib.parse import urlsplit
+src/flask_login/utils.py:7:from urllib.parse import urlunsplit
+src/flask_login/utils.py:8:
+src/flask_login/utils.py:9:from flask import current_app
+src/flask_login/utils.py:10:from flask import g
+src/flask_login/utils.py:11:from flask import has_request_context
+src/flask_login/utils.py:12:from flask import request
+src/flask_login/utils.py:13:from flask import session
+src/flask_login/utils.py:14:from flask import url_for
+src/flask_login/utils.py:15:from werkzeug.local import LocalProxy
+src/flask_login/utils.py:16:
+src/flask_login/utils.py:17:from .config import COOKIE_NAME
+src/flask_login/utils.py:18:from .config import EXEMPT_METHODS
+src/flask_login/utils.py:19:from .signals import user_logged_in
+src/flask_login/utils.py:20:from .signals import user_logged_out
+src/flask_login/utils.py:21:from .signals import user_login_confirmed
+src/flask_login/utils.py:22:
+src/flask_login/utils.py:23:#: A proxy for the current user. If no user is logged in, this will be an
+src/flask_login/utils.py:24:#: anonymous user
+src/flask_login/utils.py:25:current_user = LocalProxy(lambda: _get_user())
+src/flask_login/utils.py:26:
+src/flask_login/utils.py:27:
+src/flask_login/utils.py:28:def encode_cookie(payload, key=None):
+src/flask_login/utils.py:29:    """
+src/flask_login/utils.py:30:    This will encode a ``str`` value into a cookie, and sign that cookie
+src/flask_login/utils.py:31:    with the app's secret key.
+src/flask_login/utils.py:32:
+src/flask_login/utils.py:33:    :param payload: The value to encode, as `str`.
+src/flask_login/utils.py:34:    :type payload: str
+src/flask_login/utils.py:35:
+src/flask_login/utils.py:36:    :param key: The key to use when creating the cookie digest. If not
+src/flask_login/utils.py:37:                specified, the SECRET_KEY value from app config will be used.
+src/flask_login/utils.py:38:    :type key: str
+src/flask_login/utils.py:39:    """
+src/flask_login/utils.py:40:    return f"{payload}|{_cookie_digest(payload, key=key)}"
+src/flask_login/utils.py:41:
+src/flask_login/utils.py:42:
+src/flask_login/utils.py:43:def decode_cookie(cookie, key=None):
+src/flask_login/utils.py:44:    """
+src/flask_login/utils.py:45:    This decodes a cookie given by `encode_cookie`. If verification of the
+src/flask_login/utils.py:46:    cookie fails, ``None`` will be implicitly returned.
+src/flask_login/utils.py:47:
+src/flask_login/utils.py:48:    :param cookie: An encoded cookie.
+src/flask_login/utils.py:49:    :type cookie: str
+src/flask_login/utils.py:50:
+src/flask_login/utils.py:51:    :param key: The key to use when creating the cookie digest. If not
+src/flask_login/utils.py:52:                specified, the SECRET_KEY value from app config will be used.
+src/flask_login/utils.py:53:    :type key: str
+src/flask_login/utils.py:54:    """
+src/flask_login/utils.py:55:    try:
+src/flask_login/utils.py:56:        payload, digest = cookie.rsplit("|", 1)
+src/flask_login/utils.py:57:        if hasattr(digest, "decode"):
+src/flask_login/utils.py:58:            digest = digest.decode("ascii")  # pragma: no cover
+src/flask_login/utils.py:59:    except ValueError:
+src/flask_login/utils.py:60:        return
+src/flask_login/utils.py:61:
+src/flask_login/utils.py:62:    if hmac.compare_digest(_cookie_digest(payload, key=key), digest):
+src/flask_login/utils.py:63:        return payload
+src/flask_login/utils.py:64:
+src/flask_login/utils.py:65:
+src/flask_login/utils.py:66:def make_next_param(login_url, current_url):
+src/flask_login/utils.py:67:    """
+src/flask_login/utils.py:68:    Reduces the scheme and host from a given URL so it can be passed to
+src/flask_login/utils.py:69:    the given `login` URL more efficiently.
+src/flask_login/utils.py:70:
+src/flask_login/utils.py:71:    :param login_url: The login URL being redirected to.
+src/flask_login/utils.py:72:    :type login_url: str
+src/flask_login/utils.py:73:    :param current_url: The URL to reduce.
+src/flask_login/utils.py:74:    :type current_url: str
+src/flask_login/utils.py:75:    """
+src/flask_login/utils.py:76:    l_url = urlsplit(login_url)
+src/flask_login/utils.py:77:    c_url = urlsplit(current_url)
+src/flask_login/utils.py:78:
+src/flask_login/utils.py:79:    if (not l_url.scheme or l_url.scheme == c_url.scheme) and (
+src/flask_login/utils.py:80:        not l_url.netloc or l_url.netloc == c_url.netloc
+src/flask_login/utils.py:81:    ):
+src/flask_login/utils.py:82:        return urlunsplit(("", "", c_url.path, c_url.query, ""))
+src/flask_login/utils.py:83:    return current_url
+src/flask_login/utils.py:84:
+src/flask_login/utils.py:85:
+src/flask_login/utils.py:86:def expand_login_view(login_view):
+src/flask_login/utils.py:87:    """
+src/flask_login/utils.py:88:    Returns the url for the login view, expanding the view name to a url if
+src/flask_login/utils.py:89:    needed.
+src/flask_login/utils.py:90:
+src/flask_login/utils.py:91:    :param login_view: The name of the login view or a URL for the login view.
+src/flask_login/utils.py:92:    :type login_view: str
+src/flask_login/utils.py:93:    """
+src/flask_login/utils.py:94:    if login_view.startswith(("https://", "http://", "/")):
+src/flask_login/utils.py:95:        return login_view
+src/flask_login/utils.py:96:
+src/flask_login/utils.py:97:    return url_for(login_view)
+src/flask_login/utils.py:98:
+src/flask_login/utils.py:99:
+src/flask_login/utils.py:100:def login_url(login_view, next_url=None, next_field="next"):
+src/flask_login/utils.py:101:    """
+src/flask_login/utils.py:102:    Creates a URL for redirecting to a login page. If only `login_view` is
+src/flask_login/utils.py:103:    provided, this will just return the URL for it. If `next_url` is provided,
+src/flask_login/utils.py:104:    however, this will append a ``next=URL`` parameter to the query string
+src/flask_login/utils.py:105:    so that the login view can redirect back to that URL. Flask-Login's default
+src/flask_login/utils.py:106:    unauthorized handler uses this function when redirecting to your login url.
+src/flask_login/utils.py:107:
+src/flask_login/utils.py:108:    To force the host name used, set `FORCE_HOST_FOR_REDIRECTS` to a host. This
+src/flask_login/utils.py:109:    prevents from redirecting to external sites if `SERVER_NAME` is not configured.
+src/flask_login/utils.py:110:
+src/flask_login/utils.py:111:    :param login_view: The name of the login view. (Alternately, the actual
+src/flask_login/utils.py:112:                       URL to the login view.)
+src/flask_login/utils.py:113:    :type login_view: str
+src/flask_login/utils.py:114:    :param next_url: The URL to give the login view for redirection.
+src/flask_login/utils.py:115:    :type next_url: str
+src/flask_login/utils.py:116:    :param next_field: What field to store the next URL in. (It defaults to
+src/flask_login/utils.py:117:                       ``next``.)
+src/flask_login/utils.py:118:    :type next_field: str
+src/flask_login/utils.py:119:    """
+src/flask_login/utils.py:120:    base = expand_login_view(login_view)
+src/flask_login/utils.py:121:
+src/flask_login/utils.py:122:    if next_url is None:
+src/flask_login/utils.py:123:        return base
+src/flask_login/utils.py:124:
+src/flask_login/utils.py:125:    parsed_result = urlsplit(base)
+src/flask_login/utils.py:126:    md = parse_qs(parsed_result.query, keep_blank_values=True)
+src/flask_login/utils.py:127:    md[next_field] = make_next_param(base, next_url)
+src/flask_login/utils.py:128:    netloc = current_app.config.get("FORCE_HOST_FOR_REDIRECTS") or parsed_result.netloc
+src/flask_login/utils.py:129:    parsed_result = parsed_result._replace(netloc=netloc, query=urlencode(md, doseq=True))
+src/flask_login/utils.py:130:    return urlunsplit(parsed_result)
+src/flask_login/utils.py:131:
+src/flask_login/utils.py:132:
+src/flask_login/utils.py:133:def login_fresh():
+src/flask_login/utils.py:134:    """
+src/flask_login/utils.py:135:    This returns ``True`` if the current login is fresh.
+src/flask_login/utils.py:136:    """
+src/flask_login/utils.py:137:    return session.get("_fresh", False)
+src/flask_login/utils.py:138:
+src/flask_login/utils.py:139:
+src/flask_login/utils.py:140:def login_remembered():
+src/flask_login/utils.py:141:    """
+src/flask_login/utils.py:142:    This returns ``True`` if the current login is remembered across sessions.
+src/flask_login/utils.py:143:    """
+src/flask_login/utils.py:144:    config = current_app.config
+src/flask_login/utils.py:145:    cookie_name = config.get("REMEMBER_COOKIE_NAME", COOKIE_NAME)
+src/flask_login/utils.py:146:    has_cookie = cookie_name in request.cookies and session.get("_remember") != "clear"
+src/flask_login/utils.py:147:    if has_cookie:
+src/flask_login/utils.py:148:        cookie = request.cookies[cookie_name]
+src/flask_login/utils.py:149:        user_id = decode_cookie(cookie)
+src/flask_login/utils.py:150:        return user_id is not None
+src/flask_login/utils.py:151:    return False
+src/flask_login/utils.py:152:
+src/flask_login/utils.py:153:
+src/flask_login/utils.py:154:def login_user(user, remember=False, duration=None, force=False, fresh=True):
+src/flask_login/utils.py:155:    """
+src/flask_login/utils.py:156:    Logs a user in. You should pass the actual user object to this. If the
+src/flask_login/utils.py:157:    user's `is_active` property is ``False``, they will not be logged in
+src/flask_login/utils.py:158:    unless `force` is ``True``.
+src/flask_login/utils.py:159:
+src/flask_login/utils.py:160:    This will return ``True`` if the log in attempt succeeds, and ``False`` if
+src/flask_login/utils.py:161:    it fails (i.e. because the user is inactive).
+src/flask_login/utils.py:162:
+src/flask_login/utils.py:163:    :param user: The user object to log in.
+src/flask_login/utils.py:164:    :type user: object
+src/flask_login/utils.py:165:    :param remember: Whether to remember the user after their session expires.
+src/flask_login/utils.py:166:        Defaults to ``False``.
+src/flask_login/utils.py:167:    :type remember: bool
+src/flask_login/utils.py:168:    :param duration: The amount of time before the remember cookie expires. If
+src/flask_login/utils.py:169:        ``None`` the value set in the settings is used. Defaults to ``None``.
+src/flask_login/utils.py:170:    :type duration: :class:`datetime.timedelta`
+src/flask_login/utils.py:171:    :param force: If the user is inactive, setting this to ``True`` will log
+src/flask_login/utils.py:172:        them in regardless. Defaults to ``False``.
+src/flask_login/utils.py:173:    :type force: bool
+src/flask_login/utils.py:174:    :param fresh: setting this to ``False`` will log in the user with a session
+src/flask_login/utils.py:175:        marked as not "fresh". Defaults to ``True``.
+src/flask_login/utils.py:176:    :type fresh: bool
+src/flask_login/utils.py:177:    """
+src/flask_login/utils.py:178:    if not force and not user.is_active:
+src/flask_login/utils.py:179:        return False
+src/flask_login/utils.py:180:
+src/flask_login/utils.py:181:    user_id = getattr(user, current_app.login_manager.id_attribute)()
+src/flask_login/utils.py:182:    session["_user_id"] = user_id
+src/flask_login/utils.py:183:    session["_fresh"] = fresh
+src/flask_login/utils.py:184:    session["_id"] = current_app.login_manager._session_identifier_generator()
+src/flask_login/utils.py:185:
+src/flask_login/utils.py:186:    if remember:
+src/flask_login/utils.py:187:        session["_remember"] = "set"
+src/flask_login/utils.py:188:        if duration is not None:
+src/flask_login/utils.py:189:            try:
+src/flask_login/utils.py:190:                # equal to timedelta.total_seconds() but works with Python 2.6
+src/flask_login/utils.py:191:                session["_remember_seconds"] = (
+src/flask_login/utils.py:192:                    duration.microseconds + (duration.seconds + duration.days * 24 * 3600) * 10**6
+src/flask_login/utils.py:193:                ) / 10.0**6
+src/flask_login/utils.py:194:            except AttributeError as e:
+src/flask_login/utils.py:195:                raise Exception(
+src/flask_login/utils.py:196:                    f"duration must be a datetime.timedelta, instead got: {duration}"
+src/flask_login/utils.py:197:                ) from e
+src/flask_login/utils.py:198:
+src/flask_login/utils.py:199:    current_app.login_manager._update_request_context_with_user(user)
+src/flask_login/utils.py:200:    user_logged_in.send(current_app._get_current_object(), user=_get_user())
+src/flask_login/utils.py:201:    return True
+src/flask_login/utils.py:202:
+src/flask_login/utils.py:203:
+src/flask_login/utils.py:204:def logout_user():
+src/flask_login/utils.py:205:    """
+src/flask_login/utils.py:206:    Logs a user out. (You do not need to pass the actual user.) This will
+src/flask_login/utils.py:207:    also clean up the remember me cookie if it exists.
+src/flask_login/utils.py:208:    """
+src/flask_login/utils.py:209:
+src/flask_login/utils.py:210:    user = _get_user()
+src/flask_login/utils.py:211:
+src/flask_login/utils.py:212:    if "_user_id" in session:
+src/flask_login/utils.py:213:        session.pop("_user_id")
+src/flask_login/utils.py:214:
+src/flask_login/utils.py:215:    if "_fresh" in session:
+src/flask_login/utils.py:216:        session.pop("_fresh")
+src/flask_login/utils.py:217:
+src/flask_login/utils.py:218:    if "_id" in session:
+src/flask_login/utils.py:219:        session.pop("_id")
+src/flask_login/utils.py:220:
+src/flask_login/utils.py:221:    cookie_name = current_app.config.get("REMEMBER_COOKIE_NAME", COOKIE_NAME)
+src/flask_login/utils.py:222:    if cookie_name in request.cookies:
+src/flask_login/utils.py:223:        session["_remember"] = "clear"
+src/flask_login/utils.py:224:        if "_remember_seconds" in session:
+src/flask_login/utils.py:225:            session.pop("_remember_seconds")
+src/flask_login/utils.py:226:
+src/flask_login/utils.py:227:    user_logged_out.send(current_app._get_current_object(), user=user)
+src/flask_login/utils.py:228:
+src/flask_login/utils.py:229:    current_app.login_manager._update_request_context_with_user()
+src/flask_login/utils.py:230:    return True
+src/flask_login/utils.py:231:
+src/flask_login/utils.py:232:
+src/flask_login/utils.py:233:def confirm_login():
+src/flask_login/utils.py:234:    """
+src/flask_login/utils.py:235:    This sets the current session as fresh. Sessions become stale when they
+src/flask_login/utils.py:236:    are reloaded from a cookie.
+src/flask_login/utils.py:237:    """
+src/flask_login/utils.py:238:    session["_fresh"] = True
+src/flask_login/utils.py:239:    session["_id"] = current_app.login_manager._session_identifier_generator()
+src/flask_login/utils.py:240:    user_login_confirmed.send(current_app._get_current_object())
+src/flask_login/utils.py:241:
+src/flask_login/utils.py:242:
+src/flask_login/utils.py:243:def login_required(func):
+src/flask_login/utils.py:244:    """
+src/flask_login/utils.py:245:    If you decorate a view with this, it will ensure that the current user is
+src/flask_login/utils.py:246:    logged in and authenticated before calling the actual view. (If they are
+src/flask_login/utils.py:247:    not, it calls the :attr:`LoginManager.unauthorized` callback.) For
+src/flask_login/utils.py:248:    example::
+src/flask_login/utils.py:249:
+src/flask_login/utils.py:250:        @app.route('/post')
+src/flask_login/utils.py:251:        @login_required
+src/flask_login/utils.py:252:        def post():
+src/flask_login/utils.py:253:            pass
+src/flask_login/utils.py:254:
+src/flask_login/utils.py:255:    If there are only certain times you need to require that your user is
+src/flask_login/utils.py:256:    logged in, you can do so with::
+src/flask_login/utils.py:257:
+src/flask_login/utils.py:258:        if not current_user.is_authenticated:
+src/flask_login/utils.py:259:            return current_app.login_manager.unauthorized()
+src/flask_login/utils.py:260:
+src/flask_login/utils.py:261:    ...which is essentially the code that this function adds to your views.
+src/flask_login/utils.py:262:
+src/flask_login/utils.py:263:    .. Note ::
+src/flask_login/utils.py:264:
+src/flask_login/utils.py:265:        Per `W3 guidelines for CORS preflight requests
+src/flask_login/utils.py:266:        <http://www.w3.org/TR/cors/#cross-origin-request-with-preflight-0>`_,
+src/flask_login/utils.py:267:        HTTP ``OPTIONS`` requests are exempt from login checks.
+src/flask_login/utils.py:268:
+src/flask_login/utils.py:269:    :param func: The view function to decorate.
+src/flask_login/utils.py:270:    :type func: function
+src/flask_login/utils.py:271:    """
+src/flask_login/utils.py:272:
+src/flask_login/utils.py:273:    @wraps(func)
+src/flask_login/utils.py:274:    def decorated_view(*args, **kwargs):
+src/flask_login/utils.py:275:        if request.method in EXEMPT_METHODS:
+src/flask_login/utils.py:276:            pass
+src/flask_login/utils.py:277:        elif not current_user.is_authenticated:
+src/flask_login/utils.py:278:            return current_app.login_manager.unauthorized()
+src/flask_login/utils.py:279:
+src/flask_login/utils.py:280:        # flask 1.x compatibility
+src/flask_login/utils.py:281:        # current_app.ensure_sync is only available in Flask >= 2.0
+src/flask_login/utils.py:282:        if callable(getattr(current_app, "ensure_sync", None)):
+src/flask_login/utils.py:283:            return current_app.ensure_sync(func)(*args, **kwargs)
+src/flask_login/utils.py:284:        return func(*args, **kwargs)
+src/flask_login/utils.py:285:
+src/flask_login/utils.py:286:    return decorated_view
+src/flask_login/utils.py:287:
+src/flask_login/utils.py:288:
+src/flask_login/utils.py:289:def fresh_login_required(func):
+src/flask_login/utils.py:290:    """
+src/flask_login/utils.py:291:    If you decorate a view with this, it will ensure that the current user's
+src/flask_login/utils.py:292:    login is fresh - i.e. their session was not restored from a 'remember me'
+src/flask_login/utils.py:293:    cookie. Sensitive operations, like changing a password or e-mail, should
+src/flask_login/utils.py:294:    be protected with this, to impede the efforts of cookie thieves.
+src/flask_login/utils.py:295:
+src/flask_login/utils.py:296:    If the user is not authenticated, :meth:`LoginManager.unauthorized` is
+src/flask_login/utils.py:297:    called as normal. If they are authenticated, but their session is not
+src/flask_login/utils.py:298:    fresh, it will call :meth:`LoginManager.needs_refresh` instead. (In that
+src/flask_login/utils.py:299:    case, you will need to provide a :attr:`LoginManager.refresh_view`.)
+src/flask_login/utils.py:300:
+src/flask_login/utils.py:301:    Behaves identically to the :func:`login_required` decorator with respect
+src/flask_login/utils.py:302:    to configuration variables.
+src/flask_login/utils.py:303:
+src/flask_login/utils.py:304:    .. Note ::
+src/flask_login/utils.py:305:
+src/flask_login/utils.py:306:        Per `W3 guidelines for CORS preflight requests
+src/flask_login/utils.py:307:        <http://www.w3.org/TR/cors/#cross-origin-request-with-preflight-0>`_,
+src/flask_login/utils.py:308:        HTTP ``OPTIONS`` requests are exempt from login checks.
+src/flask_login/utils.py:309:
+src/flask_login/utils.py:310:    :param func: The view function to decorate.
+src/flask_login/utils.py:311:    :type func: function
+src/flask_login/utils.py:312:    """
+src/flask_login/utils.py:313:
+src/flask_login/utils.py:314:    @wraps(func)
+src/flask_login/utils.py:315:    def decorated_view(*args, **kwargs):
+src/flask_login/utils.py:316:        if request.method in EXEMPT_METHODS:
+src/flask_login/utils.py:317:            pass
+src/flask_login/utils.py:318:        elif not current_user.is_authenticated:
+src/flask_login/utils.py:319:            return current_app.login_manager.unauthorized()
+src/flask_login/utils.py:320:        elif not login_fresh():
+src/flask_login/utils.py:321:            return current_app.login_manager.needs_refresh()
+src/flask_login/utils.py:322:        try:
+src/flask_login/utils.py:323:            # current_app.ensure_sync available in Flask >= 2.0
+src/flask_login/utils.py:324:            return current_app.ensure_sync(func)(*args, **kwargs)
+src/flask_login/utils.py:325:        except AttributeError:  # pragma: no cover
+src/flask_login/utils.py:326:            return func(*args, **kwargs)
+src/flask_login/utils.py:327:
+src/flask_login/utils.py:328:    return decorated_view
+src/flask_login/utils.py:329:
+src/flask_login/utils.py:330:
+src/flask_login/utils.py:331:def set_login_view(login_view, blueprint=None):
+src/flask_login/utils.py:332:    """
+src/flask_login/utils.py:333:    Sets the login view for the app or blueprint. If a blueprint is passed,
+src/flask_login/utils.py:334:    the login view is set for this blueprint on ``blueprint_login_views``.
+src/flask_login/utils.py:335:
+src/flask_login/utils.py:336:    :param login_view: The user object to log in.
+src/flask_login/utils.py:337:    :type login_view: str
+src/flask_login/utils.py:338:    :param blueprint: The blueprint which this login view should be set on.
+src/flask_login/utils.py:339:        Defaults to ``None``.
+src/flask_login/utils.py:340:    :type blueprint: object
+src/flask_login/utils.py:341:    """
+src/flask_login/utils.py:342:
+src/flask_login/utils.py:343:    num_login_views = len(current_app.login_manager.blueprint_login_views)
+src/flask_login/utils.py:344:    if blueprint is not None or num_login_views != 0:
+src/flask_login/utils.py:345:        (current_app.login_manager.blueprint_login_views[blueprint.name]) = login_view
+src/flask_login/utils.py:346:
+src/flask_login/utils.py:347:        if (
+src/flask_login/utils.py:348:            current_app.login_manager.login_view is not None
+src/flask_login/utils.py:349:            and None not in current_app.login_manager.blueprint_login_views
+src/flask_login/utils.py:350:        ):
+src/flask_login/utils.py:351:            (
+src/flask_login/utils.py:352:                current_app.login_manager.blueprint_login_views[None]
+src/flask_login/utils.py:353:            ) = current_app.login_manager.login_view
+src/flask_login/utils.py:354:
+src/flask_login/utils.py:355:        current_app.login_manager.login_view = None
+src/flask_login/utils.py:356:    else:
+src/flask_login/utils.py:357:        current_app.login_manager.login_view = login_view
+src/flask_login/utils.py:358:
+src/flask_login/utils.py:359:
+src/flask_login/utils.py:360:def _get_user():
+src/flask_login/utils.py:361:    if has_request_context():
+src/flask_login/utils.py:362:        if "_login_user" not in g:
+src/flask_login/utils.py:363:            current_app.login_manager._load_user()
+src/flask_login/utils.py:364:
+src/flask_login/utils.py:365:        return g._login_user
+src/flask_login/utils.py:366:
+src/flask_login/utils.py:367:    return None
+src/flask_login/utils.py:368:
+src/flask_login/utils.py:369:
+src/flask_login/utils.py:370:def _cookie_digest(payload, key=None):
+src/flask_login/utils.py:371:    key = _secret_key(key)
+src/flask_login/utils.py:372:
+src/flask_login/utils.py:373:    return hmac.new(key, payload.encode("utf-8"), sha512).hexdigest()
+src/flask_login/utils.py:374:
+src/flask_login/utils.py:375:
+src/flask_login/utils.py:376:def _create_identifier():
+src/flask_login/utils.py:377:    h = sha512()
+src/flask_login/utils.py:378:    h.update(f"{request.remote_addr}|{request.user_agent.string}".encode())
+src/flask_login/utils.py:379:    return h.hexdigest()
+src/flask_login/utils.py:380:
+src/flask_login/utils.py:381:
+src/flask_login/utils.py:382:def _user_context_processor():
+src/flask_login/utils.py:383:    return dict(current_user=_get_user())
+src/flask_login/utils.py:384:
+src/flask_login/utils.py:385:
+src/flask_login/utils.py:386:def _secret_key(key=None):
+src/flask_login/utils.py:387:    if key is None:
+src/flask_login/utils.py:388:        key = current_app.config["SECRET_KEY"]
+src/flask_login/utils.py:389:
+src/flask_login/utils.py:390:    if isinstance(key, str):  # pragma: no cover
+src/flask_login/utils.py:391:        key = key.encode("latin1")  # ensure bytes
+src/flask_login/utils.py:392:
+src/flask_login/utils.py:393:    return key
+tests/test_login.py:1:import unittest
+tests/test_login.py:2:from collections.abc import Hashable
+tests/test_login.py:3:from contextlib import contextmanager
+tests/test_login.py:4:from datetime import datetime
+tests/test_login.py:5:from datetime import timedelta
+tests/test_login.py:6:from datetime import timezone
+tests/test_login.py:7:from unittest.mock import ANY
+tests/test_login.py:8:from unittest.mock import Mock
+tests/test_login.py:9:from unittest.mock import patch
+tests/test_login.py:10:
+tests/test_login.py:11:from flask import Blueprint
+tests/test_login.py:12:from flask import Flask
+tests/test_login.py:13:from flask import get_flashed_messages
+tests/test_login.py:14:from flask import Response
+tests/test_login.py:15:from flask import session
+tests/test_login.py:16:from flask.views import MethodView
+tests/test_login.py:17:
+tests/test_login.py:18:from flask_login import AnonymousUserMixin
+tests/test_login.py:19:from flask_login import confirm_login
+tests/test_login.py:20:from flask_login import current_user
+tests/test_login.py:21:from flask_login import decode_cookie
+tests/test_login.py:22:from flask_login import encode_cookie
+tests/test_login.py:23:from flask_login import FlaskLoginClient
+tests/test_login.py:24:from flask_login import fresh_login_required
+tests/test_login.py:25:from flask_login import login_fresh
+tests/test_login.py:26:from flask_login import login_remembered
+tests/test_login.py:27:from flask_login import login_required
+tests/test_login.py:28:from flask_login import login_url
+tests/test_login.py:29:from flask_login import login_user
+tests/test_login.py:30:from flask_login import LoginManager
+tests/test_login.py:31:from flask_login import logout_user
+tests/test_login.py:32:from flask_login import make_next_param
+tests/test_login.py:33:from flask_login import session_protected
+tests/test_login.py:34:from flask_login import set_login_view
+tests/test_login.py:35:from flask_login import user_accessed
+tests/test_login.py:36:from flask_login import user_loaded_from_cookie
+tests/test_login.py:37:from flask_login import user_loaded_from_request
+tests/test_login.py:38:from flask_login import user_logged_in
+tests/test_login.py:39:from flask_login import user_logged_out
+tests/test_login.py:40:from flask_login import user_login_confirmed
+tests/test_login.py:41:from flask_login import user_needs_refresh
+tests/test_login.py:42:from flask_login import user_unauthorized
+tests/test_login.py:43:from flask_login import UserMixin
+tests/test_login.py:44:from flask_login.utils import _secret_key
+tests/test_login.py:45:from flask_login.utils import _user_context_processor
+tests/test_login.py:46:
+tests/test_login.py:47:
+tests/test_login.py:48:@contextmanager
+tests/test_login.py:49:def listen_to(signal):
+tests/test_login.py:50:    """Context Manager that listens to signals and records emissions
+tests/test_login.py:51:
+tests/test_login.py:52:    Example:
+tests/test_login.py:53:
+tests/test_login.py:54:    with listen_to(user_logged_in) as listener:
+tests/test_login.py:55:        login_user(user)
+tests/test_login.py:56:
+tests/test_login.py:57:        # Assert that a single emittance of the specific args was seen.
+tests/test_login.py:58:        listener.assert_heard_one(app, user=user))
+tests/test_login.py:59:
+tests/test_login.py:60:        # Of course, you can always just look at the list yourself
+tests/test_login.py:61:        self.assertEqual(1, len(listener.heard))
+tests/test_login.py:62:
+tests/test_login.py:63:    """
+tests/test_login.py:64:
+tests/test_login.py:65:    class _SignalsCaught:
+tests/test_login.py:66:        def __init__(self):
+tests/test_login.py:67:            self.heard = []
+tests/test_login.py:68:
+tests/test_login.py:69:        def add(self, *args, **kwargs):
+tests/test_login.py:70:            """The actual handler of the signal."""
+tests/test_login.py:71:            self.heard.append((args, kwargs))
+tests/test_login.py:72:
+tests/test_login.py:73:        def assert_heard_one(self, *args, **kwargs):
+tests/test_login.py:74:            """The signal fired once, and with the arguments given"""
+tests/test_login.py:75:            if len(self.heard) == 0:
+tests/test_login.py:76:                raise AssertionError("No signals were fired")
+tests/test_login.py:77:            elif len(self.heard) > 1:
+tests/test_login.py:78:                msg = f"{len(self.heard)} signals were fired"
+tests/test_login.py:79:                raise AssertionError(msg)
+tests/test_login.py:80:            elif self.heard[0] != (args, kwargs):
+tests/test_login.py:81:                raise AssertionError(
+tests/test_login.py:82:                    "One signal was heard, but with incorrect"
+tests/test_login.py:83:                    f" arguments: Got ({self.heard[0]}) expected"
+tests/test_login.py:84:                    f" ({args}, {kwargs})"
+tests/test_login.py:85:                )
+tests/test_login.py:86:
+tests/test_login.py:87:        def assert_heard_none(self, *args, **kwargs):
+tests/test_login.py:88:            """The signal fired no times"""
+tests/test_login.py:89:            if len(self.heard) >= 1:
+tests/test_login.py:90:                msg = f"{len(self.heard)} signals were fired"
+tests/test_login.py:91:                raise AssertionError(msg)
+tests/test_login.py:92:
+tests/test_login.py:93:    results = _SignalsCaught()
+tests/test_login.py:94:    signal.connect(results.add)
+tests/test_login.py:95:
+tests/test_login.py:96:    try:
+tests/test_login.py:97:        yield results
+tests/test_login.py:98:    finally:
+tests/test_login.py:99:        signal.disconnect(results.add)
+tests/test_login.py:100:
+tests/test_login.py:101:
+tests/test_login.py:102:class User(UserMixin):
+tests/test_login.py:103:    def __init__(self, name, id, active=True):
+tests/test_login.py:104:        self.id = id
+tests/test_login.py:105:        self.name = name
+tests/test_login.py:106:        self.active = active
+tests/test_login.py:107:
+tests/test_login.py:108:    def get_id(self):
+tests/test_login.py:109:        return self.id
+tests/test_login.py:110:
+tests/test_login.py:111:    @property
+tests/test_login.py:112:    def is_active(self):
+tests/test_login.py:113:        return self.active
+tests/test_login.py:114:
+tests/test_login.py:115:
+tests/test_login.py:116:notch = User("Notch", 1)
+tests/test_login.py:117:steve = User("Steve", 2)
+tests/test_login.py:118:creeper = User("Creeper", 3, False)
+tests/test_login.py:119:germanjapanese = User("Müller", "佐藤")  # str user_id
+tests/test_login.py:120:
+tests/test_login.py:121:USERS = {1: notch, 2: steve, 3: creeper, "佐藤": germanjapanese}
+tests/test_login.py:122:
+tests/test_login.py:123:
+tests/test_login.py:124:class StaticTestCase(unittest.TestCase):
+tests/test_login.py:125:    def test_static_loads_anonymous(self):
+tests/test_login.py:126:        app = Flask(__name__)
+tests/test_login.py:127:        app.static_url_path = "/static"
+tests/test_login.py:128:        app.secret_key = "this is a temp key"
+tests/test_login.py:129:        lm = LoginManager()
+tests/test_login.py:130:        lm.init_app(app)
+tests/test_login.py:131:
+tests/test_login.py:132:        @lm.user_loader
+tests/test_login.py:133:        def load_user(user_id):
+tests/test_login.py:134:            return USERS[int(user_id)]
+tests/test_login.py:135:
+tests/test_login.py:136:        with app.test_client() as c:
+tests/test_login.py:137:            c.get("/static/favicon.ico")
+tests/test_login.py:138:            self.assertTrue(current_user.is_anonymous)
+tests/test_login.py:139:
+tests/test_login.py:140:    def test_static_loads_without_accessing_session(self):
+tests/test_login.py:141:        app = Flask(__name__)
+tests/test_login.py:142:        app.static_url_path = "/static"
+tests/test_login.py:143:        app.secret_key = "this is a temp key"
+tests/test_login.py:144:        lm = LoginManager()
+tests/test_login.py:145:        lm.init_app(app)
+tests/test_login.py:146:
+tests/test_login.py:147:        @lm.user_loader
+tests/test_login.py:148:        def load_user(user_id):
+tests/test_login.py:149:            return USERS[int(user_id)]
+tests/test_login.py:150:
+tests/test_login.py:151:        with app.test_client() as c:
+tests/test_login.py:152:            with listen_to(user_accessed) as listener:
+tests/test_login.py:153:                c.get("/static/favicon.ico")
+tests/test_login.py:154:                listener.assert_heard_none(app)
+tests/test_login.py:155:
+tests/test_login.py:156:
+tests/test_login.py:157:class InitializationTestCase(unittest.TestCase):
+tests/test_login.py:158:    """Tests the two initialization methods"""
+tests/test_login.py:159:
+tests/test_login.py:160:    def setUp(self):
+tests/test_login.py:161:        self.app = Flask(__name__)
+tests/test_login.py:162:        self.app.config["SECRET_KEY"] = "1234"
+tests/test_login.py:163:
+tests/test_login.py:164:    def test_init_app(self):
+tests/test_login.py:165:        login_manager = LoginManager()
+tests/test_login.py:166:        login_manager.init_app(self.app, add_context_processor=True)
+tests/test_login.py:167:
+tests/test_login.py:168:        self.assertIsInstance(login_manager, LoginManager)
+tests/test_login.py:169:
+tests/test_login.py:170:    def test_class_init(self):
+tests/test_login.py:171:        login_manager = LoginManager(self.app, add_context_processor=True)
+tests/test_login.py:172:
+tests/test_login.py:173:        self.assertIsInstance(login_manager, LoginManager)
+tests/test_login.py:174:
+tests/test_login.py:175:    def test_no_user_loader_raises(self):
+tests/test_login.py:176:        login_manager = LoginManager(self.app, add_context_processor=True)
+tests/test_login.py:177:        with self.app.test_request_context():
+tests/test_login.py:178:            session["_user_id"] = "2"
+tests/test_login.py:179:            with self.assertRaises(Exception) as cm:
+tests/test_login.py:180:                login_manager._load_user()
+tests/test_login.py:181:            expected_message = "Missing user_loader or request_loader"
+tests/test_login.py:182:            self.assertTrue(str(cm.exception).startswith(expected_message))
+tests/test_login.py:183:
+tests/test_login.py:184:
+tests/test_login.py:185:class MethodViewLoginTestCase(unittest.TestCase):
+tests/test_login.py:186:    def setUp(self):
+tests/test_login.py:187:        self.app = Flask(__name__)
+tests/test_login.py:188:        self.app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:189:        self.login_manager = LoginManager()
+tests/test_login.py:190:        self.login_manager.init_app(self.app)
+tests/test_login.py:191:
+tests/test_login.py:192:        class SecretEndpoint(MethodView):
+tests/test_login.py:193:            decorators = [
+tests/test_login.py:194:                login_required,
+tests/test_login.py:195:                fresh_login_required,
+tests/test_login.py:196:            ]
+tests/test_login.py:197:
+tests/test_login.py:198:            def options(self):
+tests/test_login.py:199:                return ""
+tests/test_login.py:200:
+tests/test_login.py:201:            def get(self):
+tests/test_login.py:202:                return ""
+tests/test_login.py:203:
+tests/test_login.py:204:        self.app.add_url_rule("/secret", view_func=SecretEndpoint.as_view("secret"))
+tests/test_login.py:205:
+tests/test_login.py:206:    def test_options_call_exempt(self):
+tests/test_login.py:207:        with self.app.test_client() as c:
+tests/test_login.py:208:            result = c.open("/secret", method="OPTIONS")
+tests/test_login.py:209:            self.assertEqual(result.status_code, 200)
+tests/test_login.py:210:
+tests/test_login.py:211:
+tests/test_login.py:212:class LoginTestCase(unittest.TestCase):
+tests/test_login.py:213:    """Tests for results of the login_user function"""
+tests/test_login.py:214:
+tests/test_login.py:215:    def setUp(self):
+tests/test_login.py:216:        self.app = Flask(__name__)
+tests/test_login.py:217:        self.app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:218:        self.app.config["SESSION_PROTECTION"] = None
+tests/test_login.py:219:        self.remember_cookie_name = "remember"
+tests/test_login.py:220:        self.app.config["REMEMBER_COOKIE_NAME"] = self.remember_cookie_name
+tests/test_login.py:221:        self.login_manager = LoginManager()
+tests/test_login.py:222:        self.login_manager.init_app(self.app)
+tests/test_login.py:223:
+tests/test_login.py:224:        # Disable absolute location, like Werkzeug 2.1
+tests/test_login.py:225:        self.app.response_class.autocorrect_location_header = False
+tests/test_login.py:226:
+tests/test_login.py:227:        @self.app.route("/")
+tests/test_login.py:228:        def index():
+tests/test_login.py:229:            return "Welcome!"
+tests/test_login.py:230:
+tests/test_login.py:231:        @self.app.route("/secret")
+tests/test_login.py:232:        def secret():
+tests/test_login.py:233:            return self.login_manager.unauthorized()
+tests/test_login.py:234:
+tests/test_login.py:235:        @self.app.route("/login-notch")
+tests/test_login.py:236:        def login_notch():
+tests/test_login.py:237:            return str(login_user(notch))
+tests/test_login.py:238:
+tests/test_login.py:239:        @self.app.route("/login-notch-remember")
+tests/test_login.py:240:        def login_notch_remember():
+tests/test_login.py:241:            return str(login_user(notch, remember=True))
+tests/test_login.py:242:
+tests/test_login.py:243:        @self.app.route("/login-notch-remember-custom")
+tests/test_login.py:244:        def login_notch_remember_custom():
+tests/test_login.py:245:            duration = timedelta(hours=7)
+tests/test_login.py:246:            return str(login_user(notch, remember=True, duration=duration))
+tests/test_login.py:247:
+tests/test_login.py:248:        @self.app.route("/login-notch-permanent")
+tests/test_login.py:249:        def login_notch_permanent():
+tests/test_login.py:250:            session.permanent = True
+tests/test_login.py:251:            return str(login_user(notch))
+tests/test_login.py:252:
+tests/test_login.py:253:        @self.app.route("/needs-refresh")
+tests/test_login.py:254:        def needs_refresh():
+tests/test_login.py:255:            return self.login_manager.needs_refresh()
+tests/test_login.py:256:
+tests/test_login.py:257:        @self.app.route("/confirm-login")
+tests/test_login.py:258:        def _confirm_login():
+tests/test_login.py:259:            confirm_login()
+tests/test_login.py:260:            return ""
+tests/test_login.py:261:
+tests/test_login.py:262:        @self.app.route("/username")
+tests/test_login.py:263:        def username():
+tests/test_login.py:264:            if current_user.is_authenticated:
+tests/test_login.py:265:                return current_user.name
+tests/test_login.py:266:            return "Anonymous"
+tests/test_login.py:267:
+tests/test_login.py:268:        @self.app.route("/is-fresh")
+tests/test_login.py:269:        def is_fresh():
+tests/test_login.py:270:            return str(login_fresh())
+tests/test_login.py:271:
+tests/test_login.py:272:        @self.app.route("/is-remembered")
+tests/test_login.py:273:        def is_remembered():
+tests/test_login.py:274:            return str(login_remembered())
+tests/test_login.py:275:
+tests/test_login.py:276:        @self.app.route("/logout")
+tests/test_login.py:277:        def logout():
+tests/test_login.py:278:            return str(logout_user())
+tests/test_login.py:279:
+tests/test_login.py:280:        @self.login_manager.user_loader
+tests/test_login.py:281:        def load_user(user_id):
+tests/test_login.py:282:            return USERS[int(user_id)]
+tests/test_login.py:283:
+tests/test_login.py:284:        @self.login_manager.request_loader
+tests/test_login.py:285:        def load_user_from_request(request):
+tests/test_login.py:286:            user_id = request.args.get("user_id")
+tests/test_login.py:287:            try:
+tests/test_login.py:288:                user_id = int(float(user_id))
+tests/test_login.py:289:            except TypeError:
+tests/test_login.py:290:                pass
+tests/test_login.py:291:            return USERS.get(user_id)
+tests/test_login.py:292:
+tests/test_login.py:293:        @self.app.route("/empty_session")
+tests/test_login.py:294:        def empty_session():
+tests/test_login.py:295:            return f"modified={session.modified}"
+tests/test_login.py:296:
+tests/test_login.py:297:        # This will help us with the possibility of typos in the tests. Now
+tests/test_login.py:298:        # we shouldn't have to check each response to help us set up state
+tests/test_login.py:299:        # (such as login pages) to make sure it worked: we will always
+tests/test_login.py:300:        # get an exception raised (rather than return a 404 response)
+tests/test_login.py:301:        @self.app.errorhandler(404)
+tests/test_login.py:302:        def handle_404(e):
+tests/test_login.py:303:            raise e
+tests/test_login.py:304:
+tests/test_login.py:305:        unittest.TestCase.setUp(self)
+tests/test_login.py:306:
+tests/test_login.py:307:    def _delete_session(self, c):
+tests/test_login.py:308:        # Helper method to cause the session to be deleted
+tests/test_login.py:309:        # as if the browser was closed. This will remove
+tests/test_login.py:310:        # the session regardless of the permanent flag
+tests/test_login.py:311:        # on the session!
+tests/test_login.py:312:        with c.session_transaction() as sess:
+tests/test_login.py:313:            sess.clear()
+tests/test_login.py:314:
+tests/test_login.py:315:    #
+tests/test_login.py:316:    # Login
+tests/test_login.py:317:    #
+tests/test_login.py:318:    def test_test_request_context_users_are_anonymous(self):
+tests/test_login.py:319:        with self.app.test_request_context():
+tests/test_login.py:320:            self.assertTrue(current_user.is_anonymous)
+tests/test_login.py:321:
+tests/test_login.py:322:    def test_defaults_anonymous(self):
+tests/test_login.py:323:        with self.app.test_client() as c:
+tests/test_login.py:324:            result = c.get("/username")
+tests/test_login.py:325:            self.assertEqual("Anonymous", result.data.decode("utf-8"))
+tests/test_login.py:326:
+tests/test_login.py:327:    def test_login_user(self):
+tests/test_login.py:328:        with self.app.test_request_context():
+tests/test_login.py:329:            result = login_user(notch)
+tests/test_login.py:330:            self.assertTrue(result)
+tests/test_login.py:331:            self.assertEqual(current_user.name, "Notch")
+tests/test_login.py:332:            self.assertIs(login_fresh(), True)
+tests/test_login.py:333:
+tests/test_login.py:334:    def test_login_user_not_fresh(self):
+tests/test_login.py:335:        with self.app.test_request_context():
+tests/test_login.py:336:            result = login_user(notch, fresh=False)
+tests/test_login.py:337:            self.assertTrue(result)
+tests/test_login.py:338:            self.assertEqual(current_user.name, "Notch")
+tests/test_login.py:339:            self.assertIs(login_fresh(), False)
+tests/test_login.py:340:
+tests/test_login.py:341:    def test_login_user_emits_signal(self):
+tests/test_login.py:342:        with self.app.test_request_context():
+tests/test_login.py:343:            with listen_to(user_logged_in) as listener:
+tests/test_login.py:344:                login_user(notch)
+tests/test_login.py:345:                listener.assert_heard_one(self.app, user=notch)
+tests/test_login.py:346:
+tests/test_login.py:347:    def test_login_inactive_user(self):
+tests/test_login.py:348:        with self.app.test_request_context():
+tests/test_login.py:349:            result = login_user(creeper)
+tests/test_login.py:350:            self.assertTrue(current_user.is_anonymous)
+tests/test_login.py:351:            self.assertFalse(result)
+tests/test_login.py:352:
+tests/test_login.py:353:    def test_login_inactive_user_forced(self):
+tests/test_login.py:354:        with self.app.test_request_context():
+tests/test_login.py:355:            login_user(creeper, force=True)
+tests/test_login.py:356:            self.assertEqual(current_user.name, "Creeper")
+tests/test_login.py:357:
+tests/test_login.py:358:    def test_login_user_with_request(self):
+tests/test_login.py:359:        user_id = 2
+tests/test_login.py:360:        user_name = USERS[user_id].name
+tests/test_login.py:361:        with self.app.test_client() as c:
+tests/test_login.py:362:            url = f"/username?user_id={user_id}"
+tests/test_login.py:363:            result = c.get(url)
+tests/test_login.py:364:            self.assertEqual(user_name, result.data.decode("utf-8"))
+tests/test_login.py:365:
+tests/test_login.py:366:    def test_login_invalid_user_with_request(self):
+tests/test_login.py:367:        user_id = 9000
+tests/test_login.py:368:        user_name = "Anonymous"
+tests/test_login.py:369:        with self.app.test_client() as c:
+tests/test_login.py:370:            url = f"/username?user_id={user_id}"
+tests/test_login.py:371:            result = c.get(url)
+tests/test_login.py:372:            self.assertEqual(user_name, result.data.decode("utf-8"))
+tests/test_login.py:373:
+tests/test_login.py:374:    #
+tests/test_login.py:375:    # Logout
+tests/test_login.py:376:    #
+tests/test_login.py:377:    def test_logout_logs_out_current_user(self):
+tests/test_login.py:378:        with self.app.test_request_context():
+tests/test_login.py:379:            login_user(notch)
+tests/test_login.py:380:            logout_user()
+tests/test_login.py:381:            self.assertTrue(current_user.is_anonymous)
+tests/test_login.py:382:
+tests/test_login.py:383:    def test_logout_emits_signal(self):
+tests/test_login.py:384:        with self.app.test_request_context():
+tests/test_login.py:385:            login_user(notch)
+tests/test_login.py:386:            with listen_to(user_logged_out) as listener:
+tests/test_login.py:387:                logout_user()
+tests/test_login.py:388:                listener.assert_heard_one(self.app, user=notch)
+tests/test_login.py:389:
+tests/test_login.py:390:    def test_logout_without_current_user(self):
+tests/test_login.py:391:        with self.app.test_request_context():
+tests/test_login.py:392:            login_user(notch)
+tests/test_login.py:393:            del session["_user_id"]
+tests/test_login.py:394:            with listen_to(user_logged_out) as listener:
+tests/test_login.py:395:                logout_user()
+tests/test_login.py:396:                listener.assert_heard_one(self.app, user=ANY)
+tests/test_login.py:397:
+tests/test_login.py:398:    #
+tests/test_login.py:399:    # Unauthorized
+tests/test_login.py:400:    #
+tests/test_login.py:401:    def test_unauthorized_fires_unauthorized_signal(self):
+tests/test_login.py:402:        with self.app.test_client() as c:
+tests/test_login.py:403:            with listen_to(user_unauthorized) as listener:
+tests/test_login.py:404:                c.get("/secret")
+tests/test_login.py:405:                listener.assert_heard_one(self.app)
+tests/test_login.py:406:
+tests/test_login.py:407:    def test_unauthorized_flashes_message_with_login_view(self):
+tests/test_login.py:408:        self.login_manager.login_view = "/login"
+tests/test_login.py:409:
+tests/test_login.py:410:        expected_message = self.login_manager.login_message = "Log in!"
+tests/test_login.py:411:        expected_category = self.login_manager.login_message_category = "login"
+tests/test_login.py:412:
+tests/test_login.py:413:        with self.app.test_client() as c:
+tests/test_login.py:414:            c.get("/secret")
+tests/test_login.py:415:            msgs = get_flashed_messages(category_filter=[expected_category])
+tests/test_login.py:416:            self.assertEqual([expected_message], msgs)
+tests/test_login.py:417:
+tests/test_login.py:418:    def test_unauthorized_flash_message_localized(self):
+tests/test_login.py:419:        def _gettext(msg):
+tests/test_login.py:420:            if msg == "Log in!":
+tests/test_login.py:421:                return "Einloggen"
+tests/test_login.py:422:
+tests/test_login.py:423:        self.login_manager.login_view = "/login"
+tests/test_login.py:424:        self.login_manager.localize_callback = _gettext
+tests/test_login.py:425:        self.login_manager.login_message = "Log in!"
+tests/test_login.py:426:
+tests/test_login.py:427:        expected_message = "Einloggen"
+tests/test_login.py:428:        expected_category = self.login_manager.login_message_category = "login"
+tests/test_login.py:429:
+tests/test_login.py:430:        with self.app.test_client() as c:
+tests/test_login.py:431:            c.get("/secret")
+tests/test_login.py:432:            msgs = get_flashed_messages(category_filter=[expected_category])
+tests/test_login.py:433:            self.assertEqual([expected_message], msgs)
+tests/test_login.py:434:        self.login_manager.localize_callback = None
+tests/test_login.py:435:
+tests/test_login.py:436:    def test_unauthorized_uses_authorized_handler(self):
+tests/test_login.py:437:        @self.login_manager.unauthorized_handler
+tests/test_login.py:438:        def _callback():
+tests/test_login.py:439:            return Response("This is secret!", 401)
+tests/test_login.py:440:
+tests/test_login.py:441:        with self.app.test_client() as c:
+tests/test_login.py:442:            result = c.get("/secret")
+tests/test_login.py:443:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:444:            self.assertEqual("This is secret!", result.data.decode("utf-8"))
+tests/test_login.py:445:
+tests/test_login.py:446:    def test_unauthorized_aborts_with_401(self):
+tests/test_login.py:447:        with self.app.test_client() as c:
+tests/test_login.py:448:            result = c.get("/secret")
+tests/test_login.py:449:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:450:
+tests/test_login.py:451:    def test_unauthorized_redirects_to_login_view(self):
+tests/test_login.py:452:        self.login_manager.login_view = "login"
+tests/test_login.py:453:
+tests/test_login.py:454:        @self.app.route("/login")
+tests/test_login.py:455:        def login():
+tests/test_login.py:456:            return "Login Form Goes Here!"
+tests/test_login.py:457:
+tests/test_login.py:458:        with self.app.test_client() as c:
+tests/test_login.py:459:            result = c.get("/secret")
+tests/test_login.py:460:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:461:            self.assertEqual(result.location, "/login?next=%2Fsecret")
+tests/test_login.py:462:
+tests/test_login.py:463:    def test_unauthorized_with_next_in_session(self):
+tests/test_login.py:464:        self.login_manager.login_view = "login"
+tests/test_login.py:465:        self.app.config["USE_SESSION_FOR_NEXT"] = True
+tests/test_login.py:466:
+tests/test_login.py:467:        @self.app.route("/login")
+tests/test_login.py:468:        def login():
+tests/test_login.py:469:            return session.pop("next", "")
+tests/test_login.py:470:
+tests/test_login.py:471:        with self.app.test_client() as c:
+tests/test_login.py:472:            result = c.get("/secret")
+tests/test_login.py:473:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:474:            self.assertEqual(result.location, "/login")
+tests/test_login.py:475:            self.assertEqual(c.get("/login").data.decode("utf-8"), "/secret")
+tests/test_login.py:476:
+tests/test_login.py:477:    def test_unauthorized_with_next_in_strong_session(self):
+tests/test_login.py:478:        self.login_manager.login_view = "login"
+tests/test_login.py:479:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:480:        self.app.config["USE_SESSION_FOR_NEXT"] = True
+tests/test_login.py:481:
+tests/test_login.py:482:        @self.app.route("/login")
+tests/test_login.py:483:        def login():
+tests/test_login.py:484:            if current_user.is_authenticated:
+tests/test_login.py:485:                # Or anything that touches current_user
+tests/test_login.py:486:                pass
+tests/test_login.py:487:            return session.pop("next", "")
+tests/test_login.py:488:
+tests/test_login.py:489:        with self.app.test_client() as c:
+tests/test_login.py:490:            result = c.get("/secret")
+tests/test_login.py:491:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:492:            self.assertEqual(result.location, "/login")
+tests/test_login.py:493:            self.assertEqual(c.get("/login").data.decode("utf-8"), "/secret")
+tests/test_login.py:494:
+tests/test_login.py:495:    def test_unauthorized_uses_blueprint_login_view(self):
+tests/test_login.py:496:        with self.app.app_context():
+tests/test_login.py:497:            first = Blueprint("first", "first")
+tests/test_login.py:498:            second = Blueprint("second", "second")
+tests/test_login.py:499:
+tests/test_login.py:500:            @self.app.route("/app_login")
+tests/test_login.py:501:            def app_login():
+tests/test_login.py:502:                return "Login Form Goes Here!"
+tests/test_login.py:503:
+tests/test_login.py:504:            @self.app.route("/first_login")
+tests/test_login.py:505:            def first_login():
+tests/test_login.py:506:                return "Login Form Goes Here!"
+tests/test_login.py:507:
+tests/test_login.py:508:            @self.app.route("/second_login")
+tests/test_login.py:509:            def second_login():
+tests/test_login.py:510:                return "Login Form Goes Here!"
+tests/test_login.py:511:
+tests/test_login.py:512:            @self.app.route("/protected")
+tests/test_login.py:513:            @login_required
+tests/test_login.py:514:            def protected():
+tests/test_login.py:515:                return "Access Granted"
+tests/test_login.py:516:
+tests/test_login.py:517:            @first.route("/protected")
+tests/test_login.py:518:            @login_required
+tests/test_login.py:519:            def first_protected():
+tests/test_login.py:520:                return "Access Granted"
+tests/test_login.py:521:
+tests/test_login.py:522:            @second.route("/protected")
+tests/test_login.py:523:            @login_required
+tests/test_login.py:524:            def second_protected():
+tests/test_login.py:525:                return "Access Granted"
+tests/test_login.py:526:
+tests/test_login.py:527:            self.app.register_blueprint(first, url_prefix="/first")
+tests/test_login.py:528:            self.app.register_blueprint(second, url_prefix="/second")
+tests/test_login.py:529:
+tests/test_login.py:530:            set_login_view("app_login")
+tests/test_login.py:531:            set_login_view("first_login", blueprint=first)
+tests/test_login.py:532:            set_login_view("second_login", blueprint=second)
+tests/test_login.py:533:
+tests/test_login.py:534:            with self.app.test_client() as c:
+tests/test_login.py:535:                result = c.get("/protected")
+tests/test_login.py:536:                self.assertEqual(result.status_code, 302)
+tests/test_login.py:537:                expected = "/app_login?next=%2Fprotected"
+tests/test_login.py:538:                self.assertEqual(result.location, expected)
+tests/test_login.py:539:
+tests/test_login.py:540:                result = c.get("/first/protected")
+tests/test_login.py:541:                self.assertEqual(result.status_code, 302)
+tests/test_login.py:542:                expected = "/first_login?next=%2Ffirst%2Fprotected"
+tests/test_login.py:543:                self.assertEqual(result.location, expected)
+tests/test_login.py:544:
+tests/test_login.py:545:                result = c.get("/second/protected")
+tests/test_login.py:546:                self.assertEqual(result.status_code, 302)
+tests/test_login.py:547:                expected = "/second_login?next=%2Fsecond%2Fprotected"
+tests/test_login.py:548:                self.assertEqual(result.location, expected)
+tests/test_login.py:549:
+tests/test_login.py:550:    def test_set_login_view_without_blueprints(self):
+tests/test_login.py:551:        with self.app.app_context():
+tests/test_login.py:552:
+tests/test_login.py:553:            @self.app.route("/app_login")
+tests/test_login.py:554:            def app_login():
+tests/test_login.py:555:                return "Login Form Goes Here!"
+tests/test_login.py:556:
+tests/test_login.py:557:            @self.app.route("/protected")
+tests/test_login.py:558:            @login_required
+tests/test_login.py:559:            def protected():
+tests/test_login.py:560:                return "Access Granted"
+tests/test_login.py:561:
+tests/test_login.py:562:            set_login_view("app_login")
+tests/test_login.py:563:
+tests/test_login.py:564:            with self.app.test_client() as c:
+tests/test_login.py:565:                result = c.get("/protected")
+tests/test_login.py:566:                self.assertEqual(result.status_code, 302)
+tests/test_login.py:567:                expected = "/app_login?next=%2Fprotected"
+tests/test_login.py:568:                self.assertEqual(result.location, expected)
+tests/test_login.py:569:
+tests/test_login.py:570:    #
+tests/test_login.py:571:    # Session Persistence/Freshness
+tests/test_login.py:572:    #
+tests/test_login.py:573:    def test_login_persists(self):
+tests/test_login.py:574:        with self.app.test_client() as c:
+tests/test_login.py:575:            c.get("/login-notch")
+tests/test_login.py:576:            result = c.get("/username")
+tests/test_login.py:577:
+tests/test_login.py:578:            self.assertEqual("Notch", result.data.decode("utf-8"))
+tests/test_login.py:579:
+tests/test_login.py:580:    def test_logout_persists(self):
+tests/test_login.py:581:        with self.app.test_client() as c:
+tests/test_login.py:582:            c.get("/login-notch")
+tests/test_login.py:583:            c.get("/logout")
+tests/test_login.py:584:            result = c.get("/username")
+tests/test_login.py:585:            self.assertEqual(result.data.decode("utf-8"), "Anonymous")
+tests/test_login.py:586:
+tests/test_login.py:587:    def test_incorrect_id_logs_out(self):
+tests/test_login.py:588:        # Ensure that any attempt to reload the user by the ID
+tests/test_login.py:589:        # will seem as if the user is no longer valid
+tests/test_login.py:590:        @self.login_manager.user_loader
+tests/test_login.py:591:        def new_user_loader(user_id):
+tests/test_login.py:592:            return
+tests/test_login.py:593:
+tests/test_login.py:594:        with self.app.test_client() as c:
+tests/test_login.py:595:            # Successfully logs in
+tests/test_login.py:596:            c.get("/login-notch")
+tests/test_login.py:597:            result = c.get("/username")
+tests/test_login.py:598:
+tests/test_login.py:599:            self.assertEqual("Anonymous", result.data.decode("utf-8"))
+tests/test_login.py:600:
+tests/test_login.py:601:    def test_authentication_is_fresh(self):
+tests/test_login.py:602:        with self.app.test_client() as c:
+tests/test_login.py:603:            c.get("/login-notch")
+tests/test_login.py:604:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:605:            self.assertEqual("True", fresh_result.data.decode("utf-8"))
+tests/test_login.py:606:            remembered_result = c.get("/is-remembered")
+tests/test_login.py:607:            self.assertEqual("False", remembered_result.data.decode("utf-8"))
+tests/test_login.py:608:
+tests/test_login.py:609:    def test_remember_me(self):
+tests/test_login.py:610:        with self.app.test_client() as c:
+tests/test_login.py:611:            c.get("/login-notch-remember")
+tests/test_login.py:612:            self._delete_session(c)
+tests/test_login.py:613:            username_result = c.get("/username")
+tests/test_login.py:614:            self.assertEqual("Notch", username_result.data.decode("utf-8"))
+tests/test_login.py:615:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:616:            self.assertEqual("False", fresh_result.data.decode("utf-8"))
+tests/test_login.py:617:            remembered_result = c.get("/is-remembered")
+tests/test_login.py:618:            self.assertEqual("True", remembered_result.data.decode("utf-8"))
+tests/test_login.py:619:
+tests/test_login.py:620:    def test_remember_me_custom_duration(self):
+tests/test_login.py:621:        with self.app.test_client() as c:
+tests/test_login.py:622:            c.get("/login-notch-remember-custom")
+tests/test_login.py:623:            self._delete_session(c)
+tests/test_login.py:624:            username_result = c.get("/username")
+tests/test_login.py:625:            self.assertEqual("Notch", username_result.data.decode("utf-8"))
+tests/test_login.py:626:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:627:            self.assertEqual("False", fresh_result.data.decode("utf-8"))
+tests/test_login.py:628:            remembered_result = c.get("/is-remembered")
+tests/test_login.py:629:            self.assertEqual("True", remembered_result.data.decode("utf-8"))
+tests/test_login.py:630:
+tests/test_login.py:631:    def test_remember_me_uses_custom_cookie_parameters(self):
+tests/test_login.py:632:        name = self.app.config["REMEMBER_COOKIE_NAME"] = "myname"
+tests/test_login.py:633:        duration = self.app.config["REMEMBER_COOKIE_DURATION"] = timedelta(days=2)
+tests/test_login.py:634:        path = self.app.config["REMEMBER_COOKIE_PATH"] = "/mypath"
+tests/test_login.py:635:        domain = self.app.config["REMEMBER_COOKIE_DOMAIN"] = "localhost.local"
+tests/test_login.py:636:        c = self.app.test_client()
+tests/test_login.py:637:        c.get("/login-notch-remember")
+tests/test_login.py:638:        cookie = c.get_cookie(name, domain, path)
+tests/test_login.py:639:        self.assertIsNotNone(cookie)
+tests/test_login.py:640:        self.assertIsNotNone(cookie.expires)
+tests/test_login.py:641:        expected_date = datetime.now(timezone.utc) + duration
+tests/test_login.py:642:        difference = expected_date - cookie.expires
+tests/test_login.py:643:        self.assertLess(difference, timedelta(seconds=10))
+tests/test_login.py:644:        self.assertGreater(difference, timedelta(seconds=-10))
+tests/test_login.py:645:
+tests/test_login.py:646:    def test_remember_me_custom_duration_uses_custom_cookie(self):
+tests/test_login.py:647:        name = self.app.config["REMEMBER_COOKIE_NAME"] = "myname"
+tests/test_login.py:648:        self.app.config["REMEMBER_COOKIE_DURATION"] = 172800
+tests/test_login.py:649:        duration = timedelta(hours=7)
+tests/test_login.py:650:        path = self.app.config["REMEMBER_COOKIE_PATH"] = "/mypath"
+tests/test_login.py:651:        domain = self.app.config["REMEMBER_COOKIE_DOMAIN"] = "localhost.local"
+tests/test_login.py:652:        c = self.app.test_client()
+tests/test_login.py:653:        c.get("/login-notch-remember-custom")
+tests/test_login.py:654:        cookie = c.get_cookie(name, domain, path)
+tests/test_login.py:655:        self.assertIsNotNone(cookie)
+tests/test_login.py:656:        self.assertIsNotNone(cookie.expires)
+tests/test_login.py:657:        expected_date = datetime.now(timezone.utc) + duration
+tests/test_login.py:658:        difference = expected_date - cookie.expires
+tests/test_login.py:659:        self.assertLess(difference, timedelta(seconds=10))
+tests/test_login.py:660:        self.assertGreater(difference, timedelta(seconds=-10))
+tests/test_login.py:661:
+tests/test_login.py:662:    def test_remember_me_accepts_duration_as_int(self):
+tests/test_login.py:663:        self.app.config["REMEMBER_COOKIE_DURATION"] = 172800
+tests/test_login.py:664:        duration = timedelta(seconds=172800)
+tests/test_login.py:665:        name = self.app.config["REMEMBER_COOKIE_NAME"] = "myname"
+tests/test_login.py:666:        domain = self.app.config["REMEMBER_COOKIE_DOMAIN"] = "localhost.local"
+tests/test_login.py:667:        c = self.app.test_client()
+tests/test_login.py:668:        result = c.get("/login-notch-remember")
+tests/test_login.py:669:        self.assertEqual(result.status_code, 200)
+tests/test_login.py:670:        cookie = c.get_cookie(name, domain)
+tests/test_login.py:671:        self.assertIsNotNone(cookie)
+tests/test_login.py:672:        self.assertIsNotNone(cookie.expires)
+tests/test_login.py:673:        expected_date = datetime.now(timezone.utc) + duration
+tests/test_login.py:674:        difference = expected_date - cookie.expires
+tests/test_login.py:675:        self.assertLess(difference, timedelta(seconds=10))
+tests/test_login.py:676:        self.assertGreater(difference, timedelta(seconds=-10))
+tests/test_login.py:677:
+tests/test_login.py:678:    def test_remember_me_with_invalid_duration_returns_500_response(self):
+tests/test_login.py:679:        self.app.config["REMEMBER_COOKIE_DURATION"] = "123"
+tests/test_login.py:680:
+tests/test_login.py:681:        with self.app.test_client() as c:
+tests/test_login.py:682:            result = c.get("/login-notch-remember")
+tests/test_login.py:683:            self.assertEqual(result.status_code, 500)
+tests/test_login.py:684:
+tests/test_login.py:685:    def test_remember_me_with_invalid_custom_duration_returns_500_resp(self):
+tests/test_login.py:686:        @self.app.route("/login-notch-remember-custom-invalid")
+tests/test_login.py:687:        def login_notch_remember_custom_invalid():
+tests/test_login.py:688:            duration = "123"
+tests/test_login.py:689:            return str(login_user(notch, remember=True, duration=duration))
+tests/test_login.py:690:
+tests/test_login.py:691:        with self.app.test_client() as c:
+tests/test_login.py:692:            result = c.get("/login-notch-remember-custom-invalid")
+tests/test_login.py:693:            self.assertEqual(result.status_code, 500)
+tests/test_login.py:694:
+tests/test_login.py:695:    def test_set_cookie_with_invalid_duration_raises_exception(self):
+tests/test_login.py:696:        self.app.config["REMEMBER_COOKIE_DURATION"] = "123"
+tests/test_login.py:697:
+tests/test_login.py:698:        with self.assertRaises(Exception) as cm:
+tests/test_login.py:699:            with self.app.test_request_context():
+tests/test_login.py:700:                session["_user_id"] = 2
+tests/test_login.py:701:                self.login_manager._set_cookie(None)
+tests/test_login.py:702:
+tests/test_login.py:703:        expected_exception_message = (
+tests/test_login.py:704:            "REMEMBER_COOKIE_DURATION must be a datetime.timedelta, instead got: 123"
+tests/test_login.py:705:        )
+tests/test_login.py:706:        self.assertIn(expected_exception_message, str(cm.exception))
+tests/test_login.py:707:
+tests/test_login.py:708:    def test_set_cookie_with_invalid_custom_duration_raises_exception(self):
+tests/test_login.py:709:        with self.assertRaises(Exception) as cm:
+tests/test_login.py:710:            with self.app.test_request_context():
+tests/test_login.py:711:                login_user(notch, remember=True, duration="123")
+tests/test_login.py:712:
+tests/test_login.py:713:        expected_exception_message = "duration must be a datetime.timedelta, instead got: 123"
+tests/test_login.py:714:        self.assertIn(expected_exception_message, str(cm.exception))
+tests/test_login.py:715:
+tests/test_login.py:716:    def test_remember_me_no_refresh_every_request(self):
+tests/test_login.py:717:        domain = self.app.config["REMEMBER_COOKIE_DOMAIN"] = "localhost.local"
+tests/test_login.py:718:        path = self.app.config["REMEMBER_COOKIE_PATH"] = "/"
+tests/test_login.py:719:        self.app.config["REMEMBER_COOKIE_REFRESH_EACH_REQUEST"] = False
+tests/test_login.py:720:        c = self.app.test_client()
+tests/test_login.py:721:        c.get("/login-notch-remember")
+tests/test_login.py:722:        cookie1 = c.get_cookie("remember", domain, path)
+tests/test_login.py:723:        self.assertIsNotNone(cookie1.expires)
+tests/test_login.py:724:        self._delete_session(c)
+tests/test_login.py:725:        c.get("/username")
+tests/test_login.py:726:        cookie2 = c.get_cookie("remember", domain, path)
+tests/test_login.py:727:        self.assertEqual(cookie1.expires, cookie2.expires)
+tests/test_login.py:728:
+tests/test_login.py:729:    def test_remember_me_refresh_each_request(self):
+tests/test_login.py:730:        with patch("flask_login.login_manager.datetime") as mock_dt:
+tests/test_login.py:731:            now = datetime.now(timezone.utc)
+tests/test_login.py:732:            mock_dt.now = Mock(return_value=now)
+tests/test_login.py:733:
+tests/test_login.py:734:            domain = self.app.config["REMEMBER_COOKIE_DOMAIN"] = "localhost"
+tests/test_login.py:735:            path = self.app.config["REMEMBER_COOKIE_PATH"] = "/"
+tests/test_login.py:736:            self.app.config["REMEMBER_COOKIE_REFRESH_EACH_REQUEST"] = True
+tests/test_login.py:737:            c = self.app.test_client()
+tests/test_login.py:738:            c.get("/login-notch-remember")
+tests/test_login.py:739:            cookie1 = c.get_cookie("remember", domain, path)
+tests/test_login.py:740:            self.assertIsNotNone(cookie1.expires)
+tests/test_login.py:741:            mock_dt.now.return_value = now + timedelta(seconds=1)
+tests/test_login.py:742:            c.get("/username")
+tests/test_login.py:743:            cookie2 = c.get_cookie("remember", domain, path)
+tests/test_login.py:744:            self.assertNotEqual(cookie1.expires, cookie2.expires)
+tests/test_login.py:745:
+tests/test_login.py:746:    def test_remember_me_is_unfresh(self):
+tests/test_login.py:747:        with self.app.test_client() as c:
+tests/test_login.py:748:            c.get("/login-notch-remember")
+tests/test_login.py:749:            self._delete_session(c)
+tests/test_login.py:750:            self.assertEqual("False", c.get("/is-fresh").data.decode("utf-8"))
+tests/test_login.py:751:            self.assertEqual("True", c.get("/is-remembered").data.decode("utf-8"))
+tests/test_login.py:752:
+tests/test_login.py:753:    def test_user_loaded_from_cookie_fired(self):
+tests/test_login.py:754:        with self.app.test_client() as c:
+tests/test_login.py:755:            c.get("/login-notch-remember")
+tests/test_login.py:756:            self._delete_session(c)
+tests/test_login.py:757:            with listen_to(user_loaded_from_cookie) as listener:
+tests/test_login.py:758:                c.get("/username")
+tests/test_login.py:759:                listener.assert_heard_one(self.app, user=notch)
+tests/test_login.py:760:
+tests/test_login.py:761:    def test_user_loaded_from_request_fired(self):
+tests/test_login.py:762:        user_id = 1
+tests/test_login.py:763:        user_name = USERS[user_id].name
+tests/test_login.py:764:        with self.app.test_client() as c:
+tests/test_login.py:765:            with listen_to(user_loaded_from_request) as listener:
+tests/test_login.py:766:                url = f"/username?user_id={user_id}"
+tests/test_login.py:767:                result = c.get(url)
+tests/test_login.py:768:                self.assertEqual(user_name, result.data.decode("utf-8"))
+tests/test_login.py:769:                listener.assert_heard_one(self.app, user=USERS[user_id])
+tests/test_login.py:770:
+tests/test_login.py:771:    def test_logout_stays_logged_out_with_remember_me(self):
+tests/test_login.py:772:        with self.app.test_client() as c:
+tests/test_login.py:773:            c.get("/login-notch-remember")
+tests/test_login.py:774:            c.get("/logout")
+tests/test_login.py:775:            result = c.get("/username")
+tests/test_login.py:776:            self.assertEqual(result.data.decode("utf-8"), "Anonymous")
+tests/test_login.py:777:
+tests/test_login.py:778:    def test_logout_stays_logged_out_with_remember_me_custom_duration(self):
+tests/test_login.py:779:        with self.app.test_client() as c:
+tests/test_login.py:780:            c.get("/login-notch-remember-custom")
+tests/test_login.py:781:            c.get("/logout")
+tests/test_login.py:782:            result = c.get("/username")
+tests/test_login.py:783:            self.assertEqual(result.data.decode("utf-8"), "Anonymous")
+tests/test_login.py:784:
+tests/test_login.py:785:    def test_needs_refresh_uses_handler(self):
+tests/test_login.py:786:        @self.login_manager.needs_refresh_handler
+tests/test_login.py:787:        def _on_refresh():
+tests/test_login.py:788:            return "Needs Refresh!"
+tests/test_login.py:789:
+tests/test_login.py:790:        with self.app.test_client() as c:
+tests/test_login.py:791:            c.get("/login-notch-remember")
+tests/test_login.py:792:            result = c.get("/needs-refresh")
+tests/test_login.py:793:            self.assertEqual("Needs Refresh!", result.data.decode("utf-8"))
+tests/test_login.py:794:
+tests/test_login.py:795:    def test_needs_refresh_fires_needs_refresh_signal(self):
+tests/test_login.py:796:        with self.app.test_client() as c:
+tests/test_login.py:797:            c.get("/login-notch-remember")
+tests/test_login.py:798:            with listen_to(user_needs_refresh) as listener:
+tests/test_login.py:799:                c.get("/needs-refresh")
+tests/test_login.py:800:                listener.assert_heard_one(self.app)
+tests/test_login.py:801:
+tests/test_login.py:802:    def test_needs_refresh_fires_flash_when_redirect_to_refresh_view(self):
+tests/test_login.py:803:        self.login_manager.refresh_view = "/refresh_view"
+tests/test_login.py:804:
+tests/test_login.py:805:        self.login_manager.needs_refresh_message = "Refresh"
+tests/test_login.py:806:        self.login_manager.needs_refresh_message_category = "refresh"
+tests/test_login.py:807:        category_filter = [self.login_manager.needs_refresh_message_category]
+tests/test_login.py:808:
+tests/test_login.py:809:        with self.app.test_client() as c:
+tests/test_login.py:810:            c.get("/login-notch-remember")
+tests/test_login.py:811:            c.get("/needs-refresh")
+tests/test_login.py:812:            msgs = get_flashed_messages(category_filter=category_filter)
+tests/test_login.py:813:            self.assertIn(self.login_manager.needs_refresh_message, msgs)
+tests/test_login.py:814:
+tests/test_login.py:815:    def test_needs_refresh_flash_message_localized(self):
+tests/test_login.py:816:        def _gettext(msg):
+tests/test_login.py:817:            if msg == "Refresh":
+tests/test_login.py:818:                return "Aktualisieren"
+tests/test_login.py:819:
+tests/test_login.py:820:        self.login_manager.refresh_view = "/refresh_view"
+tests/test_login.py:821:        self.login_manager.localize_callback = _gettext
+tests/test_login.py:822:
+tests/test_login.py:823:        self.login_manager.needs_refresh_message = "Refresh"
+tests/test_login.py:824:        self.login_manager.needs_refresh_message_category = "refresh"
+tests/test_login.py:825:        category_filter = [self.login_manager.needs_refresh_message_category]
+tests/test_login.py:826:
+tests/test_login.py:827:        with self.app.test_client() as c:
+tests/test_login.py:828:            c.get("/login-notch-remember")
+tests/test_login.py:829:            c.get("/needs-refresh")
+tests/test_login.py:830:            msgs = get_flashed_messages(category_filter=category_filter)
+tests/test_login.py:831:            self.assertIn("Aktualisieren", msgs)
+tests/test_login.py:832:        self.login_manager.localize_callback = None
+tests/test_login.py:833:
+tests/test_login.py:834:    def test_needs_refresh_aborts_401(self):
+tests/test_login.py:835:        with self.app.test_client() as c:
+tests/test_login.py:836:            c.get("/login-notch-remember")
+tests/test_login.py:837:            result = c.get("/needs-refresh")
+tests/test_login.py:838:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:839:
+tests/test_login.py:840:    def test_redirects_to_refresh_view(self):
+tests/test_login.py:841:        @self.app.route("/refresh-view")
+tests/test_login.py:842:        def refresh_view():
+tests/test_login.py:843:            return ""
+tests/test_login.py:844:
+tests/test_login.py:845:        self.login_manager.refresh_view = "refresh_view"
+tests/test_login.py:846:        with self.app.test_client() as c:
+tests/test_login.py:847:            c.get("/login-notch-remember")
+tests/test_login.py:848:            result = c.get("/needs-refresh")
+tests/test_login.py:849:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:850:            expected = "/refresh-view?next=%2Fneeds-refresh"
+tests/test_login.py:851:            self.assertEqual(result.location, expected)
+tests/test_login.py:852:
+tests/test_login.py:853:    def test_refresh_with_next_in_session(self):
+tests/test_login.py:854:        @self.app.route("/refresh-view")
+tests/test_login.py:855:        def refresh_view():
+tests/test_login.py:856:            return session.pop("next", "")
+tests/test_login.py:857:
+tests/test_login.py:858:        self.login_manager.refresh_view = "refresh_view"
+tests/test_login.py:859:        self.app.config["USE_SESSION_FOR_NEXT"] = True
+tests/test_login.py:860:
+tests/test_login.py:861:        with self.app.test_client() as c:
+tests/test_login.py:862:            c.get("/login-notch-remember")
+tests/test_login.py:863:            result = c.get("/needs-refresh")
+tests/test_login.py:864:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:865:            self.assertEqual(result.location, "/refresh-view")
+tests/test_login.py:866:            result = c.get("/refresh-view")
+tests/test_login.py:867:            self.assertEqual(result.data.decode("utf-8"), "/needs-refresh")
+tests/test_login.py:868:
+tests/test_login.py:869:    def test_confirm_login(self):
+tests/test_login.py:870:        with self.app.test_client() as c:
+tests/test_login.py:871:            c.get("/login-notch-remember")
+tests/test_login.py:872:            self._delete_session(c)
+tests/test_login.py:873:            self.assertEqual("False", c.get("/is-fresh").data.decode("utf-8"))
+tests/test_login.py:874:            self.assertEqual("True", c.get("/is-remembered").data.decode("utf-8"))
+tests/test_login.py:875:            c.get("/confirm-login")
+tests/test_login.py:876:            self.assertEqual("True", c.get("/is-fresh").data.decode("utf-8"))
+tests/test_login.py:877:            self.assertEqual("True", c.get("/is-remembered").data.decode("utf-8"))
+tests/test_login.py:878:
+tests/test_login.py:879:    def test_user_login_confirmed_signal_fired(self):
+tests/test_login.py:880:        with self.app.test_client() as c:
+tests/test_login.py:881:            with listen_to(user_login_confirmed) as listener:
+tests/test_login.py:882:                c.get("/confirm-login")
+tests/test_login.py:883:                listener.assert_heard_one(self.app)
+tests/test_login.py:884:
+tests/test_login.py:885:    def test_session_not_modified(self):
+tests/test_login.py:886:        with self.app.test_client() as c:
+tests/test_login.py:887:            # Within the request we think we didn't modify the session.
+tests/test_login.py:888:            self.assertEqual("modified=False", c.get("/empty_session").data.decode("utf-8"))
+tests/test_login.py:889:            # But after the request, the session could be modified by the
+tests/test_login.py:890:            # "after_request" handlers that call _update_remember_cookie.
+tests/test_login.py:891:            # Ensure that if nothing changed the session is not modified.
+tests/test_login.py:892:            self.assertFalse(session.modified)
+tests/test_login.py:893:
+tests/test_login.py:894:    def test_invalid_remember_cookie(self):
+tests/test_login.py:895:        domain = self.app.config["REMEMBER_COOKIE_DOMAIN"] = "localhost.local"
+tests/test_login.py:896:        c = self.app.test_client()
+tests/test_login.py:897:        c.get("/login-notch-remember")
+tests/test_login.py:898:
+tests/test_login.py:899:        with c.session_transaction() as sess:
+tests/test_login.py:900:            sess["_user_id"] = None
+tests/test_login.py:901:
+tests/test_login.py:902:        c.set_cookie(self.remember_cookie_name, "foo", domain=domain)
+tests/test_login.py:903:        result = c.get("/username")
+tests/test_login.py:904:        self.assertEqual("Anonymous", result.data.decode("utf-8"))
+tests/test_login.py:905:
+tests/test_login.py:906:    #
+tests/test_login.py:907:    # Session Protection
+tests/test_login.py:908:    #
+tests/test_login.py:909:    def test_session_protection_basic_passes_successive_requests(self):
+tests/test_login.py:910:        self.app.config["SESSION_PROTECTION"] = "basic"
+tests/test_login.py:911:        with self.app.test_client() as c:
+tests/test_login.py:912:            c.get("/login-notch-remember")
+tests/test_login.py:913:            username_result = c.get("/username")
+tests/test_login.py:914:            self.assertEqual("Notch", username_result.data.decode("utf-8"))
+tests/test_login.py:915:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:916:            self.assertEqual("True", fresh_result.data.decode("utf-8"))
+tests/test_login.py:917:
+tests/test_login.py:918:    def test_session_protection_strong_passes_successive_requests(self):
+tests/test_login.py:919:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:920:        with self.app.test_client() as c:
+tests/test_login.py:921:            c.get("/login-notch-remember")
+tests/test_login.py:922:            username_result = c.get("/username")
+tests/test_login.py:923:            self.assertEqual("Notch", username_result.data.decode("utf-8"))
+tests/test_login.py:924:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:925:            self.assertEqual("True", fresh_result.data.decode("utf-8"))
+tests/test_login.py:926:
+tests/test_login.py:927:    def test_session_protection_basic_marks_session_unfresh(self):
+tests/test_login.py:928:        self.app.config["SESSION_PROTECTION"] = "basic"
+tests/test_login.py:929:        with self.app.test_client() as c:
+tests/test_login.py:930:            c.get("/login-notch-remember")
+tests/test_login.py:931:            username_result = c.get("/username", headers=[("User-Agent", "different")])
+tests/test_login.py:932:            self.assertEqual("Notch", username_result.data.decode("utf-8"))
+tests/test_login.py:933:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:934:            self.assertEqual("False", fresh_result.data.decode("utf-8"))
+tests/test_login.py:935:
+tests/test_login.py:936:    def test_session_protection_basic_fires_signal(self):
+tests/test_login.py:937:        self.app.config["SESSION_PROTECTION"] = "basic"
+tests/test_login.py:938:
+tests/test_login.py:939:        with self.app.test_client() as c:
+tests/test_login.py:940:            c.get("/login-notch-remember")
+tests/test_login.py:941:            with listen_to(session_protected) as listener:
+tests/test_login.py:942:                c.get("/username", headers=[("User-Agent", "different")])
+tests/test_login.py:943:                listener.assert_heard_one(self.app)
+tests/test_login.py:944:
+tests/test_login.py:945:    def test_session_protection_basic_skips_when_remember_me(self):
+tests/test_login.py:946:        self.app.config["SESSION_PROTECTION"] = "basic"
+tests/test_login.py:947:
+tests/test_login.py:948:        with self.app.test_client() as c:
+tests/test_login.py:949:            c.get("/login-notch-remember")
+tests/test_login.py:950:            # clear session to force remember me (and remove old session id)
+tests/test_login.py:951:            self._delete_session(c)
+tests/test_login.py:952:            # should not trigger protection because "sess" is empty
+tests/test_login.py:953:            with listen_to(session_protected) as listener:
+tests/test_login.py:954:                c.get("/username")
+tests/test_login.py:955:                listener.assert_heard_none(self.app)
+tests/test_login.py:956:
+tests/test_login.py:957:    def test_session_protection_strong_skips_when_remember_me(self):
+tests/test_login.py:958:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:959:
+tests/test_login.py:960:        with self.app.test_client() as c:
+tests/test_login.py:961:            c.get("/login-notch-remember")
+tests/test_login.py:962:            # clear session to force remember me (and remove old session id)
+tests/test_login.py:963:            self._delete_session(c)
+tests/test_login.py:964:            # should not trigger protection because "sess" is empty
+tests/test_login.py:965:            with listen_to(session_protected) as listener:
+tests/test_login.py:966:                c.get("/username")
+tests/test_login.py:967:                listener.assert_heard_none(self.app)
+tests/test_login.py:968:
+tests/test_login.py:969:    def test_permanent_strong_session_protection_marks_session_unfresh(self):
+tests/test_login.py:970:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:971:        with self.app.test_client() as c:
+tests/test_login.py:972:            c.get("/login-notch-permanent")
+tests/test_login.py:973:            username_result = c.get("/username", headers=[("User-Agent", "different")])
+tests/test_login.py:974:            self.assertEqual("Notch", username_result.data.decode("utf-8"))
+tests/test_login.py:975:            fresh_result = c.get("/is-fresh")
+tests/test_login.py:976:            self.assertEqual("False", fresh_result.data.decode("utf-8"))
+tests/test_login.py:977:
+tests/test_login.py:978:    def test_permanent_strong_session_protection_fires_signal(self):
+tests/test_login.py:979:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:980:
+tests/test_login.py:981:        with self.app.test_client() as c:
+tests/test_login.py:982:            c.get("/login-notch-permanent")
+tests/test_login.py:983:            with listen_to(session_protected) as listener:
+tests/test_login.py:984:                c.get("/username", headers=[("User-Agent", "different")])
+tests/test_login.py:985:                listener.assert_heard_one(self.app)
+tests/test_login.py:986:
+tests/test_login.py:987:    def test_session_protection_strong_deletes_session(self):
+tests/test_login.py:988:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:989:        with self.app.test_client() as c:
+tests/test_login.py:990:            # write some unrelated data in the session, to ensure it does not
+tests/test_login.py:991:            # get destroyed
+tests/test_login.py:992:            with c.session_transaction() as sess:
+tests/test_login.py:993:                sess["foo"] = "bar"
+tests/test_login.py:994:            c.get("/login-notch-remember")
+tests/test_login.py:995:            username_result = c.get("/username", headers=[("User-Agent", "different")])
+tests/test_login.py:996:            self.assertEqual("Anonymous", username_result.data.decode("utf-8"))
+tests/test_login.py:997:            with c.session_transaction() as sess:
+tests/test_login.py:998:                self.assertIn("foo", sess)
+tests/test_login.py:999:                self.assertEqual("bar", sess["foo"])
+tests/test_login.py:1000:
+tests/test_login.py:1001:    def test_session_protection_strong_fires_signal_user_agent(self):
+tests/test_login.py:1002:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:1003:
+tests/test_login.py:1004:        with self.app.test_client() as c:
+tests/test_login.py:1005:            c.get("/login-notch-remember")
+tests/test_login.py:1006:            with listen_to(session_protected) as listener:
+tests/test_login.py:1007:                c.get("/username", headers=[("User-Agent", "different")])
+tests/test_login.py:1008:                listener.assert_heard_one(self.app)
+tests/test_login.py:1009:
+tests/test_login.py:1010:    def test_session_protection_skip_when_off_and_anonymous(self):
+tests/test_login.py:1011:        with self.app.test_client() as c:
+tests/test_login.py:1012:            # no user access
+tests/test_login.py:1013:            with listen_to(user_accessed) as user_listener:
+tests/test_login.py:1014:                results = c.get("/")
+tests/test_login.py:1015:                user_listener.assert_heard_none(self.app)
+tests/test_login.py:1016:
+tests/test_login.py:1017:            # access user with no session data
+tests/test_login.py:1018:            with listen_to(session_protected) as session_listener:
+tests/test_login.py:1019:                results = c.get("/username")
+tests/test_login.py:1020:                self.assertEqual(results.data.decode("utf-8"), "Anonymous")
+tests/test_login.py:1021:                session_listener.assert_heard_none(self.app)
+tests/test_login.py:1022:
+tests/test_login.py:1023:            # verify no session data has been set
+tests/test_login.py:1024:            self.assertFalse(session)
+tests/test_login.py:1025:
+tests/test_login.py:1026:    def test_session_protection_skip_when_basic_and_anonymous(self):
+tests/test_login.py:1027:        self.app.config["SESSION_PROTECTION"] = "basic"
+tests/test_login.py:1028:
+tests/test_login.py:1029:        with self.app.test_client() as c:
+tests/test_login.py:1030:            # no user access
+tests/test_login.py:1031:            with listen_to(user_accessed) as user_listener:
+tests/test_login.py:1032:                results = c.get("/")
+tests/test_login.py:1033:                user_listener.assert_heard_none(self.app)
+tests/test_login.py:1034:
+tests/test_login.py:1035:            # access user with no session data
+tests/test_login.py:1036:            with listen_to(session_protected) as session_listener:
+tests/test_login.py:1037:                results = c.get("/username")
+tests/test_login.py:1038:                self.assertEqual(results.data.decode("utf-8"), "Anonymous")
+tests/test_login.py:1039:                session_listener.assert_heard_none(self.app)
+tests/test_login.py:1040:
+tests/test_login.py:1041:            # verify no session data has been set
+tests/test_login.py:1042:            self.assertFalse(session)
+tests/test_login.py:1043:
+tests/test_login.py:1044:    #
+tests/test_login.py:1045:    # Lazy Access User
+tests/test_login.py:1046:    #
+tests/test_login.py:1047:    def test_requests_without_accessing_session(self):
+tests/test_login.py:1048:        with self.app.test_client() as c:
+tests/test_login.py:1049:            c.get("/login-notch")
+tests/test_login.py:1050:
+tests/test_login.py:1051:            # no session access
+tests/test_login.py:1052:            with listen_to(user_accessed) as listener:
+tests/test_login.py:1053:                c.get("/")
+tests/test_login.py:1054:                listener.assert_heard_none(self.app)
+tests/test_login.py:1055:
+tests/test_login.py:1056:            # should have a session access
+tests/test_login.py:1057:            with listen_to(user_accessed) as listener:
+tests/test_login.py:1058:                result = c.get("/username")
+tests/test_login.py:1059:                listener.assert_heard_one(self.app)
+tests/test_login.py:1060:                self.assertEqual(result.data.decode("utf-8"), "Notch")
+tests/test_login.py:1061:
+tests/test_login.py:1062:    #
+tests/test_login.py:1063:    # View Decorators
+tests/test_login.py:1064:    #
+tests/test_login.py:1065:    def test_login_required_decorator(self):
+tests/test_login.py:1066:        @self.app.route("/protected")
+tests/test_login.py:1067:        @login_required
+tests/test_login.py:1068:        def protected():
+tests/test_login.py:1069:            return "Access Granted"
+tests/test_login.py:1070:
+tests/test_login.py:1071:        with self.app.test_client() as c:
+tests/test_login.py:1072:            result = c.get("/protected")
+tests/test_login.py:1073:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:1074:
+tests/test_login.py:1075:            c.get("/login-notch")
+tests/test_login.py:1076:            result2 = c.get("/protected")
+tests/test_login.py:1077:            self.assertIn("Access Granted", result2.data.decode("utf-8"))
+tests/test_login.py:1078:
+tests/test_login.py:1079:    @unittest.skipIf(not hasattr(Flask, "ensure_sync"), "Flask version before async")
+tests/test_login.py:1080:    def test_login_required_decorator_with_async(self):
+tests/test_login.py:1081:        import asyncio
+tests/test_login.py:1082:
+tests/test_login.py:1083:        @self.app.route("/protected")
+tests/test_login.py:1084:        @login_required
+tests/test_login.py:1085:        async def protected():
+tests/test_login.py:1086:            await asyncio.sleep(0)
+tests/test_login.py:1087:            return "Access Granted"
+tests/test_login.py:1088:
+tests/test_login.py:1089:        with self.app.test_client() as c:
+tests/test_login.py:1090:            result = c.get("/protected")
+tests/test_login.py:1091:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:1092:
+tests/test_login.py:1093:            c.get("/login-notch")
+tests/test_login.py:1094:            result = c.get("/protected")
+tests/test_login.py:1095:            self.assertEqual(result.status_code, 200)
+tests/test_login.py:1096:
+tests/test_login.py:1097:            c.get("/login-notch")
+tests/test_login.py:1098:            result2 = c.get("/protected")
+tests/test_login.py:1099:            self.assertIn("Access Granted", result2.data.decode("utf-8"))
+tests/test_login.py:1100:
+tests/test_login.py:1101:    def test_fresh_login_required_decorator(self):
+tests/test_login.py:1102:        @self.app.route("/very-protected")
+tests/test_login.py:1103:        @fresh_login_required
+tests/test_login.py:1104:        def very_protected():
+tests/test_login.py:1105:            return "Access Granted"
+tests/test_login.py:1106:
+tests/test_login.py:1107:        with self.app.test_client() as c:
+tests/test_login.py:1108:            result = c.get("/very-protected")
+tests/test_login.py:1109:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:1110:
+tests/test_login.py:1111:            c.get("/login-notch-remember")
+tests/test_login.py:1112:            logged_in_result = c.get("/very-protected")
+tests/test_login.py:1113:            self.assertEqual("Access Granted", logged_in_result.data.decode("utf-8"))
+tests/test_login.py:1114:
+tests/test_login.py:1115:            self._delete_session(c)
+tests/test_login.py:1116:            stale_result = c.get("/very-protected")
+tests/test_login.py:1117:            self.assertEqual(stale_result.status_code, 401)
+tests/test_login.py:1118:
+tests/test_login.py:1119:            c.get("/confirm-login")
+tests/test_login.py:1120:            refreshed_result = c.get("/very-protected")
+tests/test_login.py:1121:            self.assertEqual("Access Granted", refreshed_result.data.decode("utf-8"))
+tests/test_login.py:1122:
+tests/test_login.py:1123:    #
+tests/test_login.py:1124:    # Misc
+tests/test_login.py:1125:    #
+tests/test_login.py:1126:    def test_user_context_processor(self):
+tests/test_login.py:1127:        with self.app.test_request_context():
+tests/test_login.py:1128:            _ucp = self.app.context_processor(_user_context_processor)
+tests/test_login.py:1129:            self.assertIsInstance(_ucp()["current_user"], AnonymousUserMixin)
+tests/test_login.py:1130:
+tests/test_login.py:1131:
+tests/test_login.py:1132:class LoginViaRequestTestCase(unittest.TestCase):
+tests/test_login.py:1133:    """Tests for LoginManager.request_loader."""
+tests/test_login.py:1134:
+tests/test_login.py:1135:    def setUp(self):
+tests/test_login.py:1136:        self.app = Flask(__name__)
+tests/test_login.py:1137:        self.app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:1138:        self.app.config["SESSION_PROTECTION"] = None
+tests/test_login.py:1139:        self.remember_cookie_name = "remember"
+tests/test_login.py:1140:        self.app.config["REMEMBER_COOKIE_NAME"] = self.remember_cookie_name
+tests/test_login.py:1141:        self.login_manager = LoginManager()
+tests/test_login.py:1142:        self.login_manager.init_app(self.app)
+tests/test_login.py:1143:
+tests/test_login.py:1144:        @self.app.route("/")
+tests/test_login.py:1145:        def index():
+tests/test_login.py:1146:            return "Welcome!"
+tests/test_login.py:1147:
+tests/test_login.py:1148:        @self.app.route("/login-notch")
+tests/test_login.py:1149:        def login_notch():
+tests/test_login.py:1150:            return str(login_user(notch))
+tests/test_login.py:1151:
+tests/test_login.py:1152:        @self.app.route("/username")
+tests/test_login.py:1153:        def username():
+tests/test_login.py:1154:            if current_user.is_authenticated:
+tests/test_login.py:1155:                return current_user.name
+tests/test_login.py:1156:            return "Anonymous", 401
+tests/test_login.py:1157:
+tests/test_login.py:1158:        @self.app.route("/logout")
+tests/test_login.py:1159:        def logout():
+tests/test_login.py:1160:            return str(logout_user())
+tests/test_login.py:1161:
+tests/test_login.py:1162:        @self.login_manager.request_loader
+tests/test_login.py:1163:        def load_user_from_request(request):
+tests/test_login.py:1164:            user_id = request.args.get("user_id") or session.get("_user_id")
+tests/test_login.py:1165:            try:
+tests/test_login.py:1166:                user_id = int(float(user_id))
+tests/test_login.py:1167:            except TypeError:
+tests/test_login.py:1168:                pass
+tests/test_login.py:1169:            return USERS.get(user_id)
+tests/test_login.py:1170:
+tests/test_login.py:1171:        # This will help us with the possibility of typos in the tests. Now
+tests/test_login.py:1172:        # we shouldn't have to check each response to help us set up state
+tests/test_login.py:1173:        # (such as login pages) to make sure it worked: we will always
+tests/test_login.py:1174:        # get an exception raised (rather than return a 404 response)
+tests/test_login.py:1175:        @self.app.errorhandler(404)
+tests/test_login.py:1176:        def handle_404(e):
+tests/test_login.py:1177:            raise e
+tests/test_login.py:1178:
+tests/test_login.py:1179:        unittest.TestCase.setUp(self)
+tests/test_login.py:1180:
+tests/test_login.py:1181:    def test_has_no_user_loader_callback(self):
+tests/test_login.py:1182:        self.assertIsNone(self.login_manager._user_callback)
+tests/test_login.py:1183:
+tests/test_login.py:1184:    def test_request_context_users_are_anonymous(self):
+tests/test_login.py:1185:        with self.app.test_request_context():
+tests/test_login.py:1186:            self.assertTrue(current_user.is_anonymous)
+tests/test_login.py:1187:
+tests/test_login.py:1188:    def test_defaults_anonymous(self):
+tests/test_login.py:1189:        with self.app.test_client() as c:
+tests/test_login.py:1190:            result = c.get("/username")
+tests/test_login.py:1191:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:1192:
+tests/test_login.py:1193:    def test_login_via_request(self):
+tests/test_login.py:1194:        user_id = 2
+tests/test_login.py:1195:        user_name = USERS[user_id].name
+tests/test_login.py:1196:        with self.app.test_client() as c:
+tests/test_login.py:1197:            url = f"/username?user_id={user_id}"
+tests/test_login.py:1198:            result = c.get(url)
+tests/test_login.py:1199:            self.assertEqual(user_name, result.data.decode("utf-8"))
+tests/test_login.py:1200:
+tests/test_login.py:1201:    def test_login_via_request_uses_cookie_when_already_logged_in(self):
+tests/test_login.py:1202:        user_id = 2
+tests/test_login.py:1203:        user_name = notch.name
+tests/test_login.py:1204:        with self.app.test_client() as c:
+tests/test_login.py:1205:            c.get("/login-notch")
+tests/test_login.py:1206:            url = "/username"
+tests/test_login.py:1207:            result = c.get(url)
+tests/test_login.py:1208:            self.assertEqual(user_name, result.data.decode("utf-8"))
+tests/test_login.py:1209:            url = f"/username?user_id={user_id}"
+tests/test_login.py:1210:            result = c.get(url)
+tests/test_login.py:1211:            self.assertEqual("Steve", result.data.decode("utf-8"))
+tests/test_login.py:1212:
+tests/test_login.py:1213:    def test_login_invalid_user_with_request(self):
+tests/test_login.py:1214:        user_id = 9000
+tests/test_login.py:1215:        with self.app.test_client() as c:
+tests/test_login.py:1216:            url = f"/username?user_id={user_id}"
+tests/test_login.py:1217:            result = c.get(url)
+tests/test_login.py:1218:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:1219:
+tests/test_login.py:1220:    def test_login_invalid_user_with_request_when_already_logged_in(self):
+tests/test_login.py:1221:        user_id = 9000
+tests/test_login.py:1222:        with self.app.test_client() as c:
+tests/test_login.py:1223:            url = "/login-notch"
+tests/test_login.py:1224:            result = c.get(url)
+tests/test_login.py:1225:            self.assertEqual("True", result.data.decode("utf-8"))
+tests/test_login.py:1226:            url = f"/username?user_id={user_id}"
+tests/test_login.py:1227:            result = c.get(url)
+tests/test_login.py:1228:            self.assertEqual(result.status_code, 401)
+tests/test_login.py:1229:
+tests/test_login.py:1230:    def test_login_user_with_request_does_not_modify_session(self):
+tests/test_login.py:1231:        user_id = 2
+tests/test_login.py:1232:        user_name = USERS[user_id].name
+tests/test_login.py:1233:        with self.app.test_client() as c:
+tests/test_login.py:1234:            url = f"/username?user_id={user_id}"
+tests/test_login.py:1235:            result = c.get(url)
+tests/test_login.py:1236:            self.assertEqual(user_name, result.data.decode("utf-8"))
+tests/test_login.py:1237:            url = "/username"
+tests/test_login.py:1238:            result = c.get(url)
+tests/test_login.py:1239:            self.assertEqual("Anonymous", result.data.decode("utf-8"))
+tests/test_login.py:1240:
+tests/test_login.py:1241:
+tests/test_login.py:1242:class TestLoginUrlGeneration(unittest.TestCase):
+tests/test_login.py:1243:    def setUp(self):
+tests/test_login.py:1244:        self.app = Flask(__name__)
+tests/test_login.py:1245:        self.login_manager = LoginManager()
+tests/test_login.py:1246:        self.login_manager.init_app(self.app)
+tests/test_login.py:1247:
+tests/test_login.py:1248:        @self.app.route("/login")
+tests/test_login.py:1249:        def login():
+tests/test_login.py:1250:            return ""
+tests/test_login.py:1251:
+tests/test_login.py:1252:    def test_make_next_param(self):
+tests/test_login.py:1253:        with self.app.test_request_context():
+tests/test_login.py:1254:            url = make_next_param("/login", "http://localhost/profile")
+tests/test_login.py:1255:            self.assertEqual("/profile", url)
+tests/test_login.py:1256:
+tests/test_login.py:1257:            url = make_next_param("https://localhost/login", "http://localhost/profile")
+tests/test_login.py:1258:            self.assertEqual("http://localhost/profile", url)
+tests/test_login.py:1259:
+tests/test_login.py:1260:            url = make_next_param("http://accounts.localhost/login", "http://localhost/profile")
+tests/test_login.py:1261:            self.assertEqual("http://localhost/profile", url)
+tests/test_login.py:1262:
+tests/test_login.py:1263:    def test_login_url_generation(self):
+tests/test_login.py:1264:        with self.app.test_request_context():
+tests/test_login.py:1265:            PROTECTED = "http://localhost/protected"
+tests/test_login.py:1266:
+tests/test_login.py:1267:            self.assertEqual("/login?n=%2Fprotected", login_url("/login", PROTECTED, "n"))
+tests/test_login.py:1268:
+tests/test_login.py:1269:            url = login_url("/login", PROTECTED)
+tests/test_login.py:1270:            self.assertEqual("/login?next=%2Fprotected", url)
+tests/test_login.py:1271:
+tests/test_login.py:1272:            expected = "https://auth.localhost/login?next=http%3A%2F%2Flocalhost%2Fprotected"
+tests/test_login.py:1273:            result = login_url("https://auth.localhost/login", PROTECTED)
+tests/test_login.py:1274:            self.assertEqual(expected, result)
+tests/test_login.py:1275:
+tests/test_login.py:1276:            url = login_url("/login?affil=cgnu", PROTECTED)
+tests/test_login.py:1277:            self.assertEqual(
+tests/test_login.py:1278:                "/login?affil=cgnu&next=%2Fprotected",
+tests/test_login.py:1279:                url,
+tests/test_login.py:1280:            )
+tests/test_login.py:1281:
+tests/test_login.py:1282:    def test_login_url_generation_with_view(self):
+tests/test_login.py:1283:        with self.app.test_request_context():
+tests/test_login.py:1284:            self.assertEqual("/login?next=%2Fprotected", login_url("login", "/protected"))
+tests/test_login.py:1285:
+tests/test_login.py:1286:    def test_login_url_no_next_url(self):
+tests/test_login.py:1287:        self.assertEqual(login_url("/foo"), "/foo")
+tests/test_login.py:1288:
+tests/test_login.py:1289:
+tests/test_login.py:1290:class CookieEncodingTestCase(unittest.TestCase):
+tests/test_login.py:1291:    def test_cookie_encoding(self):
+tests/test_login.py:1292:        app = Flask(__name__)
+tests/test_login.py:1293:        app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:1294:
+tests/test_login.py:1295:        # COOKIE = u'1|7d276051c1eec578ed86f6b8478f7f7d803a7970'
+tests/test_login.py:1296:
+tests/test_login.py:1297:        # Due to the restriction of 80 chars I have to break up the hash in two
+tests/test_login.py:1298:        h1 = "0e9e6e9855fbe6df7906ec4737578a1d491b38d3fd5246c1561016e189d6516"
+tests/test_login.py:1299:        h2 = "043286501ca43257c938e60aad77acec5ce916b94ca9d00c0bb6f9883ae4b82"
+tests/test_login.py:1300:        h3 = "ae"
+tests/test_login.py:1301:        COOKIE = "1|" + h1 + h2 + h3
+tests/test_login.py:1302:
+tests/test_login.py:1303:        with app.test_request_context():
+tests/test_login.py:1304:            self.assertEqual(COOKIE, encode_cookie("1"))
+tests/test_login.py:1305:            self.assertEqual("1", decode_cookie(COOKIE))
+tests/test_login.py:1306:            self.assertIsNone(decode_cookie("Foo|BAD_BASH"))
+tests/test_login.py:1307:            self.assertIsNone(decode_cookie("no bar"))
+tests/test_login.py:1308:
+tests/test_login.py:1309:    def test_cookie_encoding_with_key(self):
+tests/test_login.py:1310:        app = Flask(__name__)
+tests/test_login.py:1311:        app.config["SECRET_KEY"] = "not-used"
+tests/test_login.py:1312:        key = "deterministic"
+tests/test_login.py:1313:
+tests/test_login.py:1314:        # COOKIE = u'1|7d276051c1eec578ed86f6b8478f7f7d803a7970'
+tests/test_login.py:1315:
+tests/test_login.py:1316:        # Due to the restriction of 80 chars I have to break up the hash in two
+tests/test_login.py:1317:        h1 = "0e9e6e9855fbe6df7906ec4737578a1d491b38d3fd5246c1561016e189d6516"
+tests/test_login.py:1318:        h2 = "043286501ca43257c938e60aad77acec5ce916b94ca9d00c0bb6f9883ae4b82"
+tests/test_login.py:1319:        h3 = "ae"
+tests/test_login.py:1320:        COOKIE = "1|" + h1 + h2 + h3
+tests/test_login.py:1321:
+tests/test_login.py:1322:        with app.test_request_context():
+tests/test_login.py:1323:            self.assertEqual(COOKIE, encode_cookie("1", key=key))
+tests/test_login.py:1324:            self.assertEqual("1", decode_cookie(COOKIE, key=key))
+tests/test_login.py:1325:            self.assertIsNone(decode_cookie("Foo|BAD_BASH", key=key))
+tests/test_login.py:1326:            self.assertIsNone(decode_cookie("no bar", key=key))
+tests/test_login.py:1327:
+tests/test_login.py:1328:
+tests/test_login.py:1329:class SecretKeyTestCase(unittest.TestCase):
+tests/test_login.py:1330:    def setUp(self):
+tests/test_login.py:1331:        self.app = Flask(__name__)
+tests/test_login.py:1332:
+tests/test_login.py:1333:    def test_bytes(self):
+tests/test_login.py:1334:        self.app.config["SECRET_KEY"] = b"\x9e\x8f\x14"
+tests/test_login.py:1335:        with self.app.test_request_context():
+tests/test_login.py:1336:            self.assertEqual(_secret_key(), b"\x9e\x8f\x14")
+tests/test_login.py:1337:
+tests/test_login.py:1338:    def test_native(self):
+tests/test_login.py:1339:        self.app.config["SECRET_KEY"] = "\x9e\x8f\x14"
+tests/test_login.py:1340:        with self.app.test_request_context():
+tests/test_login.py:1341:            self.assertEqual(_secret_key(), b"\x9e\x8f\x14")
+tests/test_login.py:1342:
+tests/test_login.py:1343:    def test_default(self):
+tests/test_login.py:1344:        self.assertEqual(_secret_key("\x9e\x8f\x14"), b"\x9e\x8f\x14")
+tests/test_login.py:1345:
+tests/test_login.py:1346:
+tests/test_login.py:1347:class ImplicitIdUser(UserMixin):
+tests/test_login.py:1348:    __slots__ = ()
+tests/test_login.py:1349:
+tests/test_login.py:1350:    def __init__(self, id):
+tests/test_login.py:1351:        self.id = id
+tests/test_login.py:1352:
+tests/test_login.py:1353:
+tests/test_login.py:1354:class ExplicitIdUser(UserMixin):
+tests/test_login.py:1355:    __slots__ = ()
+tests/test_login.py:1356:
+tests/test_login.py:1357:    def __init__(self, name):
+tests/test_login.py:1358:        self.name = name
+tests/test_login.py:1359:
+tests/test_login.py:1360:
+tests/test_login.py:1361:class UserMixinTestCase(unittest.TestCase):
+tests/test_login.py:1362:    def test_default_values(self):
+tests/test_login.py:1363:        user = ImplicitIdUser(1)
+tests/test_login.py:1364:        self.assertTrue(user.is_active)
+tests/test_login.py:1365:        self.assertTrue(user.is_authenticated)
+tests/test_login.py:1366:        self.assertFalse(user.is_anonymous)
+tests/test_login.py:1367:
+tests/test_login.py:1368:    def test_get_id_from_id_attribute(self):
+tests/test_login.py:1369:        user = ImplicitIdUser(1)
+tests/test_login.py:1370:        self.assertEqual("1", user.get_id())
+tests/test_login.py:1371:
+tests/test_login.py:1372:    def test_get_id_not_implemented(self):
+tests/test_login.py:1373:        user = ExplicitIdUser("Notch")
+tests/test_login.py:1374:        self.assertRaises(NotImplementedError, lambda: user.get_id())
+tests/test_login.py:1375:
+tests/test_login.py:1376:    def test_equality(self):
+tests/test_login.py:1377:        first = ImplicitIdUser(1)
+tests/test_login.py:1378:        same = ImplicitIdUser(1)
+tests/test_login.py:1379:        different = ImplicitIdUser(2)
+tests/test_login.py:1380:
+tests/test_login.py:1381:        # Explicitly test the equality operator
+tests/test_login.py:1382:        self.assertTrue(first == same)
+tests/test_login.py:1383:        self.assertFalse(first == different)
+tests/test_login.py:1384:        self.assertFalse(first != same)
+tests/test_login.py:1385:        self.assertTrue(first != different)
+tests/test_login.py:1386:
+tests/test_login.py:1387:        self.assertFalse(first == "1")
+tests/test_login.py:1388:        self.assertTrue(first != "1")
+tests/test_login.py:1389:
+tests/test_login.py:1390:    def test_hashable(self):
+tests/test_login.py:1391:        self.assertTrue(isinstance(UserMixin(), Hashable))
+tests/test_login.py:1392:
+tests/test_login.py:1393:
+tests/test_login.py:1394:class AnonymousUserTestCase(unittest.TestCase):
+tests/test_login.py:1395:    def test_values(self):
+tests/test_login.py:1396:        user = AnonymousUserMixin()
+tests/test_login.py:1397:
+tests/test_login.py:1398:        self.assertFalse(user.is_active)
+tests/test_login.py:1399:        self.assertFalse(user.is_authenticated)
+tests/test_login.py:1400:        self.assertTrue(user.is_anonymous)
+tests/test_login.py:1401:        self.assertIsNone(user.get_id())
+tests/test_login.py:1402:
+tests/test_login.py:1403:
+tests/test_login.py:1404:class UnicodeCookieUserIDTestCase(unittest.TestCase):
+tests/test_login.py:1405:    def setUp(self):
+tests/test_login.py:1406:        self.app = Flask(__name__)
+tests/test_login.py:1407:        self.app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:1408:        self.app.config["SESSION_PROTECTION"] = None
+tests/test_login.py:1409:        self.remember_cookie_name = "remember"
+tests/test_login.py:1410:        self.app.config["REMEMBER_COOKIE_NAME"] = self.remember_cookie_name
+tests/test_login.py:1411:        self.login_manager = LoginManager()
+tests/test_login.py:1412:        self.login_manager.init_app(self.app)
+tests/test_login.py:1413:
+tests/test_login.py:1414:        @self.app.route("/")
+tests/test_login.py:1415:        def index():
+tests/test_login.py:1416:            return "Welcome!"
+tests/test_login.py:1417:
+tests/test_login.py:1418:        @self.app.route("/login-germanjapanese-remember")
+tests/test_login.py:1419:        def login_germanjapanese_remember():
+tests/test_login.py:1420:            return str(login_user(germanjapanese, remember=True))
+tests/test_login.py:1421:
+tests/test_login.py:1422:        @self.app.route("/username")
+tests/test_login.py:1423:        def username():
+tests/test_login.py:1424:            if current_user.is_authenticated:
+tests/test_login.py:1425:                return current_user.name
+tests/test_login.py:1426:            return "Anonymous"
+tests/test_login.py:1427:
+tests/test_login.py:1428:        @self.app.route("/userid")
+tests/test_login.py:1429:        def user_id():
+tests/test_login.py:1430:            if current_user.is_authenticated:
+tests/test_login.py:1431:                return current_user.id
+tests/test_login.py:1432:            return "wrong_id"
+tests/test_login.py:1433:
+tests/test_login.py:1434:        @self.login_manager.user_loader
+tests/test_login.py:1435:        def load_user(user_id):
+tests/test_login.py:1436:            return USERS[str(user_id)]
+tests/test_login.py:1437:
+tests/test_login.py:1438:        # This will help us with the possibility of typos in the tests. Now
+tests/test_login.py:1439:        # we shouldn't have to check each response to help us set up state
+tests/test_login.py:1440:        # (such as login pages) to make sure it worked: we will always
+tests/test_login.py:1441:        # get an exception raised (rather than return a 404 response)
+tests/test_login.py:1442:        @self.app.errorhandler(404)
+tests/test_login.py:1443:        def handle_404(e):
+tests/test_login.py:1444:            raise e
+tests/test_login.py:1445:
+tests/test_login.py:1446:        unittest.TestCase.setUp(self)
+tests/test_login.py:1447:
+tests/test_login.py:1448:    def _delete_session(self, c):
+tests/test_login.py:1449:        # Helper method to cause the session to be deleted
+tests/test_login.py:1450:        # as if the browser was closed. This will remove
+tests/test_login.py:1451:        # the session regardless of the permanent flag
+tests/test_login.py:1452:        # on the session!
+tests/test_login.py:1453:        with c.session_transaction() as sess:
+tests/test_login.py:1454:            sess.clear()
+tests/test_login.py:1455:
+tests/test_login.py:1456:    def test_remember_me_username(self):
+tests/test_login.py:1457:        with self.app.test_client() as c:
+tests/test_login.py:1458:            c.get("/login-germanjapanese-remember")
+tests/test_login.py:1459:            self._delete_session(c)
+tests/test_login.py:1460:            result = c.get("/username")
+tests/test_login.py:1461:            self.assertEqual("Müller", result.data.decode("utf-8"))
+tests/test_login.py:1462:
+tests/test_login.py:1463:    def test_remember_me_user_id(self):
+tests/test_login.py:1464:        with self.app.test_client() as c:
+tests/test_login.py:1465:            c.get("/login-germanjapanese-remember")
+tests/test_login.py:1466:            self._delete_session(c)
+tests/test_login.py:1467:            result = c.get("/userid")
+tests/test_login.py:1468:            self.assertEqual("佐藤", result.data.decode("utf-8"))
+tests/test_login.py:1469:
+tests/test_login.py:1470:
+tests/test_login.py:1471:class StrictHostForRedirectsTestCase(unittest.TestCase):
+tests/test_login.py:1472:    def setUp(self):
+tests/test_login.py:1473:        self.app = Flask(__name__)
+tests/test_login.py:1474:        self.app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:1475:        self.app.config["SESSION_PROTECTION"] = None
+tests/test_login.py:1476:        self.remember_cookie_name = "remember"
+tests/test_login.py:1477:        self.app.config["REMEMBER_COOKIE_NAME"] = self.remember_cookie_name
+tests/test_login.py:1478:        self.login_manager = LoginManager()
+tests/test_login.py:1479:        self.login_manager.init_app(self.app)
+tests/test_login.py:1480:
+tests/test_login.py:1481:        @self.app.route("/secret")
+tests/test_login.py:1482:        def secret():
+tests/test_login.py:1483:            return self.login_manager.unauthorized()
+tests/test_login.py:1484:
+tests/test_login.py:1485:        @self.app.route("/")
+tests/test_login.py:1486:        def index():
+tests/test_login.py:1487:            return "Welcome!"
+tests/test_login.py:1488:
+tests/test_login.py:1489:        @self.login_manager.user_loader
+tests/test_login.py:1490:        def load_user(user_id):
+tests/test_login.py:1491:            return USERS[str(user_id)]
+tests/test_login.py:1492:
+tests/test_login.py:1493:        # This will help us with the possibility of typos in the tests. Now
+tests/test_login.py:1494:        # we shouldn't have to check each response to help us set up state
+tests/test_login.py:1495:        # (such as login pages) to make sure it worked: we will always
+tests/test_login.py:1496:        # get an exception raised (rather than return a 404 response)
+tests/test_login.py:1497:        @self.app.errorhandler(404)
+tests/test_login.py:1498:        def handle_404(e):
+tests/test_login.py:1499:            raise e
+tests/test_login.py:1500:
+tests/test_login.py:1501:        unittest.TestCase.setUp(self)
+tests/test_login.py:1502:
+tests/test_login.py:1503:    def test_unauthorized_uses_host_from_next_url(self):
+tests/test_login.py:1504:        self.login_manager.login_view = "login"
+tests/test_login.py:1505:        self.app.config["FORCE_HOST_FOR_REDIRECTS"] = None
+tests/test_login.py:1506:
+tests/test_login.py:1507:        @self.app.route("/login")
+tests/test_login.py:1508:        def login():
+tests/test_login.py:1509:            return session.pop("next", "")
+tests/test_login.py:1510:
+tests/test_login.py:1511:        with self.app.test_client() as c:
+tests/test_login.py:1512:            result = c.get("/secret", base_url="http://foo.com")
+tests/test_login.py:1513:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:1514:            self.assertEqual(result.location, "/login?next=%2Fsecret")
+tests/test_login.py:1515:
+tests/test_login.py:1516:    def test_unauthorized_uses_host_from_config_when_available(self):
+tests/test_login.py:1517:        self.login_manager.login_view = "login"
+tests/test_login.py:1518:        self.app.config["FORCE_HOST_FOR_REDIRECTS"] = "good.com"
+tests/test_login.py:1519:
+tests/test_login.py:1520:        @self.app.route("/login")
+tests/test_login.py:1521:        def login():
+tests/test_login.py:1522:            return session.pop("next", "")
+tests/test_login.py:1523:
+tests/test_login.py:1524:        with self.app.test_client() as c:
+tests/test_login.py:1525:            result = c.get("/secret", base_url="http://bad.com")
+tests/test_login.py:1526:            self.assertEqual(result.status_code, 302)
+tests/test_login.py:1527:            self.assertEqual(result.location, "//good.com/login?next=%2Fsecret")
+tests/test_login.py:1528:
+tests/test_login.py:1529:
+tests/test_login.py:1530:class CustomTestClientTestCase(unittest.TestCase):
+tests/test_login.py:1531:    def setUp(self):
+tests/test_login.py:1532:        self.app = Flask(__name__)
+tests/test_login.py:1533:        self.app.config["SECRET_KEY"] = "deterministic"
+tests/test_login.py:1534:        self.app.config["SESSION_PROTECTION"] = None
+tests/test_login.py:1535:        self.remember_cookie_name = "remember"
+tests/test_login.py:1536:        self.app.config["REMEMBER_COOKIE_NAME"] = self.remember_cookie_name
+tests/test_login.py:1537:        self.login_manager = LoginManager()
+tests/test_login.py:1538:        self.login_manager.init_app(self.app)
+tests/test_login.py:1539:        self.app.test_client_class = FlaskLoginClient
+tests/test_login.py:1540:
+tests/test_login.py:1541:        @self.app.route("/username")
+tests/test_login.py:1542:        def username():
+tests/test_login.py:1543:            if current_user.is_authenticated:
+tests/test_login.py:1544:                return current_user.name
+tests/test_login.py:1545:            return "Anonymous"
+tests/test_login.py:1546:
+tests/test_login.py:1547:        @self.app.route("/is-fresh")
+tests/test_login.py:1548:        def is_fresh():
+tests/test_login.py:1549:            return str(login_fresh())
+tests/test_login.py:1550:
+tests/test_login.py:1551:        @self.login_manager.user_loader
+tests/test_login.py:1552:        def load_user(user_id):
+tests/test_login.py:1553:            return USERS[int(user_id)]
+tests/test_login.py:1554:
+tests/test_login.py:1555:        # This will help us with the possibility of typos in the tests. Now
+tests/test_login.py:1556:        # we shouldn't have to check each response to help us set up state
+tests/test_login.py:1557:        # (such as login pages) to make sure it worked: we will always
+tests/test_login.py:1558:        # get an exception raised (rather than return a 404 response)
+tests/test_login.py:1559:        @self.app.errorhandler(404)
+tests/test_login.py:1560:        def handle_404(e):
+tests/test_login.py:1561:            raise e
+tests/test_login.py:1562:
+tests/test_login.py:1563:        unittest.TestCase.setUp(self)
+tests/test_login.py:1564:
+tests/test_login.py:1565:    def test_no_args_to_test_client(self):
+tests/test_login.py:1566:        with self.app.test_client() as c:
+tests/test_login.py:1567:            result = c.get("/username")
+tests/test_login.py:1568:            self.assertEqual("Anonymous", result.data.decode("utf-8"))
+tests/test_login.py:1569:
+tests/test_login.py:1570:    def test_user_arg_to_test_client(self):
+tests/test_login.py:1571:        with self.app.test_client(user=notch) as c:
+tests/test_login.py:1572:            username = c.get("/username")
+tests/test_login.py:1573:            self.assertEqual("Notch", username.data.decode("utf-8"))
+tests/test_login.py:1574:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1575:            self.assertEqual("True", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1576:
+tests/test_login.py:1577:    def test_fresh_login_arg_to_test_client(self):
+tests/test_login.py:1578:        with self.app.test_client(user=notch, fresh_login=False) as c:
+tests/test_login.py:1579:            username = c.get("/username")
+tests/test_login.py:1580:            self.assertEqual("Notch", username.data.decode("utf-8"))
+tests/test_login.py:1581:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1582:            self.assertEqual("False", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1583:
+tests/test_login.py:1584:    def test_session_protection_modes(self):
+tests/test_login.py:1585:        # Disabled
+tests/test_login.py:1586:        self.app.config["SESSION_PROTECTION"] = None
+tests/test_login.py:1587:        with self.app.test_client(user=notch, fresh_login=False) as c:
+tests/test_login.py:1588:            username = c.get("/username")
+tests/test_login.py:1589:            self.assertEqual("Notch", username.data.decode("utf-8"))
+tests/test_login.py:1590:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1591:            self.assertEqual("False", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1592:
+tests/test_login.py:1593:        with self.app.test_client(user=notch, fresh_login=True) as c:
+tests/test_login.py:1594:            username = c.get("/username")
+tests/test_login.py:1595:            self.assertEqual("Notch", username.data.decode("utf-8"))
+tests/test_login.py:1596:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1597:            self.assertEqual("True", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1598:
+tests/test_login.py:1599:        # Enabled with mode: basic
+tests/test_login.py:1600:        self.app.config["SESSION_PROTECTION"] = "basic"
+tests/test_login.py:1601:        with self.app.test_client(user=notch, fresh_login=False) as c:
+tests/test_login.py:1602:            username = c.get("/username")
+tests/test_login.py:1603:            self.assertEqual("Notch", username.data.decode("utf-8"))
+tests/test_login.py:1604:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1605:            self.assertEqual("False", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1606:
+tests/test_login.py:1607:        with self.app.test_client(user=notch, fresh_login=True) as c:
+tests/test_login.py:1608:            username = c.get("/username")
+tests/test_login.py:1609:            self.assertEqual("Notch", username.data.decode("utf-8"))
+tests/test_login.py:1610:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1611:            self.assertEqual("False", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1612:
+tests/test_login.py:1613:        # Enabled with mode: strong
+tests/test_login.py:1614:        self.app.config["SESSION_PROTECTION"] = "strong"
+tests/test_login.py:1615:        with self.app.test_client(user=notch, fresh_login=False) as c:
+tests/test_login.py:1616:            username = c.get("/username")
+tests/test_login.py:1617:            self.assertEqual("Anonymous", username.data.decode("utf-8"))
+tests/test_login.py:1618:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1619:            self.assertEqual("False", is_fresh.data.decode("utf-8"))
+tests/test_login.py:1620:
+tests/test_login.py:1621:        with self.app.test_client(user=notch, fresh_login=True) as c:
+tests/test_login.py:1622:            username = c.get("/username")
+tests/test_login.py:1623:            self.assertEqual("Anonymous", username.data.decode("utf-8"))
+tests/test_login.py:1624:            is_fresh = c.get("/is-fresh")
+tests/test_login.py:1625:            self.assertEqual("False", is_fresh.data.decode("utf-8"))
