@@ -139,7 +139,7 @@ pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-95 tests, no network and no API key: the Anthropic client is faked in
+106 tests, no network and no API key: the Anthropic client is faked in
 `tests/test_extract.py`, and the end-to-end CLI test runs off a saved
 extraction. The sample repo in `tests/fixtures/sample_repo` covers aliased
 imports, submodule imports, star imports, a file with a syntax error, a

@@ -171,7 +171,7 @@ decides &mdash; so every alert points at a line.</p>
   changed. Whether that matters to a repo is a deterministic comparison against
   real import sites.<br>
   <a href="/api/check?repo=mattupstate/flask-security&amp;package=flask&amp;version=2.3.0">JSON API</a>
-  &middot; <a href="https://github.com/">source</a>
+  &middot; <a href="https://github.com/narrahul/release-radar">source</a>
 </p>
 </div></body></html>
 """
