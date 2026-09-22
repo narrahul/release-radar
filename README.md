@@ -1,6 +1,9 @@
 # Release Radar
 
-Tells a Python repository which dependency releases actually break **its** code.
+**[Live demo](https://release-radar-npm2.onrender.com)** · Tells a Python repository which dependency releases
+actually break **its** code.
+
+> The free host sleeps when idle — the first request takes ~30s to wake it.
 
 An LLM reads the release notes and extracts the APIs that were removed or
 renamed. A static `ast` scan finds the names the repo really imports. Plain
